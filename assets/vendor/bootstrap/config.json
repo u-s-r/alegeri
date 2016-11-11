@@ -226,9 +226,9 @@
     "@state-warning-text": "#8a6d3b",
     "@state-warning-bg": "#fcf8e3",
     "@state-warning-border": "darken(spin(@state-warning-bg, -10), 5%)",
-    "@state-danger-text": "#a94442",
-    "@state-danger-bg": "#f2dede",
-    "@state-danger-border": "darken(spin(@state-danger-bg, -10), 5%)",
+    "@state-danger-text": "@brand-danger",
+    "@state-danger-bg": "@brand-danger",
+    "@state-danger-border": "@brand-danger",
     "@tooltip-max-width": "200px",
     "@tooltip-color": "#fff",
     "@tooltip-bg": "#000",
@@ -400,5 +400,5 @@
     "tab.js",
     "transition.js"
   ],
-  "customizerUrl": "http://getbootstrap.com/customize/?id=87db3510064510648fbcc8a90ecfa9c6"
+  "customizerUrl": "http://getbootstrap.com/customize/?id=9beb9a98ef83e6480046bb509f9f8cfd"
 }
