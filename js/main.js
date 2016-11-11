@@ -114,6 +114,7 @@
     highlight: function (element) {
       $(element).closest('.form-group, .checkbox').addClass('has-error');
     },
+    ignore: [],
     unhighlight: function (element) {
       $(element).closest('.form-group, .checkbox').removeClass('has-error');
     }
@@ -159,6 +160,11 @@
       },
       confirmare: {
         required: true
+      },
+      recaptcha: {
+        required: function () {
+          return '' === grecaptcha.getResponse();
+        }
       }
     }
   });
@@ -200,7 +206,20 @@
       },
       regiune: {
         required: true
+      },
+      recaptcha: {
+        required: function () {
+          return '' === grecaptcha.getResponse();
+        }
       }
     }
   });
+
+  window.recaptchaInit = function () {
+    $('.g-recaptcha').each(function () {
+      grecaptcha.render(this, {
+        'sitekey': $(this).data('sitekey')
+      });
+    });
+  };
 })(jQuery);

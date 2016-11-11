@@ -5,7 +5,7 @@
   },
   "extends": "eslint:recommended",
   "globals": {
-    "countdown": false,
+    "grecaptcha": false,
     "USR": true
   },
   "parser": "babel-eslint",

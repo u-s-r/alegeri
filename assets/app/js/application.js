@@ -281,6 +281,7 @@ jQuery.fn.vectorMap('addMap', 'diaspora', {"width":89,"height":89,"paths":{"DIAS
     highlight: function (element) {
       $(element).closest('.form-group, .checkbox').addClass('has-error');
     },
+    ignore: [],
     unhighlight: function (element) {
       $(element).closest('.form-group, .checkbox').removeClass('has-error');
     }
@@ -326,6 +327,11 @@ jQuery.fn.vectorMap('addMap', 'diaspora', {"width":89,"height":89,"paths":{"DIAS
       },
       confirmare: {
         required: true
+      },
+      recaptcha: {
+        required: function () {
+          return '' === grecaptcha.getResponse();
+        }
       }
     }
   });
@@ -367,7 +373,20 @@ jQuery.fn.vectorMap('addMap', 'diaspora', {"width":89,"height":89,"paths":{"DIAS
       },
       regiune: {
         required: true
+      },
+      recaptcha: {
+        required: function () {
+          return '' === grecaptcha.getResponse();
+        }
       }
     }
   });
+
+  window.recaptchaInit = function () {
+    $('.g-recaptcha').each(function () {
+      grecaptcha.render(this, {
+        'sitekey': $(this).data('sitekey')
+      });
+    });
+  };
 })(jQuery);
