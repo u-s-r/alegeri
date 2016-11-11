@@ -123,6 +123,7 @@
 .required label:after {
   color: #ff374f;
   content: "*";
+  font-weight: normal;
   margin-left: 2px;
   position: absolute;
 }
