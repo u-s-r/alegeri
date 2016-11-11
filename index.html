@@ -78,14 +78,14 @@
         <div class="col-md-10 col-md-offset-1">
           <div class="statistics">
             <div class="statistic statistic-primary">
-              <div class="value" id="countdown-days">00</div>
+              <div class="value">00</div>
               <div class="label">Reprezentanți</div>
             </div>
             <div class="statistic statistic-separator">
               <div class="value">/</div>
             </div>
             <div class="statistic statistic-secondary">
-              <div class="value" id="countdown-hours">00</div>
+              <div class="value">00</div>
               <div class="label">Delegați</div>
             </div>
           </div>
@@ -97,29 +97,34 @@
           <ul class="media-list">
             <li class="media">
               <div class="media-left">
-                <img class="media-object" src="assets/app/img/icon-semneaza.png" alt="Semnează">
+                <img class="media-object" src="assets/app/img/icon-inscriere.png" alt="Înscrie-te ca reprezentat sau delegat">
               </div>
               <div class="media-body">
-                <h3 class="media-heading">Înscrie-te</h3>
+                <h3 class="media-heading">Înscrie-te ca reprezentat sau delegat</h3>
                 <dl>
                   <dt>Reprezentant</dt>
                   <dd>Imprimă formularul folosind butonul de mai sus şi completează-l conform instrucțiunilor, folosind date din cartea ta de identitate. La final semnează formularul, doar aşa este considerată validă intrarea.</dd>
                   <dt>Delegat</dt>
                   <dd>Ne trebuie cât mai multe semnături, aşa că te rugăm să vorbeşti cu prietenii, familia şi vecinii tăi să completeze şi ei formularul. Semnăturile lor trebuie să fie originale; nu semnaţi în locul altei persoane.</dd>
                 </dl>
-                <ul class="nav nav-pills nav-justified">
-                  <li role="presentation" class="active"><a href="#">Reprezentant</a></li>
-                  <li role="presentation"><a href="#">Delegat</a></li>
-                </ul>
               </div>
             </li>
             <li class="media">
               <div class="media-left">
-                <img class="media-object" src="assets/app/img/icon-spune-prietenilor.png" alt="Spune-le prietenilor">
+                <img class="media-object" src="assets/app/img/icon-trimite.png" alt="Vreau alegeri corecte!">
               </div>
               <div class="media-body">
-                <h3 class="media-heading">Spune-le familiei și prietenilor!</h3>
+                <h3 class="media-heading">Vreau alegeri corecte!</h3>
                 <p>Ne trebuie cât mai multe semnături, aşa că te rugăm să vorbeşti cu prietenii, familia şi vecinii tăi să completeze şi ei formularul. Semnăturile lor trebuie să fie originale; nu semnaţi în locul altei persoane.</p>
+                <p>Vreau să fiu:</p>
+                <ul class="nav nav-pills nav-justified" role="tablist">
+                  <li role="presentation" class="active"><a href="#reprezentat" aria-controls="reprezentat" role="tab" data-toggle="tab">Reprezentant</a></li>
+                  <li role="presentation"><a href="#delegat" aria-controls="delegat" role="tab" data-toggle="tab">Delegat</a></li>
+                </ul>
+                <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane active" id="reprezentat">TODO: reprezentat</div>
+                  <div role="tabpanel" class="tab-pane" id="delegat">TODO: delegat</div>
+                </div>
               </div>
             </li>
           </ul>
@@ -131,7 +136,7 @@
             <div class="panel-body">
               <div class="media">
                 <div class="media-body">
-                  <p><strong>Fiecare semnătură este o investiție într-un viitor mai bun pentru această țară și o speranță că și oamenii buni pot ajunge în Parlament.</strong></p>
+                  <p><strong>Vreau alegeri corecte! Înscrie-te ca să asigurăm corectitudinea procesului electoral din ziua votului!</strong></p>
                   <p>Mulțumim!</p>
                 </div>
                 <div class="media-right media-middle">
