@@ -122,7 +122,71 @@
                   <li role="presentation"><a href="#delegat" aria-controls="delegat" role="tab" data-toggle="tab">Delegat</a></li>
                 </ul>
                 <div class="tab-content">
-                  <div role="tabpanel" class="tab-pane active" id="reprezentat">TODO: reprezentat</div>
+                  <div role="tabpanel" class="tab-pane active" id="reprezentat">
+                    <form>
+                      <div class="form-group">
+                        <label>Prenume:</label>
+                        <input type="text" class="form-control" placeholder="Andrei">
+                      </div>
+                      <div class="form-group">
+                        <label>Nume de familie:</label>
+                        <input type="text" class="form-control" placeholder="Popescu">
+                      </div>
+                      <div class="form-group">
+                        <label>Email:</label>
+                        <input type="email" class="form-control" placeholder="andrei.popescu@usr.ro">
+                      </div>
+                      <div class="form-group">
+                        <label>Număr de telefon:</label>
+                        <input type="text" class="form-control" placeholder="07xx-xxx-xxx">
+                      </div>
+                      <div class="form-group">
+                        <label>CNP:</label>
+                        <input type="text" class="form-control" placeholder="SAALLZZJJNNNC">
+                      </div>
+                      <div class="row">
+                        <div class="col-xs-4">
+                          <div class="form-group">
+                            <label>Serie:</label>
+                            <input type="text" class="form-control" placeholder="XX">
+                          </div>
+                        </div>
+                        <div class="col-xs-8">
+                          <div class="form-group">
+                            <label>Număr:</label>
+                            <input type="text" class="form-control" placeholder="xxxxxx">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label>Adresa din buletin:</label>
+                        <textarea class="form-control" rows="3"></textarea>
+                      </div>
+                      <div class="form-group">
+                        <label>Județul unde vreau să fiu repartizat:</label>
+                        <select class="form-control" disabled>
+                          <option>&mdash;</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label>Observații:</label>
+                        <textarea class="form-control" rows="3"></textarea>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox">
+                          Dacă nu sunt atribuit ca reprezentat, sunt de acord să fiu și delegat
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label class="text-muted">
+                          <input type="checkbox">
+                          Confirm pe propria răspundere că nu sunt membru sau rudă
+                        </label>
+                      </div>
+                      <button type="submit" class="btn btn-default">Vreau alegeri corecte!</button>
+                    </form>
+                  </div>
                   <div role="tabpanel" class="tab-pane" id="delegat">TODO: delegat</div>
                 </div>
               </div>
