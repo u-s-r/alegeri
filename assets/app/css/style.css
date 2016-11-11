@@ -674,6 +674,20 @@
 .tab-content {
   margin-bottom: 15px;
 }
+.spinner {
+  background-image: url("../img/spinner.gif");
+  background-repeat: none;
+  background-size: 1.4em auto;
+  display: inline-block;
+  height: 1.4em;
+  margin-left: .5em;
+  vertical-align: middle;
+  visibility: hidden;
+  width: 1.4em;
+}
+.spinner.active {
+  visibility: visible;
+}
 /* Paths */
 /* Colors */
 /*# sourceMappingURL=style.css.map */
