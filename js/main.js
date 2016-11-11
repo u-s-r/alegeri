@@ -138,6 +138,9 @@
 
   $('.form-reprezentant').validate({
     rules: {
+      confirmare: {
+        required: true
+      },
       prenume: {
         required: true
       },
@@ -174,7 +177,13 @@
       regiune: {
         required: true
       },
-      confirmare: {
+      localitate: {
+        required: true
+      },
+      tara: {
+        required: true
+      },
+      acord: {
         required: true
       },
       recaptcha: {
@@ -222,6 +231,15 @@
         required: true
       },
       regiune: {
+        required: true
+      },
+      localitate: {
+        required: true
+      },
+      tara: {
+        required: true
+      },
+      acord: {
         required: true
       },
       recaptcha: {

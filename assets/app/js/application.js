@@ -305,6 +305,9 @@ jQuery.fn.vectorMap('addMap', 'diaspora', {"width":89,"height":89,"paths":{"DIAS
 
   $('.form-reprezentant').validate({
     rules: {
+      confirmare: {
+        required: true
+      },
       prenume: {
         required: true
       },
@@ -341,7 +344,13 @@ jQuery.fn.vectorMap('addMap', 'diaspora', {"width":89,"height":89,"paths":{"DIAS
       regiune: {
         required: true
       },
-      confirmare: {
+      localitate: {
+        required: true
+      },
+      tara: {
+        required: true
+      },
+      acord: {
         required: true
       },
       recaptcha: {
@@ -389,6 +398,15 @@ jQuery.fn.vectorMap('addMap', 'diaspora', {"width":89,"height":89,"paths":{"DIAS
         required: true
       },
       regiune: {
+        required: true
+      },
+      localitate: {
+        required: true
+      },
+      tara: {
+        required: true
+      },
+      acord: {
         required: true
       },
       recaptcha: {

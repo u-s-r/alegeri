@@ -20,6 +20,7 @@ $data['serie']      = $_POST['serie'];
 $data['numar']      = $_POST['numar'];
 $data['adresa']     = $_POST['adresa'];
 $data['entry.8']    = $_POST['regiune'];
+$data['entry.9']    = $_POST['localitate'];
 $data['entry.10']   = $_POST['tara'];
 $data['entry.25']   = $_POST['observatii'];
 $data['delegat']    = isset($_POST['delegat']);

@@ -125,6 +125,18 @@
                   <div role="tabpanel" class="tab-pane active" id="reprezentat">
                     <form class="form-reprezentant" method="post">
                       <input type="hidden" name="tip" value="reprezentant">
+                      <div class="checkbox">
+                        <label class="control-label">
+                          <input type="checkbox" name="delegat" checked>
+                          Dacă nu sunt atribuit ca reprezentat, sunt de acord să fiu și delegat
+                        </label>
+                      </div>
+                      <div class="checkbox required">
+                        <label class="control-label">
+                          <input type="checkbox" name="confirmare" required>
+                          Confirm pe propria răspundere că nu sunt membru sau rudă
+                        </label>
+                      </div>
                       <div class="form-group required">
                         <label class="control-label" for="prenume-reprezentat">Prenume:</label>
                         <input type="text" class="form-control" id="prenume-reprezentat" name="prenume" placeholder="Andrei" required>
@@ -217,6 +229,10 @@
                           <option value="Vâlcea">Vâlcea</option>
                           <option value="Vrancea">Vrancea</option>
                         </select>
+                      </div>
+                      <div class="form-group required">
+                        <label class="control-label" for="localitate-delegat">Localitatea unde doresc să activez:</label>
+                        <input type="text" class="form-control" id="localitate-delegat" name="localitate" required>
                       </div>
                       <div class="form-group required">
                         <label class="control-label" for="tara-reprezentant">Țara unde doresc să activez:</label>
@@ -492,16 +508,10 @@
                         <label class="control-label" for="observatii-reprezentant">Observații:</label>
                         <textarea class="form-control" id="observatii-reprezentant" name="observatii" rows="3"></textarea>
                       </div>
-                      <div class="checkbox">
-                        <label class="control-label">
-                          <input type="checkbox" name="delegat" checked>
-                          Dacă nu sunt atribuit ca reprezentat, sunt de acord să fiu și delegat
-                        </label>
-                      </div>
                       <div class="checkbox required">
                         <label class="control-label">
-                          <input type="checkbox" name="confirmare" required>
-                          Confirm pe propria răspundere că nu sunt membru sau rudă
+                          <input type="checkbox" name="acord" required>
+                          Sunt de acord cu salvarea datelor
                         </label>
                       </div>
                       <div class="form-group">
@@ -608,6 +618,10 @@
                           <option value="Vâlcea">Vâlcea</option>
                           <option value="Vrancea">Vrancea</option>
                         </select>
+                      </div>
+                      <div class="form-group required">
+                        <label class="control-label" for="localitate-delegat">Localitatea unde doresc să activez:</label>
+                        <input type="text" class="form-control" id="localitate-delegat" name="localitate" required>
                       </div>
                       <div class="form-group required">
                         <label class="control-label" for="tara-delegat">Țara unde doresc să activez:</label>
@@ -882,6 +896,12 @@
                       <div class="form-group">
                         <label class="control-label" for="observatii-delegat">Observații:</label>
                         <textarea class="form-control" id="observatii-delegat" name="observatii" rows="3"></textarea>
+                      </div>
+                      <div class="checkbox required">
+                        <label class="control-label">
+                          <input type="checkbox" name="acord" required>
+                          Sunt de acord cu salvarea datelor
+                        </label>
                       </div>
                       <div class="form-group">
                         <div class="g-recaptcha" data-sitekey="6LcJvQsUAAAAANyRcfLvhPMuS6tp9Z2ngT8TLUlg"></div>
