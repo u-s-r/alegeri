@@ -119,6 +119,13 @@
   font-size: 63px;
   line-height: 1;
 }
+/* Forms */
+.required label:after {
+  color: #ff374f;
+  content: "*";
+  margin-left: 2px;
+  position: absolute;
+}
 .btn {
   border-radius: 20px;
   border: 0;

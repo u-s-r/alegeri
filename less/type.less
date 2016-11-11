@@ -115,3 +115,16 @@
     line-height: 1;
   }
 }
+
+/* Forms */
+
+.required {
+  label {
+    &:after {
+      color: @red;
+      content: "*";
+      margin-left: 2px;
+      position: absolute;
+    }
+  }
+}
