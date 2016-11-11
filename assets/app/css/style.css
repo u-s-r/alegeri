@@ -650,6 +650,12 @@
 .list-checkbox {
   margin-bottom: 20px;
 }
+.form-control {
+  box-shadow: none;
+}
+.form-control:focus {
+  box-shadow: none;
+}
 /* Paths */
 /* Colors */
 /*# sourceMappingURL=style.css.map */
