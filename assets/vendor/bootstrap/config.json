@@ -385,23 +385,20 @@
     "print.less",
     "type.less",
     "grid.less",
+    "forms.less",
     "buttons.less",
     "responsive-utilities.less",
     "glyphicons.less",
+    "navs.less",
     "jumbotron.less",
     "media.less",
     "panels.less",
     "responsive-embed.less",
-    "close.less",
-    "component-animations.less",
-    "popovers.less",
-    "modals.less"
+    "component-animations.less"
   ],
   "js": [
-    "modal.js",
-    "tooltip.js",
-    "popover.js",
+    "tab.js",
     "transition.js"
   ],
-  "customizerUrl": "http://getbootstrap.com/customize/?id=49da27022ae6b711c4d6668dc6b0b304"
+  "customizerUrl": "http://getbootstrap.com/customize/?id=05da7d33db0f3ee86f7922f9b997d73e"
 }
