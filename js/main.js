@@ -1,8 +1,6 @@
 (function ($) {
   'use strict';
 
-  $('[data-toggle="popover"]').popover();
-
   $.get('semnaturi.php', function (data) {
     $.extend(true, USR.data, data);
 
