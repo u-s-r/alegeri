@@ -271,21 +271,105 @@ jQuery.fn.vectorMap('addMap', 'diaspora', {"width":89,"height":89,"paths":{"DIAS
   $.validator.setDefaults({
     errorClass: 'help-block',
     errorElement: 'span',
-    errorPlacement: function(error, element) {
+    errorPlacement: function (error, element) {
       if (element.parent('.control-label').length) {
         error.insertAfter(element.parent());
       } else {
         error.insertAfter(element);
       }
     },
-    highlight: function(element) {
+    highlight: function (element) {
       $(element).closest('.form-group, .checkbox').addClass('has-error');
     },
-    unhighlight: function(element) {
+    unhighlight: function (element) {
       $(element).closest('.form-group, .checkbox').removeClass('has-error');
     }
   });
 
-  $('.form-reprezentant').validate();
-  $('.form-delegat').validate();
+  $('.form-reprezentant').validate({
+    rules: {
+      prenume: {
+        required: true
+      },
+      nume: {
+        required: true
+      },
+      email: {
+        email: true,
+        required: true
+      },
+      telefon: {
+        digits: true,
+        required: true
+      },
+      cnp: {
+        digits: true,
+        maxlength: 13,
+        minlength: 13,
+        required: true
+      },
+      serie: {
+        maxlength: 2,
+        minlength: 2,
+        required: true
+      },
+      numar: {
+        digits: true,
+        maxlength: 6,
+        minlength: 6,
+        required: true
+      },
+      adresa: {
+        required: true
+      },
+      regiune: {
+        required: true
+      },
+      confirmare: {
+        required: true
+      }
+    }
+  });
+
+  $('.form-delegat').validate({
+    rules: {
+      prenume: {
+        required: true
+      },
+      nume: {
+        required: true
+      },
+      email: {
+        email: true,
+        required: true
+      },
+      telefon: {
+        digits: true,
+        required: true
+      },
+      cnp: {
+        digits: true,
+        maxlength: 13,
+        minlength: 13,
+        required: true
+      },
+      serie: {
+        maxlength: 2,
+        minlength: 2,
+        required: true
+      },
+      numar: {
+        digits: true,
+        maxlength: 6,
+        minlength: 6,
+        required: true
+      },
+      adresa: {
+        required: true
+      },
+      regiune: {
+        required: true
+      }
+    }
+  });
 })(jQuery);
