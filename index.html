@@ -123,7 +123,7 @@
                 </ul>
                 <div class="tab-content">
                   <div role="tabpanel" class="tab-pane active" id="reprezentat">
-                    <form method="post">
+                    <form class="form-reprezentant" method="post">
                       <input type="hidden" name="tip" value="reprezentant">
                       <div class="form-group required">
                         <label class="control-label" for="prenume-reprezentat">Prenume:</label>
@@ -239,7 +239,7 @@
                     </form>
                   </div>
                   <div role="tabpanel" class="tab-pane" id="delegat">
-                    <form method="post">
+                    <form class="form-delegat" method="post">
                       <input type="hidden" name="tip" value="delegat">
                       <div class="form-group required">
                         <label class="control-label" for="prenume-delegat">Prenume:</label>
@@ -389,6 +389,8 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="assets/vendor/jquery/jquery.min.js"><\/script>')</script>
+    <script src="assets/vendor/jquery-validation/jquery.validate.js"></script>
+    <script src="assets/vendor/jquery-validation/localization/messages_ro.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/vendor/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
     <script src="assets/vendor/jvectormap/jquery-jvectormap.min.js"></script>

@@ -119,6 +119,12 @@ module.exports = function (grunt) {
           },
           {
             expand: true,
+            cwd: 'node_modules/jquery-validation/dist',
+            src: '**',
+            dest: 'assets/vendor/jquery-validation'
+          },
+          {
+            expand: true,
             cwd: 'node_modules/jvectormap',
             src: ['*.css', '*.js'],
             dest: 'assets/vendor/jvectormap'
@@ -149,6 +155,7 @@ module.exports = function (grunt) {
       assets: [
         'assets/vendor/ion-rangeslider',
         'assets/vendor/jquery',
+        'assets/vendor/jquery-validation',
         'assets/vendor/jvectormap'
       ],
       css: 'assets/app/css',
