@@ -168,7 +168,7 @@ jQuery.fn.vectorMap('addMap', 'diaspora', {"width":89,"height":89,"paths":{"DIAS
 (function ($) {
   'use strict';
 
-  $.get('semnaturi.php', function (data) {
+  $.get('alegeri.php', function (data) {
     $.extend(true, USR.data, data);
 
     $('#progres-semnaturi').ionRangeSlider({

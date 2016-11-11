@@ -29,14 +29,14 @@ function get_data() {
   $data = array();
 
   $cache = new Gilbitron\Util\SimpleCache();
-  $semnaturi = $cache->get_data('semnaturi', $url);
-  $semnaturi = json_decode($semnaturi);
+  $alegeri = $cache->get_data('alegeri', $url);
+  $alegeri = json_decode($alegeri);
 
   $total = 0;
   $min = 0;
   $max = 0;
 
-  foreach ($semnaturi->feed->entry as $entry) {
+  foreach ($alegeri->feed->entry as $entry) {
     $content = parse_entry_content($entry->content->{'$t'});
 
     if (!isset($content['_chk2m'])) {

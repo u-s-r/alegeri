@@ -1,7 +1,7 @@
 (function ($) {
   'use strict';
 
-  $.get('semnaturi.php', function (data) {
+  $.get('alegeri.php', function (data) {
     $.extend(true, USR.data, data);
 
     $('#progres-semnaturi').ionRangeSlider({
