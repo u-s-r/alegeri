@@ -287,6 +287,22 @@ jQuery.fn.vectorMap('addMap', 'diaspora', {"width":89,"height":89,"paths":{"DIAS
     }
   });
 
+  var signup = function (form) {
+    var $form = $(form);
+    var $spinner = $form.find('.spinner');
+    var data = $form.serialize();
+
+    $spinner.addClass('active');
+
+    $.post('inscriere.php', data, function (response) {
+      /* eslint no-console: 0 */
+      console.log(response);
+
+      $form[0].reset();
+      $spinner.removeClass('active');
+    });
+  };
+
   $('.form-reprezentant').validate({
     rules: {
       prenume: {
@@ -333,7 +349,8 @@ jQuery.fn.vectorMap('addMap', 'diaspora', {"width":89,"height":89,"paths":{"DIAS
           return '' === grecaptcha.getResponse();
         }
       }
-    }
+    },
+    submitHandler: signup
   });
 
   $('.form-delegat').validate({
@@ -379,7 +396,8 @@ jQuery.fn.vectorMap('addMap', 'diaspora', {"width":89,"height":89,"paths":{"DIAS
           return '' === grecaptcha.getResponse();
         }
       }
-    }
+    },
+    submitHandler: signup
   });
 
   window.recaptchaInit = function () {

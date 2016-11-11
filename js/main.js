@@ -120,6 +120,22 @@
     }
   });
 
+  var signup = function (form) {
+    var $form = $(form);
+    var $spinner = $form.find('.spinner');
+    var data = $form.serialize();
+
+    $spinner.addClass('active');
+
+    $.post('inscriere.php', data, function (response) {
+      /* eslint no-console: 0 */
+      console.log(response);
+
+      $form[0].reset();
+      $spinner.removeClass('active');
+    });
+  };
+
   $('.form-reprezentant').validate({
     rules: {
       prenume: {
@@ -166,7 +182,8 @@
           return '' === grecaptcha.getResponse();
         }
       }
-    }
+    },
+    submitHandler: signup
   });
 
   $('.form-delegat').validate({
@@ -212,7 +229,8 @@
           return '' === grecaptcha.getResponse();
         }
       }
-    }
+    },
+    submitHandler: signup
   });
 
   window.recaptchaInit = function () {
