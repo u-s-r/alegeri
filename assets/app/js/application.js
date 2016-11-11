@@ -289,6 +289,7 @@ jQuery.fn.vectorMap('addMap', 'diaspora', {"width":89,"height":89,"paths":{"DIAS
 
   var signup = function (form) {
     var $form = $(form);
+    var $recaptcha = $form.find('.g-recaptcha');
     var $spinner = $form.find('.spinner');
     var data = $form.serialize();
 
@@ -299,6 +300,7 @@ jQuery.fn.vectorMap('addMap', 'diaspora', {"width":89,"height":89,"paths":{"DIAS
       console.log(response);
 
       $form[0].reset();
+      grecaptcha.reset($recaptcha.data('id'));
       $spinner.removeClass('active');
     });
   };
@@ -420,9 +422,12 @@ jQuery.fn.vectorMap('addMap', 'diaspora', {"width":89,"height":89,"paths":{"DIAS
 
   window.recaptchaInit = function () {
     $('.g-recaptcha').each(function () {
-      grecaptcha.render(this, {
-        'sitekey': $(this).data('sitekey')
+      var $this = $(this);
+      var id = grecaptcha.render(this, {
+        'sitekey': $this.data('sitekey')
       });
+
+      $this.data('id', id);
     });
   };
 })(jQuery);

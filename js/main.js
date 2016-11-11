@@ -122,6 +122,7 @@
 
   var signup = function (form) {
     var $form = $(form);
+    var $recaptcha = $form.find('.g-recaptcha');
     var $spinner = $form.find('.spinner');
     var data = $form.serialize();
 
@@ -132,6 +133,7 @@
       console.log(response);
 
       $form[0].reset();
+      grecaptcha.reset($recaptcha.data('id'));
       $spinner.removeClass('active');
     });
   };
@@ -253,9 +255,12 @@
 
   window.recaptchaInit = function () {
     $('.g-recaptcha').each(function () {
-      grecaptcha.render(this, {
-        'sitekey': $(this).data('sitekey')
+      var $this = $(this);
+      var id = grecaptcha.render(this, {
+        'sitekey': $this.data('sitekey')
       });
+
+      $this.data('id', id);
     });
   };
 })(jQuery);
