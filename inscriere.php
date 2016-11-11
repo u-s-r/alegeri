@@ -25,7 +25,8 @@ $data['entry.10']   = $_POST['tara'];
 $data['entry.25']   = $_POST['observatii'];
 $data['delegat']    = isset($_POST['delegat']);
 $data['confirmare'] = isset($_POST['confirmare']);
-$data['script']     = 'update';
+$data['entry.27']   = 'FormularAlegeri';
+$data['entry.28']   = 'update';
 
 $ch = curl_init();
 
