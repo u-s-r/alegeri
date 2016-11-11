@@ -662,6 +662,9 @@
 .nav-pills > li > a {
   border: 1px solid #148bff;
 }
+.tab-content {
+  margin-bottom: 15px;
+}
 /* Paths */
 /* Colors */
 /*# sourceMappingURL=style.css.map */
