@@ -181,7 +181,7 @@ jQuery.fn.vectorMap('addMap', 'diaspora', {"width":89,"height":89,"paths":{"DIAS
       hide_min_max: true,
       max: USR.data.intervalSemnaturi[1],
       min: USR.data.intervalSemnaturi[0],
-      postfix: ' semnături strânse',
+      postfix: ' membri înscriși',
       prettify_separator: '.'
     });
 
