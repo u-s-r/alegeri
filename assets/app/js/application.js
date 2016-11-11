@@ -299,7 +299,6 @@ jQuery.fn.vectorMap('addMap', 'diaspora', {"width":89,"height":89,"paths":{"DIAS
         required: true
       },
       telefon: {
-        digits: true,
         required: true
       },
       cnp: {
@@ -344,7 +343,6 @@ jQuery.fn.vectorMap('addMap', 'diaspora', {"width":89,"height":89,"paths":{"DIAS
         required: true
       },
       telefon: {
-        digits: true,
         required: true
       },
       cnp: {

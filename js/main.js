@@ -132,7 +132,6 @@
         required: true
       },
       telefon: {
-        digits: true,
         required: true
       },
       cnp: {
@@ -177,7 +176,6 @@
         required: true
       },
       telefon: {
-        digits: true,
         required: true
       },
       cnp: {
