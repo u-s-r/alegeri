@@ -83,7 +83,6 @@ module.exports = function (grunt) {
       core: {
         src: [
           'js/usr.js',
-          'js/countdown.js',
           'js/map-ro.js',
           'js/map-diaspora.js',
           'js/main.js'
@@ -106,12 +105,6 @@ module.exports = function (grunt) {
     copy: {
       packages: {
         files: [
-          {
-            expand: true,
-            cwd: 'node_modules/countdown',
-            src: '*.js',
-            dest: 'assets/vendor/countdown'
-          },
           {
             expand: true,
             cwd: 'node_modules/ion-rangeslider',
@@ -154,7 +147,6 @@ module.exports = function (grunt) {
         force: true
       },
       assets: [
-        'assets/vendor/countdown',
         'assets/vendor/ion-rangeslider',
         'assets/vendor/jquery',
         'assets/vendor/jvectormap'

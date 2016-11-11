@@ -1,7 +1,7 @@
 {
   "name": "usr",
   "version": "1.0.0",
-  "description": "Începe curățenia Parlamentului cu o semnătură!",
+  "description": "Înscrie-te ca să asigurăm corectitudinea procesului electoral din ziua votului!",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,7 +12,6 @@
   "author": "USR",
   "license": "MIT",
   "dependencies": {
-    "countdown": "^2.6.0",
     "ion-rangeslider": "^2.1.4",
     "jquery": "^1.12.4",
     "jvectormap": "^2.0.4"
