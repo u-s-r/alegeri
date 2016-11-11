@@ -12,6 +12,8 @@ if (!isset($_POST['tip'])) {
 $data = array(
   'sheetName'  => 'Sheet1';
   'tip'        => 'delegat' === $_POST['tip'] ? 'Delegat' : 'Reprezentant';
+  'delegat'    => isset($_POST['delegat']);
+  'confirmare' => isset($_POST['confirmare']);
   'entry.3'    => $_POST['prenume'];
   'entry.4'    => $_POST['nume'];
   'entry.7'    => $_POST['email'];
@@ -24,8 +26,7 @@ $data = array(
   'entry.9'    => $_POST['localitate'];
   'entry.10'   => $_POST['tara'];
   'entry.25'   => $_POST['observatii'];
-  'delegat'    => isset($_POST['delegat']);
-  'confirmare' => isset($_POST['confirmare']);
+  'entry.22'   => $_POST['acord'];
   'entry.27'   => 'FormularAlegeri';
   'entry.28'   => 'update';
 );
