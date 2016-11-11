@@ -107,6 +107,7 @@
 }
 .statistic-separator .value {
   color: #d4f0fd;
+  font-weight: 200;
 }
 /* Tags */
 .tag {
@@ -627,12 +628,12 @@
 }
 .statistic-primary,
 .statistic-secondary {
-  width: 4em;
+  width: 8em;
 }
 @media (min-width: 768px) {
   .statistic-primary,
   .statistic-secondary {
-    width: 6em;
+    width: 10em;
   }
 }
 .media-list {
