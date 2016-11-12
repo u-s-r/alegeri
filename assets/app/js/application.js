@@ -287,7 +287,11 @@ jQuery.fn.vectorMap('addMap', 'diaspora', {"width":89,"height":89,"paths":{"DIAS
     }
   });
 
-  var signup = function (form) {
+  var onFormError = function () {
+    $('.alert').addClass('hidden');
+  };
+
+  var onFormSubmit = function (form) {
     var $form = $(form);
     var $recaptcha = $form.find('.g-recaptcha');
     var $spinner = $form.find('.spinner');
@@ -311,6 +315,7 @@ jQuery.fn.vectorMap('addMap', 'diaspora', {"width":89,"height":89,"paths":{"DIAS
   };
 
   $('.form-reprezentant').validate({
+    invalidHandler: onFormError,
     rules: {
       confirmare: {
         required: true
@@ -366,10 +371,11 @@ jQuery.fn.vectorMap('addMap', 'diaspora', {"width":89,"height":89,"paths":{"DIAS
         }
       }
     },
-    submitHandler: signup
+    submitHandler: onFormSubmit
   });
 
   $('.form-delegat').validate({
+    invalidHandler: onFormError,
     rules: {
       prenume: {
         required: true
@@ -422,7 +428,7 @@ jQuery.fn.vectorMap('addMap', 'diaspora', {"width":89,"height":89,"paths":{"DIAS
         }
       }
     },
-    submitHandler: signup
+    submitHandler: onFormSubmit
   });
 
   window.recaptchaInit = function () {

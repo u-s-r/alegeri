@@ -120,7 +120,11 @@
     }
   });
 
-  var signup = function (form) {
+  var onFormError = function () {
+    $('.alert').addClass('hidden');
+  };
+
+  var onFormSubmit = function (form) {
     var $form = $(form);
     var $recaptcha = $form.find('.g-recaptcha');
     var $spinner = $form.find('.spinner');
@@ -144,6 +148,7 @@
   };
 
   $('.form-reprezentant').validate({
+    invalidHandler: onFormError,
     rules: {
       confirmare: {
         required: true
@@ -199,10 +204,11 @@
         }
       }
     },
-    submitHandler: signup
+    submitHandler: onFormSubmit
   });
 
   $('.form-delegat').validate({
+    invalidHandler: onFormError,
     rules: {
       prenume: {
         required: true
@@ -255,7 +261,7 @@
         }
       }
     },
-    submitHandler: signup
+    submitHandler: onFormSubmit
   });
 
   window.recaptchaInit = function () {
