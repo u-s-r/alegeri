@@ -11,6 +11,7 @@ if (!isset($_POST['tip'])) {
 
 $data = array(
   'sheetName' => 'Sheet1',
+  'entry.1'   => $_SERVER['REMOTE_ADDR'],
   'entry.29'  => 'delegat' === $_POST['tip'] ? 'Delegat' : 'Reprezentant',
   'entry.30'  => isset($_POST['delegat']) ? 'Da' : 'Nu',
   'entry.3'   => $_POST['prenume'],
