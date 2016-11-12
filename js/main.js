@@ -126,11 +126,16 @@
     var $spinner = $form.find('.spinner');
     var data = $form.serialize();
 
+    $('.alert').addClass('hidden');
+
     $spinner.addClass('active');
 
     $.post('inscriere.php', data, function (response) {
-      /* eslint no-console: 0 */
-      console.log(response);
+      if (response) {
+        $('.alert-success').removeClass('hidden');
+      } else {
+        $('.alert-danger').removeClass('hidden');
+      }
 
       $form[0].reset();
       grecaptcha.reset($recaptcha.data('id'));
