@@ -3,14 +3,38 @@ require 'config.php';
 
 header('Content-Type: application/json');
 
-if (!isset($_POST['tip'])) {
+$required_fields = array(
+  'tip',
+  'prenume',
+  'nume',
+  'email',
+  'telefon',
+  'cnp',
+  'serie',
+  'numar',
+  'adresa',
+  'regiune',
+  'localitate',
+  'tara',
+  'acord'
+);
+
+foreach ($required_fields as $key) {
+  if (empty($_POST[$key])) {
+    exit('false');
+  }
+}
+
+$tip = 'delegat' === $_POST['tip'] ? 'Delegat' : 'Reprezentant';
+
+if ('Reprezentant' === $tip && !isset($_POST['confirmare'])) {
   exit('false');
 }
 
 $data = array(
   'sheetName' => 'Sheet1',
   'entry.1'   => $_SERVER['REMOTE_ADDR'],
-  'entry.29'  => 'delegat' === $_POST['tip'] ? 'Delegat' : 'Reprezentant',
+  'entry.29'  => $tip,
   'entry.30'  => isset($_POST['delegat']) ? 'Da' : 'Nu',
   'entry.3'   => $_POST['prenume'],
   'entry.4'   => $_POST['nume'],
