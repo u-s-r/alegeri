@@ -190,7 +190,7 @@
       },
       recaptcha: {
         required: function () {
-          return '' === grecaptcha.getResponse();
+          return '' === grecaptcha.getResponse(0);
         }
       }
     },
@@ -246,7 +246,7 @@
       },
       recaptcha: {
         required: function () {
-          return '' === grecaptcha.getResponse();
+          return '' === grecaptcha.getResponse(1);
         }
       }
     },

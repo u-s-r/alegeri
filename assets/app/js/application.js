@@ -357,7 +357,7 @@ jQuery.fn.vectorMap('addMap', 'diaspora', {"width":89,"height":89,"paths":{"DIAS
       },
       recaptcha: {
         required: function () {
-          return '' === grecaptcha.getResponse();
+          return '' === grecaptcha.getResponse(0);
         }
       }
     },
@@ -413,7 +413,7 @@ jQuery.fn.vectorMap('addMap', 'diaspora', {"width":89,"height":89,"paths":{"DIAS
       },
       recaptcha: {
         required: function () {
-          return '' === grecaptcha.getResponse();
+          return '' === grecaptcha.getResponse(1);
         }
       }
     },
