@@ -2,7 +2,7 @@
 require 'config.php';
 require 'vendor/autoload.php';
 
-$url = sprintf('https://spreadsheets.google.com/feeds/list/%s/%s/public/basic?alt=json', SPREADSHEETS_KEY, SPREADSHEETS_WORKSHEET);
+$url = sprintf('https://spreadsheets.google.com/feeds/list/%s/%s/public/basic?alt=json', SPREADSHEET_SEMNEAZA_KEY, SPREADSHEET_SEMNEAZA_WORKSHEET);
 
 function parse_entry_content($str) {
   $props = explode(', ', $str);
