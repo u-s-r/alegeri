@@ -661,6 +661,9 @@
 .form-control {
   box-shadow: none;
 }
+textarea.form-control {
+  resize: vertical;
+}
 .form-control:focus,
 .has-error .form-control:focus {
   box-shadow: none;
