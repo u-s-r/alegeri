@@ -16,7 +16,8 @@ $required_fields = array(
   'regiune',
   'localitate',
   'tara',
-  'acord'
+  'acord',
+  'g-recaptcha-response'
 );
 
 foreach ($required_fields as $key) {
@@ -31,7 +32,41 @@ if ('Reprezentant' === $tip && !isset($_POST['confirmare'])) {
   exit('false');
 }
 
-$data = array(
+function post($url, $data = array()) {
+  $ch = curl_init();
+
+  curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+  curl_setopt($ch, CURLOPT_POST, true);
+  curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+  curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+  curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+  curl_setopt($ch, CURLOPT_TIMEOUT, 10);
+  curl_setopt($ch, CURLOPT_URL, $url);
+
+  $response = curl_exec($ch);
+
+  curl_close($ch);
+
+  return $response;
+}
+
+$response = post(RECAPTCHA_URL, array(
+  'secret'   => RECAPTCHA_SECRET,
+  'response' => $_POST['g-recaptcha-response'],
+  'remoteip' => $_SERVER['REMOTE_ADDR']
+));
+
+if (false === $response) {
+  exit('false');
+}
+
+$response = json_decode($response);
+
+if (false === $response->success) {
+  exit('false');
+}
+
+$response = post(SPREADSHEET_ALEGERI_URL, array(
   'sheetName' => 'Sheet1',
   'entry.1'   => $_SERVER['REMOTE_ADDR'],
   'entry.29'  => $tip,
@@ -50,20 +85,6 @@ $data = array(
   'entry.25'  => $_POST['observatii'],
   'entry.22'  => 'Sunt de acord să intru în baza de date USR',
   'entry.27'  => 'FormularAlegeri'
-);
-
-$ch = curl_init();
-
-curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
-curl_setopt($ch, CURLOPT_POST, true);
-curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-curl_setopt($ch, CURLOPT_TIMEOUT, 10);
-curl_setopt($ch, CURLOPT_URL, SPREADSHEETS_URL);
-
-$response = curl_exec($ch);
-
-curl_close($ch);
+));
 
 exit(json_encode(false !== $response));
