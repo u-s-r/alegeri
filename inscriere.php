@@ -24,7 +24,7 @@ $data = array(
   'entry.9'   => $_POST['localitate'],
   'entry.10'  => $_POST['tara'],
   'entry.25'  => $_POST['observatii'],
-  'entry.22'  => 'Sunt de acord sa intru in baza de date USR',
+  'entry.22'  => 'Sunt de acord să intru în baza de date USR',
   'entry.27'  => 'FormularAlegeri'
 );
 
