@@ -26,8 +26,7 @@ $data = array(
   'entry.10'  => $_POST['tara'],
   'entry.25'  => $_POST['observatii'],
   'entry.22'  => 'Sunt de acord sa intru in baza de date USR',
-  'entry.27'  => 'FormularAlegeri',
-  'entry.28'  => 'update'
+  'entry.27'  => 'FormularAlegeri'
 );
 
 $ch = curl_init();
