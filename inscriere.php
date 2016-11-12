@@ -1,8 +1,6 @@
 <?php
 require 'config.php';
 
-$url = 'https://script.google.com/macros/s/AKfycbwzaTnsfEmM32gfIf3QbVimFzHn803KrqsZ4b97b_iZEhum4ocL/exec';
-
 header('Content-Type: application/json');
 
 if (!isset($_POST['tip'])) {
@@ -38,7 +36,7 @@ curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 curl_setopt($ch, CURLOPT_TIMEOUT, 10);
-curl_setopt($ch, CURLOPT_URL, $url);
+curl_setopt($ch, CURLOPT_URL, SPREADSHEETS_URL);
 
 $response = curl_exec($ch);
 
