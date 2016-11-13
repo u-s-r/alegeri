@@ -1,5 +1,6 @@
 <?php
 require 'config.php';
+require 'vendor/autoload.php';
 
 header('Content-Type: application/json');
 
@@ -29,6 +30,10 @@ foreach ($required_fields as $key) {
 $tip = 'delegat' === $_POST['tip'] ? 'Delegat' : 'Reprezentant';
 
 if ('Reprezentant' === $tip && !isset($_POST['confirmare'])) {
+  exit('false');
+}
+
+if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
   exit('false');
 }
 
@@ -87,4 +92,47 @@ $response = post(SPREADSHEET_ALEGERI_URL, array(
   'entry.27'  => 'FormularAlegeri'
 ));
 
-exit(json_encode(false !== $response));
+if (false === $response) {
+  exit('false');
+}
+
+$templates = new League\Plates\Engine('templates');
+
+$data = array(
+  'tip'        => $tip,
+  'prenume'    => $_POST['prenume'],
+  'nume'       => $_POST['nume'],
+  'email'      => $_POST['email'],
+  'telefon'    => $_POST['telefon'],
+  'cnp'        => $_POST['cnp'],
+  'serie'      => $_POST['serie'],
+  'numar'      => $_POST['numar'],
+  'adresa'     => $_POST['adresa'],
+  'regiune'    => $_POST['regiune'],
+  'localitate' => $_POST['localitate'],
+  'tara'       => $_POST['tara'],
+  'observatii' => $_POST['observatii']
+);
+
+if (isset($_POST['delegat'])) {
+  $data['delegat'] = $_POST['delegat'];
+}
+
+if (isset($_POST['confirmare'])) {
+  $data['confirmare'] = $_POST['confirmare'];
+}
+
+$message = $templates->render('email', $data);
+$message = preg_replace('~\R~u', "\r\n", $message);
+$message = wordwrap($message, 70, "\r\n");
+
+$to      = sprintf('%s %s <%>', $_POST['prenume'], $_POST['nume'], $_POST['email']);
+$subject = 'Alegeri USR: Mulțumim pentru înscriere!';
+
+$headers  = 'MIME-Version: 1.0' . "\r\n";
+$headers .= 'Content-Type: text/html; charset=utf-8' . "\r\n";
+$headers .= 'From: Alegeri USR <alegeri@usr.ro>' . "\r\n";
+
+mail($to, $subject, $message, $headers);
+
+exit('true');
