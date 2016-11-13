@@ -297,6 +297,8 @@ jQuery.fn.vectorMap('addMap', 'diaspora', {"width":89,"height":89,"paths":{"DIAS
     var $spinner = $form.find('.spinner');
     var data = $form.serialize();
 
+    grecaptcha.reset($recaptcha.data('id'));
+
     $('.alert').addClass('hidden');
 
     $spinner.addClass('active');
@@ -306,8 +308,6 @@ jQuery.fn.vectorMap('addMap', 'diaspora', {"width":89,"height":89,"paths":{"DIAS
 
       if (response) {
         $form[0].reset();
-
-        grecaptcha.reset($recaptcha.data('id'));
 
         $('.alert-success').removeClass('hidden');
       } else {
