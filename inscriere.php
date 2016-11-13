@@ -126,7 +126,7 @@ $message = $templates->render('email', $data);
 $message = preg_replace('~\R~u', "\r\n", $message);
 $message = wordwrap($message, 70, "\r\n");
 
-$to      = sprintf('%s %s <%>', $_POST['prenume'], $_POST['nume'], $_POST['email']);
+$to      = sprintf('%s %s <%s>', $_POST['prenume'], $_POST['nume'], $_POST['email']);
 $subject = 'Alegeri USR: Mulțumim pentru înscriere!';
 
 $headers  = 'MIME-Version: 1.0' . "\r\n";
