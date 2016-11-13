@@ -135,15 +135,17 @@
     $spinner.addClass('active');
 
     $.post('inscriere.php', data, function (response) {
+      $spinner.removeClass('active');
+
       if (response) {
+        $form[0].reset();
+
+        grecaptcha.reset($recaptcha.data('id'));
+
         $('.alert-success').removeClass('hidden');
       } else {
         $('.alert-danger').removeClass('hidden');
       }
-
-      $form[0].reset();
-      grecaptcha.reset($recaptcha.data('id'));
-      $spinner.removeClass('active');
     });
   };
 
