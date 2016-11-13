@@ -6,5 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'League\\Plates\\' => array($vendorDir . '/league/plates/src'),
     'Gilbitron\\Util\\' => array($vendorDir . '/gilbitron/php-simplecache/src'),
 );

@@ -7,6 +7,10 @@ namespace Composer\Autoload;
 class ComposerStaticInit5b5d376c5332bf6c755f64891f9b95bd
 {
     public static $prefixLengthsPsr4 = array (
+        'L' => 
+        array (
+            'League\\Plates\\' => 14,
+        ),
         'G' => 
         array (
             'Gilbitron\\Util\\' => 15,
@@ -14,6 +18,10 @@ class ComposerStaticInit5b5d376c5332bf6c755f64891f9b95bd
     );
 
     public static $prefixDirsPsr4 = array (
+        'League\\Plates\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/league/plates/src',
+        ),
         'Gilbitron\\Util\\' => 
         array (
             0 => __DIR__ . '/..' . '/gilbitron/php-simplecache/src',
