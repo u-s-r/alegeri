@@ -6,11 +6,20 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/u-s-r/alegeri.git"
+  },
   "keywords": [
+    "alegeri",
     "usr"
   ],
   "author": "USR",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/u-s-r/alegeri/issues"
+  },
+  "homepage": "https://alegeri.usr.ro/",
   "dependencies": {
     "ion-rangeslider": "^2.1.4",
     "jquery": "^1.12.4",
@@ -37,5 +46,6 @@
     "grunt-postcss": "^0.8.0",
     "jit-grunt": "^0.10.0",
     "time-grunt": "^1.4.0"
-  }
+  },
+  "private": true
 }
