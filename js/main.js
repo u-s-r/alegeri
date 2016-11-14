@@ -304,23 +304,28 @@
     });
   };
 
-  $('#regiune-reprezentant').change(function () {
-    var $tara = $('#tara-reprezentant');
+  var validateRelationship = function (a, b) {
+    $(a).change(function () {
+      var $tara = $(b);
 
-    if ('Diaspora' === $(this).val() && 'Romania' === $tara.val()) {
-      $tara.find('option:first').prop('selected', true);
-    } else {
-      $tara.find('option[value="Romania"]').prop('selected', true);
-    }
-  });
+      if ('Diaspora' === $(this).val() && 'Romania' === $tara.val()) {
+        $tara.find('option:first').prop('selected', true);
+      } else {
+        $tara.find('option[value="Romania"]').prop('selected', true);
+      }
+    });
 
-  $('#tara-reprezentant').change(function () {
-    var $regiune = $('#regiune-reprezentant');
+    $(b).change(function () {
+      var $regiune = $(a);
 
-    if ('Romania' === $(this).val() && 'Diaspora' === $regiune.val()) {
-      $regiune.find('option:first').prop('selected', true);
-    } else {
-      $regiune.find('option[value="Diaspora"]').prop('selected', true);
-    }
-  });
+      if ('Romania' === $(this).val() && 'Diaspora' === $regiune.val()) {
+        $regiune.find('option:first').prop('selected', true);
+      } else {
+        $regiune.find('option[value="Diaspora"]').prop('selected', true);
+      }
+    });
+  };
+
+  validateRelationship('#regiune-reprezentant', '#tara-reprezentant');
+  validateRelationship('#regiune-delegat', '#tara-delegat');
 })(jQuery);
