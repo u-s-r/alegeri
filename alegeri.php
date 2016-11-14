@@ -16,7 +16,19 @@ function parse_entry_content($str) {
     }
 
     if (2 === count($prop)) {
-      $content[$prop[0]] = 'nrsemnăturistrânselazi' === $prop[0] ? intval($prop[1]) : $prop[1];
+      switch ($prop[0]) {
+        case 'nrsectiidevotare':
+        case 'nrreprezentanti':
+        case 'nrdelegati':
+          $content[$prop[0]] = intval($prop[1]);
+
+          break;
+
+        default:
+          $content[$prop[0]] = $prop[1];
+
+          break;
+      }
     }
   }
 
@@ -43,22 +55,30 @@ function get_data() {
       continue;
     }
 
-    $total += $content['nrsemnăturistrânselazi'];
+    $inscrieri = $content['nrreprezentanti'] + $content['nrdelegati'];
 
-    if ($max < $content['nrsemnăturistrânselazi']) {
-      $max = $content['nrsemnăturistrânselazi'];
+    $total += $inscrieri;
+
+    if ($max < $inscrieri) {
+      $max = $inscrieri;
     }
 
+    $alegeri = array(
+      'sectii'        => $content['nrsectiidevotare'],
+      'reprezentanti' => $content['nrreprezentanti'],
+      'delegati'      => $content['nrdelegati']
+    );
+
     if ('DIASPORA' === $content['_chk2m']) {
-      $data['diaspora']['semnaturi'][$content['_chk2m']] = $content['nrsemnăturistrânselazi'];
+      $data['diaspora']['alegeri'][$content['_chk2m']] = $alegeri;
 
       continue;
     }
 
-    $data['semnaturi'][$content['_chk2m']] = $content['nrsemnăturistrânselazi'];
+    $data['alegeri'][$content['_chk2m']] = $alegeri;
   }
 
-  $data['semnaturiStranse'] = $total;
+  $data['inscrieriValidate'] = $total;
   $data['min'] = $min;
   $data['max'] = $max;
 
