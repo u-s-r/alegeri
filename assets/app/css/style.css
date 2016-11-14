@@ -671,8 +671,16 @@ textarea.form-control {
 .nav-pills {
   margin-bottom: 15px;
 }
+.nav-pills > li {
+  display: block;
+  float: left;
+  width: 50%;
+}
 .nav-pills > li > a {
   border: 1px solid #148bff;
+}
+.nav-pills > li + li {
+  margin-left: 0;
 }
 .tab-content {
   margin-bottom: 15px;
