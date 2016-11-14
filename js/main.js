@@ -37,8 +37,9 @@
       map: 'ro_merc',
       onRegionTipShow: function (event, element, code) {
         var contacte = '';
+        var inscrieri = USR.data.alegeri[code].reprezentanti + USR.data.alegeri[code].delegati;
         var html = '<strong>' + element.html() + '</strong><br>Secții de votare: ' +
-          USR.data.alegeri[code] + '<br>Înscrieri validate: 0';
+          USR.data.alegeri[code].sectii + '<br>Înscrieri validate: ' + inscrieri;
 
         for (var i = 0; i < USR.data.contacte[code].length; i++) {
           contacte += '<dt>' + USR.data.contacte[code][i].locatie + '</dt><dd><ul class="list-unstyled">';
@@ -67,7 +68,15 @@
           min: USR.data.min,
           normalizeFunction: 'polynomial',
           scale: ['#7fc1ff', '#ffffff'],
-          values: USR.data.alegeri
+          values: (function () {
+            var values = [];
+
+            for (var code in USR.data.alegeri) {
+              values[code] = USR.data.alegeri[code].reprezentanti + USR.data.alegeri[code].delegati;
+            }
+
+            return values;
+          })()
         }]
       },
       zoomButtons: false,
@@ -80,8 +89,9 @@
       map: 'diaspora',
       onRegionTipShow: function (event, element, code) {
         var contacte = '';
+        var inscrieri = USR.data.diaspora.alegeri[code].reprezentanti + USR.data.diaspora.alegeri[code].delegati;
         var html = '<strong>' + element.html() + '</strong><br>Secții de votare: ' +
-          USR.data.diaspora.alegeri[code] + '<br>Înscrieri validate: 0';
+          USR.data.diaspora.alegeri[code].sectii + '<br>Înscrieri validate: ' + inscrieri;
 
         for (var i = 0; i < USR.data.diaspora.contacte.length; i++) {
           contacte += '<dl><dt>' + USR.data.diaspora.contacte[i].locatie + '</dt><dd><ul class="list-unstyled">';
@@ -108,7 +118,15 @@
           min: USR.data.min,
           normalizeFunction: 'polynomial',
           scale: ['#7fc1ff', '#ffffff'],
-          values: USR.data.diaspora.alegeri
+          values: (function () {
+            var values = [];
+
+            for (var code in USR.data.diaspora.alegeri) {
+              values[code] = USR.data.diaspora.alegeri[code].reprezentanti + USR.data.diaspora.alegeri[code].delegati;
+            }
+
+            return values;
+          })()
         }]
       },
       zoomButtons: false,

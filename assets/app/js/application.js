@@ -11,48 +11,48 @@ if ('undefined' === typeof window.USR) {
   USR.data.intervalInscrieri = [0, 20000];
 
   USR.data.alegeri = {
-    'AB': 440,
-    'AR': 437,
-    'AG': 520,
-    'BC': 634,
-    'BH': 652,
-    'BN': 313,
-    'BT': 422,
-    'BR': 281,
-    'BV': 447,
-    'BZ': 427,
-    'CL': 235,
-    'CS': 365,
-    'CJ': 656,
-    'CT': 556,
-    'CV': 214,
-    'DB': 432,
-    'DJ': 530,
-    'GL': 436,
-    'GR': 245,
-    'GJ': 332,
-    'HR': 290,
-    'HD': 524,
-    'IL': 220,
-    'IS': 730,
-    'IF': 238,
-    'MM': 435,
-    'MH': 286,
-    'MS': 568,
-    'NT': 486,
-    'OT': 379,
-    'PH': 623,
-    'SM': 334,
-    'SJ': 312,
-    'SB': 370,
-    'SV': 555,
-    'TR': 334,
-    'TM': 595,
-    'TL': 204,
-    'VS': 527,
-    'VL': 430,
-    'VN': 358,
-    'B': 1254
+    'AB': {'sectii': 440, 'reprezentanti': 0, 'delegati': 0},
+    'AR': {'sectii': 437, 'reprezentanti': 0, 'delegati': 0},
+    'AG': {'sectii': 520, 'reprezentanti': 0, 'delegati': 0},
+    'BC': {'sectii': 634, 'reprezentanti': 0, 'delegati': 0},
+    'BH': {'sectii': 652, 'reprezentanti': 0, 'delegati': 0},
+    'BN': {'sectii': 313, 'reprezentanti': 0, 'delegati': 0},
+    'BT': {'sectii': 422, 'reprezentanti': 0, 'delegati': 0},
+    'BR': {'sectii': 281, 'reprezentanti': 0, 'delegati': 0},
+    'BV': {'sectii': 447, 'reprezentanti': 0, 'delegati': 0},
+    'BZ': {'sectii': 427, 'reprezentanti': 0, 'delegati': 0},
+    'CL': {'sectii': 235, 'reprezentanti': 0, 'delegati': 0},
+    'CS': {'sectii': 365, 'reprezentanti': 0, 'delegati': 0},
+    'CJ': {'sectii': 656, 'reprezentanti': 0, 'delegati': 0},
+    'CT': {'sectii': 556, 'reprezentanti': 0, 'delegati': 0},
+    'CV': {'sectii': 214, 'reprezentanti': 0, 'delegati': 0},
+    'DB': {'sectii': 432, 'reprezentanti': 0, 'delegati': 0},
+    'DJ': {'sectii': 530, 'reprezentanti': 0, 'delegati': 0},
+    'GL': {'sectii': 436, 'reprezentanti': 0, 'delegati': 0},
+    'GR': {'sectii': 245, 'reprezentanti': 0, 'delegati': 0},
+    'GJ': {'sectii': 332, 'reprezentanti': 0, 'delegati': 0},
+    'HR': {'sectii': 290, 'reprezentanti': 0, 'delegati': 0},
+    'HD': {'sectii': 524, 'reprezentanti': 0, 'delegati': 0},
+    'IL': {'sectii': 220, 'reprezentanti': 0, 'delegati': 0},
+    'IS': {'sectii': 730, 'reprezentanti': 0, 'delegati': 0},
+    'IF': {'sectii': 238, 'reprezentanti': 0, 'delegati': 0},
+    'MM': {'sectii': 435, 'reprezentanti': 0, 'delegati': 0},
+    'MH': {'sectii': 286, 'reprezentanti': 0, 'delegati': 0},
+    'MS': {'sectii': 568, 'reprezentanti': 0, 'delegati': 0},
+    'NT': {'sectii': 486, 'reprezentanti': 0, 'delegati': 0},
+    'OT': {'sectii': 379, 'reprezentanti': 0, 'delegati': 0},
+    'PH': {'sectii': 623, 'reprezentanti': 0, 'delegati': 0},
+    'SM': {'sectii': 334, 'reprezentanti': 0, 'delegati': 0},
+    'SJ': {'sectii': 312, 'reprezentanti': 0, 'delegati': 0},
+    'SB': {'sectii': 370, 'reprezentanti': 0, 'delegati': 0},
+    'SV': {'sectii': 555, 'reprezentanti': 0, 'delegati': 0},
+    'TR': {'sectii': 334, 'reprezentanti': 0, 'delegati': 0},
+    'TM': {'sectii': 595, 'reprezentanti': 0, 'delegati': 0},
+    'TL': {'sectii': 204, 'reprezentanti': 0, 'delegati': 0},
+    'VS': {'sectii': 527, 'reprezentanti': 0, 'delegati': 0},
+    'VL': {'sectii': 430, 'reprezentanti': 0, 'delegati': 0},
+    'VN': {'sectii': 358, 'reprezentanti': 0, 'delegati': 0},
+    'B': {'sectii': 1254, 'reprezentanti': 0, 'delegati': 0}
   };
 
   USR.data.contact = '0726701994';
@@ -132,7 +132,7 @@ if ('undefined' === typeof window.USR) {
 
   USR.data.diaspora = {
     'alegeri': {
-      'DIASPORA': 417
+      'DIASPORA': {'sectii': 417, 'reprezentanti': 0, 'delegati': 0}
     },
     'contact': 'diaspora@usr.ro',
     'contacte': [
@@ -154,7 +154,7 @@ if ('undefined' === typeof window.USR) {
   };
 
   USR.data.min = 0;
-  USR.data.max = 19133;
+  USR.data.max = 0;
 })(USR);
 
 /* jscs:disable */
@@ -202,8 +202,9 @@ jQuery.fn.vectorMap('addMap', 'diaspora', {"width":89,"height":89,"paths":{"DIAS
       map: 'ro_merc',
       onRegionTipShow: function (event, element, code) {
         var contacte = '';
+        var inscrieri = USR.data.alegeri[code].reprezentanti + USR.data.alegeri[code].delegati;
         var html = '<strong>' + element.html() + '</strong><br>Secții de votare: ' +
-          USR.data.alegeri[code] + '<br>Înscrieri validate: 0';
+          USR.data.alegeri[code].sectii + '<br>Înscrieri validate: ' + inscrieri;
 
         for (var i = 0; i < USR.data.contacte[code].length; i++) {
           contacte += '<dt>' + USR.data.contacte[code][i].locatie + '</dt><dd><ul class="list-unstyled">';
@@ -232,7 +233,15 @@ jQuery.fn.vectorMap('addMap', 'diaspora', {"width":89,"height":89,"paths":{"DIAS
           min: USR.data.min,
           normalizeFunction: 'polynomial',
           scale: ['#7fc1ff', '#ffffff'],
-          values: USR.data.alegeri
+          values: (function () {
+            var values = [];
+
+            for (var code in USR.data.alegeri) {
+              values[code] = USR.data.alegeri[code].reprezentanti + USR.data.alegeri[code].delegati;
+            }
+
+            return values;
+          })()
         }]
       },
       zoomButtons: false,
@@ -245,8 +254,9 @@ jQuery.fn.vectorMap('addMap', 'diaspora', {"width":89,"height":89,"paths":{"DIAS
       map: 'diaspora',
       onRegionTipShow: function (event, element, code) {
         var contacte = '';
+        var inscrieri = USR.data.diaspora.alegeri[code].reprezentanti + USR.data.diaspora.alegeri[code].delegati;
         var html = '<strong>' + element.html() + '</strong><br>Secții de votare: ' +
-          USR.data.diaspora.alegeri[code] + '<br>Înscrieri validate: 0';
+          USR.data.diaspora.alegeri[code].sectii + '<br>Înscrieri validate: ' + inscrieri;
 
         for (var i = 0; i < USR.data.diaspora.contacte.length; i++) {
           contacte += '<dl><dt>' + USR.data.diaspora.contacte[i].locatie + '</dt><dd><ul class="list-unstyled">';
@@ -273,7 +283,15 @@ jQuery.fn.vectorMap('addMap', 'diaspora', {"width":89,"height":89,"paths":{"DIAS
           min: USR.data.min,
           normalizeFunction: 'polynomial',
           scale: ['#7fc1ff', '#ffffff'],
-          values: USR.data.diaspora.alegeri
+          values: (function () {
+            var values = [];
+
+            for (var code in USR.data.diaspora.alegeri) {
+              values[code] = USR.data.diaspora.alegeri[code].reprezentanti + USR.data.diaspora.alegeri[code].delegati;
+            }
+
+            return values;
+          })()
         }]
       },
       zoomButtons: false,
