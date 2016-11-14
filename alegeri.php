@@ -80,7 +80,7 @@ function get_data() {
 
   $data['inscrieriValidate'] = $total;
   $data['min'] = $min;
-  $data['max'] = $max;
+  $data['max'] = $min === $max ? $max + 1 : $max;
 
   return $data;
 }
