@@ -173,12 +173,9 @@ jQuery.fn.vectorMap('addMap', 'diaspora', {"width":89,"height":89,"paths":{"DIAS
           contacte += '</ul></dd>';
         }
 
-        html += '<br>Contact: ';
-
         if ('' !== contacte) {
+          html += '<br>Contact: ';
           html += '<dl>' + contacte + '</dl>';
-        } else {
-          html += USR.data.contact;
         }
 
         element.html(html);
