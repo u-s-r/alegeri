@@ -24,6 +24,7 @@
     "ion-rangeslider": "^2.1.4",
     "jquery": "^1.12.4",
     "jquery-validation": "^1.15.1",
+    "jquery.scrollto": "^2.1.2",
     "jvectormap": "^2.0.4"
   },
   "devDependencies": {
