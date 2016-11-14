@@ -36,7 +36,7 @@
             <h1>Înscrie-te ca să asigurăm corectitudinea procesului electoral din ziua votului!</h1>
           </div>
           <div class="media-right">
-            <a class="btn btn-inverted" href="https://www.nicusordan.ro/doneaza/" target="_blank" onclick="ga('send', 'event', 'pagina_semnaturi', 'buton', 'doneaza')">Donează</a>
+            <a class="btn btn-inverted" href="https://www.nicusordan.ro/doneaza/" target="_blank" onclick="ga('send', 'event', 'pagina_alegeri', 'buton', 'doneaza')">Donează</a>
           </div>
         </div>
         <div class="row">
@@ -63,7 +63,7 @@
                 <p>Completează formularul de mai jos pentru a putea fi reprezentant sau delegat al USR într-o secție de votare.</p>
               </div>
               <div class="panel-footer">
-                <a class="btn btn-default" href="https://usr.ro/" target="_blank" onclick="ga('send', 'event', 'pagina_semnaturi', 'buton', 'continuam_usr')">
+                <a class="btn btn-default" href="#inscriere" data-trigger="scroll" onclick="ga('send', 'event', 'pagina_alegeri', 'buton', 'inscriere')">
                   <span class="glyphicon glyphicon-menu-right"></span>
                   Completează formularul
                 </a>
@@ -111,7 +111,7 @@
                 </dl>
               </div>
             </li>
-            <li class="media">
+            <li class="media" id="inscriere">
               <div class="media-left">
                 <img class="media-object" src="assets/app/img/icon-trimite.png" alt="Vreau alegeri corecte!">
               </div>
@@ -963,7 +963,7 @@
                   <p>Mulțumim!</p>
                 </div>
                 <div class="media-right media-middle">
-                  <a class="btn btn-default" href="https://www.nicusordan.ro/doneaza/" target="_blank" onclick="ga('send', 'event', 'pagina_semnaturi', 'buton', 'doneaza')">
+                  <a class="btn btn-default" href="https://www.nicusordan.ro/doneaza/" target="_blank" onclick="ga('send', 'event', 'pagina_alegeri', 'buton', 'doneaza')">
                     <span class="glyphicon glyphicon-menu-right"></span>
                     Donează acum
                   </a>
@@ -995,6 +995,7 @@
     <script>window.jQuery || document.write('<script src="assets/vendor/jquery/jquery.min.js"><\/script>')</script>
     <script src="assets/vendor/jquery-validation/jquery.validate.js"></script>
     <script src="assets/vendor/jquery-validation/localization/messages_ro.js"></script>
+    <script src="assets/vendor/jquery.scrollto/jquery.scrollTo.min.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/vendor/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
     <script src="assets/vendor/jvectormap/jquery-jvectormap.min.js"></script>

@@ -1,6 +1,21 @@
 (function ($) {
   'use strict';
 
+  $('[data-trigger="scroll"]').click(function (event) {
+    if (this.pathname !== window.location.pathname) {
+      return;
+    }
+
+    event.preventDefault();
+
+    var target = this.hash || 'body';
+
+    $(window).stop(true).scrollTo(target, {
+      duration: 1000,
+      offset: -30
+    });
+  });
+
   $.get('alegeri.php', function (data) {
     $.extend(true, USR.data, data);
 
