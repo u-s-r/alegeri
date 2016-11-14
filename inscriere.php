@@ -77,24 +77,24 @@ if (false === $response->success) {
 }
 
 $response = post(SPREADSHEET_ALEGERI_URL, array(
-  'sheetName' => 'Sheet1',
   'entry.1'   => $_SERVER['REMOTE_ADDR'],
-  'entry.29'  => $tip,
-  'entry.30'  => isset($_POST['delegat']) ? 'Da' : 'Nu',
   'entry.3'   => $_POST['prenume'],
   'entry.4'   => $_POST['nume'],
-  'entry.7'   => $_POST['email'],
   'entry.6'   => $_POST['telefon'],
+  'entry.7'   => $_POST['email'],
+  'entry.8'   => $_POST['regiune'],
+  'entry.9'   => $localitate,
+  'entry.10'  => $_POST['tara'],
+  'entry.22'  => 'Sunt de acord să intru în baza de date USR',
+  'entry.25'  => $_POST['observatii'],
+  'entry.27'  => 'FormularAlegeri',
+  'entry.29'  => $tip,
+  'entry.30'  => isset($_POST['delegat']) ? 'Da' : 'Nu',
   'entry.31'  => $_POST['cnp'],
   'entry.32'  => $_POST['serie'],
   'entry.33'  => $_POST['numar'],
   'entry.34'  => $_POST['adresa'],
-  'entry.8'   => $_POST['regiune'],
-  'entry.9'   => $localitate,
-  'entry.10'  => $_POST['tara'],
-  'entry.25'  => $_POST['observatii'],
-  'entry.22'  => 'Sunt de acord să intru în baza de date USR',
-  'entry.27'  => 'FormularAlegeri'
+  'sheetName' => 'Sheet1'
 ));
 
 if (false === $response) {
