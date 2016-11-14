@@ -373,9 +373,6 @@ jQuery.fn.vectorMap('addMap', 'diaspora', {"width":89,"height":89,"paths":{"DIAS
       regiune: {
         required: true
       },
-      localitate: {
-        required: true
-      },
       tara: {
         required: true
       },
@@ -428,9 +425,6 @@ jQuery.fn.vectorMap('addMap', 'diaspora', {"width":89,"height":89,"paths":{"DIAS
         required: true
       },
       regiune: {
-        required: true
-      },
-      localitate: {
         required: true
       },
       tara: {

@@ -206,9 +206,6 @@
       regiune: {
         required: true
       },
-      localitate: {
-        required: true
-      },
       tara: {
         required: true
       },
@@ -261,9 +258,6 @@
         required: true
       },
       regiune: {
-        required: true
-      },
-      localitate: {
         required: true
       },
       tara: {

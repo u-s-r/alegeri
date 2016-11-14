@@ -15,7 +15,6 @@ $required_fields = array(
   'numar',
   'adresa',
   'regiune',
-  'localitate',
   'tara',
   'acord',
   'g-recaptcha-response'
@@ -35,6 +34,12 @@ if ('Reprezentant' === $tip && !isset($_POST['confirmare'])) {
 
 if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
   exit('false');
+}
+
+$localitate = $_POST['localitate'];
+
+if (empty(trim($localitate))) {
+  $localitate = 'Sunt de acord să activez și în altă localitate din județ';
 }
 
 function post($url, $data = array()) {
@@ -85,7 +90,7 @@ $response = post(SPREADSHEET_ALEGERI_URL, array(
   'entry.33'  => $_POST['numar'],
   'entry.34'  => $_POST['adresa'],
   'entry.8'   => $_POST['regiune'],
-  'entry.9'   => $_POST['localitate'],
+  'entry.9'   => $localitate,
   'entry.10'  => $_POST['tara'],
   'entry.25'  => $_POST['observatii'],
   'entry.22'  => 'Sunt de acord să intru în baza de date USR',
@@ -109,7 +114,7 @@ $data = array(
   'numar'      => $_POST['numar'],
   'adresa'     => $_POST['adresa'],
   'regiune'    => $_POST['regiune'],
-  'localitate' => $_POST['localitate'],
+  'localitate' => $localitate,
   'tara'       => $_POST['tara'],
   'observatii' => $_POST['observatii']
 );
