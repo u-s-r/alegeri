@@ -19,15 +19,15 @@
   $.get('alegeri.php', function (data) {
     $.extend(true, USR.data, data);
 
-    $('#progres-semnaturi').ionRangeSlider({
+    $('#progres-inscrieri').ionRangeSlider({
       force_edges: true,
-      from: data.semnaturiStranse,
+      from: data.inscrieriValidate,
       from_fixed: true,
       grid: true,
       hide_min_max: true,
-      max: USR.data.intervalSemnaturi[1],
-      min: USR.data.intervalSemnaturi[0],
-      postfix: ' membri înscriși',
+      max: USR.data.intervalInscrieri[1],
+      min: USR.data.intervalInscrieri[0],
+      postfix: ' înscrieri validate',
       prettify_separator: '.'
     });
 
@@ -37,8 +37,8 @@
       map: 'ro_merc',
       onRegionTipShow: function (event, element, code) {
         var contacte = '';
-        var html = '<strong>' + element.html() + '</strong><br>Semnături strânse: ' +
-          USR.data.semnaturi[code];
+        var html = '<strong>' + element.html() + '</strong><br>Secții de votare: ' +
+          USR.data.alegeri[code] + '<br>Înscrieri validate: 0';
 
         for (var i = 0; i < USR.data.contacte[code].length; i++) {
           contacte += '<dt>' + USR.data.contacte[code][i].locatie + '</dt><dd><ul class="list-unstyled">';
@@ -67,7 +67,7 @@
           min: USR.data.min,
           normalizeFunction: 'polynomial',
           scale: ['#7fc1ff', '#ffffff'],
-          values: USR.data.semnaturi
+          values: USR.data.alegeri
         }]
       },
       zoomButtons: false,
@@ -80,8 +80,8 @@
       map: 'diaspora',
       onRegionTipShow: function (event, element, code) {
         var contacte = '';
-        var html = '<strong>' + element.html() + '</strong><br>Semnături strânse: ' +
-          USR.data.diaspora.semnaturi[code];
+        var html = '<strong>' + element.html() + '</strong><br>Secții de votare: ' +
+          USR.data.diaspora.alegeri[code] + '<br>Înscrieri validate: 0';
 
         for (var i = 0; i < USR.data.diaspora.contacte.length; i++) {
           contacte += '<dl><dt>' + USR.data.diaspora.contacte[i].locatie + '</dt><dd><ul class="list-unstyled">';
@@ -93,7 +93,7 @@
           contacte += '</ul></dd></dl>';
         }
 
-        html += '<br>Contact: ' + USR.data.diaspora.contact + '<p>' + USR.data.diaspora.info + '</p>';
+        html += '<br>Contact: ' + USR.data.diaspora.contact;
 
         if ('' !== contacte) {
           html += '<div class="dl-two-columns">' + contacte + '</div>';
@@ -108,7 +108,7 @@
           min: USR.data.min,
           normalizeFunction: 'polynomial',
           scale: ['#7fc1ff', '#ffffff'],
-          values: USR.data.diaspora.semnaturi
+          values: USR.data.diaspora.alegeri
         }]
       },
       zoomButtons: false,

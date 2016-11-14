@@ -7,53 +7,52 @@ if ('undefined' === typeof window.USR) {
 
   USR.data = {};
 
-  USR.data.targetSemnaturi = 200000;
-  USR.data.semnaturiStranse = 350781;
-  USR.data.intervalSemnaturi = [0, 400000];
+  USR.data.inscrieriValidate = 0;
+  USR.data.intervalInscrieri = [0, 20000];
 
-  USR.data.semnaturi = {
-    'AB': 3160,
-    'AR': 7397,
-    'AG': 4681,
-    'BC': 5259,
-    'BH': 4312,
-    'BN': 1498,
-    'BT': 682,
-    'BR': 2702,
-    'BV': 17253,
-    'BZ': 2539,
-    'CL': 288,
-    'CS': 725,
-    'CJ': 26178,
-    'CT': 8403,
-    'CV': 135,
-    'DB': 3213,
-    'DJ': 3871,
-    'GL': 5020,
-    'GR': 1489,
-    'GJ': 3877,
-    'HR': 149,
-    'HD': 2123,
-    'IL': 240,
-    'IS': 10862,
-    'IF': 4847,
-    'MM': 5450,
-    'MH': 3213,
-    'MS': 1309,
-    'NT': 2973,
-    'OT': 1168,
-    'PH': 11473,
-    'SM': 1396,
-    'SJ': 731,
-    'SB': 8013,
-    'SV': 6864,
-    'TR': 1050,
-    'TM': 14779,
-    'TL': 390,
-    'VS': 2043,
-    'VL': 1591,
-    'VN': 810,
-    'B': 159095
+  USR.data.alegeri = {
+    'AB': 440,
+    'AR': 437,
+    'AG': 520,
+    'BC': 634,
+    'BH': 652,
+    'BN': 313,
+    'BT': 422,
+    'BR': 281,
+    'BV': 447,
+    'BZ': 427,
+    'CL': 235,
+    'CS': 365,
+    'CJ': 656,
+    'CT': 556,
+    'CV': 214,
+    'DB': 432,
+    'DJ': 530,
+    'GL': 436,
+    'GR': 245,
+    'GJ': 332,
+    'HR': 290,
+    'HD': 524,
+    'IL': 220,
+    'IS': 730,
+    'IF': 238,
+    'MM': 435,
+    'MH': 286,
+    'MS': 568,
+    'NT': 486,
+    'OT': 379,
+    'PH': 623,
+    'SM': 334,
+    'SJ': 312,
+    'SB': 370,
+    'SV': 555,
+    'TR': 334,
+    'TM': 595,
+    'TL': 204,
+    'VS': 527,
+    'VL': 430,
+    'VN': 358,
+    'B': 1254
   };
 
   USR.data.contact = '0726701994';
@@ -132,11 +131,10 @@ if ('undefined' === typeof window.USR) {
   };
 
   USR.data.diaspora = {
-    'semnaturi': {
-      'DIASPORA': 7530
+    'alegeri': {
+      'DIASPORA': 417
     },
     'contact': 'diaspora@usr.ro',
-    'info': 'Am strâns cu success semnăturile pentru a candida în diaspora! Trimiteţi-ne însă în continuare semnăturile voastre pentru a candida şi în ţară pe buletinul de vot. Dacă aveţi domiciliu/rezidenţa în străinătate, urmaţi instrucţiunile din ghidul pentru diaspora. Dacă nu, urmaţi instrucţiunile ghidului pentru România!',
     'contacte': [
       {'locatie': 'Republica Moldova', 'persoane': [['Alexandru Gâdiuţă', '+37368792566']]},
       {'locatie': 'Italia', 'persoane': [['Cerasella Ponta (Roma)', '+393280947327'], ['Corina Cristina Velniciuc (Roma)', '+393285521723']]},
@@ -156,5 +154,5 @@ if ('undefined' === typeof window.USR) {
   };
 
   USR.data.min = 0;
-  USR.data.max = 159095;
+  USR.data.max = 19133;
 })(USR);
