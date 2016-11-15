@@ -55,12 +55,12 @@ function get_data() {
       continue;
     }
 
-    $inscrieri = $content['nrreprezentanti'] + $content['nrdelegati'];
+    $sectii = $content['nrreprezentanti'] + $content['nrdelegati'];
 
-    $total += $inscrieri;
+    $total += $sectii;
 
-    if ($max < $inscrieri) {
-      $max = $inscrieri;
+    if ($max < $sectii) {
+      $max = $sectii;
     }
 
     $alegeri = array(

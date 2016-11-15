@@ -19,14 +19,14 @@
   $.get('alegeri.php', function (data) {
     $.extend(true, USR.data, data);
 
-    $('#progres-inscrieri').ionRangeSlider({
+    $('#progres-sectii').ionRangeSlider({
       force_edges: true,
-      from: data.inscrieriValidate,
+      from: data.sectiiAcoperite,
       from_fixed: true,
       grid: true,
       hide_min_max: true,
-      max: USR.data.intervalInscrieri[1],
-      min: USR.data.intervalInscrieri[0],
+      max: USR.data.intervalSectii[1],
+      min: USR.data.intervalSectii[0],
       postfix: ' secții acoperite',
       prettify_separator: '.'
     });
@@ -37,9 +37,9 @@
       map: 'ro_merc',
       onRegionTipShow: function (event, element, code) {
         var contacte = '';
-        var inscrieri = USR.data.alegeri[code].reprezentanti + USR.data.alegeri[code].delegati;
+        var sectii = USR.data.alegeri[code].reprezentanti + USR.data.alegeri[code].delegati;
         var html = '<strong>' + element.html() + '</strong><br>Secții de votare: ' +
-          USR.data.alegeri[code].sectii + '<br>Secții acoperite: ' + inscrieri;
+          USR.data.alegeri[code].sectii + '<br>Secții acoperite: ' + sectii;
 
         for (var i = 0; i < USR.data.contacte[code].length; i++) {
           contacte += '<dt>' + USR.data.contacte[code][i].locatie + '</dt><dd><ul class="list-unstyled">';
@@ -86,9 +86,9 @@
       map: 'diaspora',
       onRegionTipShow: function (event, element, code) {
         var contacte = '';
-        var inscrieri = USR.data.diaspora.alegeri[code].reprezentanti + USR.data.diaspora.alegeri[code].delegati;
+        var sectii = USR.data.diaspora.alegeri[code].reprezentanti + USR.data.diaspora.alegeri[code].delegati;
         var html = '<strong>' + element.html() + '</strong><br>Secții de votare: ' +
-          USR.data.diaspora.alegeri[code].sectii + '<br>Secții acoperite: ' + inscrieri;
+          USR.data.diaspora.alegeri[code].sectii + '<br>Secții acoperite: ' + sectii;
 
         for (var i = 0; i < USR.data.diaspora.contacte.length; i++) {
           contacte += '<dl><dt>' + USR.data.diaspora.contacte[i].locatie + '</dt><dd><ul class="list-unstyled">';

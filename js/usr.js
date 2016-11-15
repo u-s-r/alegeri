@@ -7,8 +7,8 @@ if ('undefined' === typeof window.USR) {
 
   USR.data = {};
 
-  USR.data.inscrieriValidate = 0;
-  USR.data.intervalInscrieri = [0, 20000];
+  USR.data.sectiiAcoperite = 0;
+  USR.data.intervalSectii = [0, 20000];
 
   USR.data.alegeri = {
     'AB': {'sectii': 440, 'reprezentanti': 0, 'delegati': 0},
