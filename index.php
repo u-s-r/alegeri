@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+<?php
+require 'functions.php';
+
+$data = get_data();
+?><!DOCTYPE html>
 <html lang="ro">
   <head>
     <meta charset="utf-8">
@@ -77,14 +81,14 @@
         <div class="col-md-10 col-md-offset-1">
           <div class="statistics">
             <div class="statistic statistic-primary">
-              <div class="value">0</div>
+              <div class="value"><?php echo $data['sectiiAcoperite']; ?></div>
               <div class="label">Secții acoperite</div>
             </div>
             <div class="statistic statistic-separator">
               <div class="value">/</div>
             </div>
             <div class="statistic statistic-secondary">
-              <div class="value">19043</div>
+              <div class="value"><?php echo $data['sectii']; ?></div>
               <div class="label">Secții de votare</div>
             </div>
           </div>
