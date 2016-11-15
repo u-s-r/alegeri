@@ -570,7 +570,7 @@ mark {
 }
 @media (min-width: 1200px) {
   .jumbotron-primary .panel {
-    margin-top: 60px;
+    margin-top: 50px;
   }
 }
 @media (min-width: 992px) {
