@@ -110,6 +110,12 @@ if (false === $response) {
   exit('false');
 }
 
+$response = json_decode($response);
+
+if (empty($response->result) || 'success' !== $response->result) {
+  exit('false');
+}
+
 $templates = new League\Plates\Engine('templates');
 
 $data = array(
