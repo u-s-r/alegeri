@@ -54,27 +54,6 @@
   color: #ff374f;
   content: "\25cf";
 }
-.list-checkbox {
-  padding-left: 0;
-}
-.list-checkbox li {
-  margin-bottom: 10px;
-  padding-left: 2em;
-}
-.list-checkbox li:before {
-  background-image: url("../img/sprite-checkbox.png");
-  background-repeat: none;
-  background-size: 1em auto;
-  height: 1em;
-  top: 1px;
-  width: 1em;
-}
-.list-checkbox li.checked:before {
-  background-position: left bottom;
-}
-.list-relaxed > li {
-  margin-bottom: 10px;
-}
 /* Labels */
 .label {
   color: #148bff;
