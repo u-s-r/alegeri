@@ -6,17 +6,16 @@ header('Content-Type: application/json');
 
 $required_fields = array(
   'tip',
-  'prenume',
   'nume',
-  'email',
-  'telefon',
+  'prenume',
   'cnp',
   'serie',
   'numar',
   'adresa',
   'regiune',
   'tara',
-  'acord',
+  'telefon',
+  'email',
   'g-recaptcha-response'
 );
 
@@ -32,17 +31,19 @@ if ('Reprezentant' === $tip && !isset($_POST['confirmare'])) {
   exit('false');
 }
 
-if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-  exit('false');
-}
-
 $localitate = trim($_POST['localitate']);
 
 if (empty($localitate)) {
   $localitate = 'Sunt de acord să activez și în altă localitate din județ';
 }
 
+if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+  exit('false');
+}
+
 $observatii = trim($_POST['observatii']);
+
+$acord = isset($_POST['acord']) ? 'Sunt de acord să intru în baza de date USR' : 'Nu sunt de acord să intru în baza de date USR';
 
 function post($url, $data = array()) {
   $ch = curl_init();
@@ -87,7 +88,7 @@ $data = array(
   'entry.8'   => $_POST['regiune'],
   'entry.9'   => $localitate,
   'entry.10'  => $_POST['tara'],
-  'entry.22'  => 'Sunt de acord să intru în baza de date USR',
+  'entry.22'  => $acord,
   'entry.27'  => 'FormularAlegeri',
   'entry.28'  => 'update',
   'entry.29'  => $tip,
@@ -113,18 +114,19 @@ $templates = new League\Plates\Engine('templates');
 
 $data = array(
   'tip'        => $tip,
-  'prenume'    => $_POST['prenume'],
   'nume'       => $_POST['nume'],
-  'email'      => $_POST['email'],
-  'telefon'    => $_POST['telefon'],
+  'prenume'    => $_POST['prenume'],
   'cnp'        => $_POST['cnp'],
   'serie'      => $_POST['serie'],
   'numar'      => $_POST['numar'],
   'adresa'     => $_POST['adresa'],
   'regiune'    => $_POST['regiune'],
-  'localitate' => $localitate,
   'tara'       => $_POST['tara'],
-  'observatii' => $observatii
+  'localitate' => $localitate,
+  'telefon'    => $_POST['telefon'],
+  'email'      => $_POST['email'],
+  'observatii' => $observatii,
+  'acord' => $acord
 );
 
 if (isset($_POST['delegat'])) {

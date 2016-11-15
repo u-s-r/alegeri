@@ -224,9 +224,6 @@
       tara: {
         required: true
       },
-      acord: {
-        required: true
-      },
       recaptcha: {
         required: function () {
           return '' === grecaptcha.getResponse(0);
@@ -276,9 +273,6 @@
         required: true
       },
       tara: {
-        required: true
-      },
-      acord: {
         required: true
       },
       recaptcha: {

@@ -117,19 +117,20 @@
                         <?php endif; ?>
                         <?php if (isset($delegat)): ?><p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;"><b>Dacă nu sunt atribuit ca reprezentant, sunt de acord să fiu și delegat</b></p><?php endif; ?>
                         <?php if (isset($confirmare)): ?><p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;"><b>Confirm pe propria răspundere că nu sunt candidat sau rudă de până la gradul 2 a unui candidat</b></p><?php endif; ?>
-                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;"><b>Prenume:</b><br><?php echo $this->e($prenume); ?></p>
                         <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;"><b>Nume de familie:</b><br><?php echo $this->e($nume); ?></p>
-                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;"><b>Email:</b><br><?php echo $this->e($email); ?></p>
-                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;"><b>Număr de telefon:</b><br><?php echo $this->e($telefon); ?></p>
+                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;"><b>Prenume:</b><br><?php echo $this->e($prenume); ?></p>
                         <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;"><b>CNP:</b><br><?php echo $this->e($cnp); ?></p>
-                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;"><b>Serie CI:</b><br><?php echo $this->e($serie); ?></p>
-                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;"><b>Număr CI:</b><br><?php echo $this->e($numar); ?></p>
-                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;"><b>Adresa din buletin:</b><br><?php echo $this->e($adresa); ?></p>
-                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;"><b>Județ repartizare:</b><br><?php echo $this->e($regiune); ?></p>
-                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;"><b>Localitatea unde doresc să activez:</b><br><?php echo $this->e($localitate); ?></p>
+                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;"><b>Serie act identitate:</b><br><?php echo $this->e($serie); ?></p>
+                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;"><b>Număr act identitate:</b><br><?php echo $this->e($numar); ?></p>
+                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;"><b>Domiciliul sau reşedinţa din actul de identitate:</b><br><?php echo $this->e($adresa); ?></p>
+                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;"><b>Județul din actul de identitate:</b><br><?php echo $this->e($regiune); ?></p>
                         <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;"><b>Țara:</b><br><?php echo $this->e($tara); ?></p>
+                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;"><b>Localitatea unde doresc să activez, în judeţul din actul de identitate:</b><br><?php echo $this->e($localitate); ?></p>
+                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;"><b>Număr de telefon:</b><br><?php echo $this->e($telefon); ?></p>
+                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;"><b>Email:</b><br><?php echo $this->e($email); ?></p>
                         <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;"><b>Observații:</b><br><?php echo empty($observatii) ? '&mdash;' : $this->e($observatii); ?></p>
-                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;"><b>Sunt de acord să intru în baza de date USR</b></p>
+                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Dacă doriţi să fiţi distribuiţi într-o localitate din alt judeţ, nu veţi putea vota.</p>
+                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;"><b><?php echo $this->e($acord); ?></b></p>
                         <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Ne trebuie cât mai mulți reprezentanți și delegați care să supravegheze procesul de votare, așa că te rugăm să vorbești cu prietenii, familia și vecinii tăi să completeze și ei formularul.</p>
                         <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; box-sizing: border-box;" width="100%">
                           <tbody>
