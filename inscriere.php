@@ -88,6 +88,7 @@ $response = post(SPREADSHEET_ALEGERI_URL, array(
   'entry.22'  => 'Sunt de acord să intru în baza de date USR',
   'entry.25'  => $_POST['observatii'],
   'entry.27'  => 'FormularAlegeri',
+  'entry.28'  => 'update',
   'entry.29'  => $tip,
   'entry.30'  => isset($_POST['delegat']) ? 'Da' : 'Nu',
   'entry.31'  => $_POST['cnp'],
