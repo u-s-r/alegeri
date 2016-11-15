@@ -27,7 +27,7 @@
       hide_min_max: true,
       max: USR.data.intervalInscrieri[1],
       min: USR.data.intervalInscrieri[0],
-      postfix: ' înscrieri validate',
+      postfix: ' secții acoperite',
       prettify_separator: '.'
     });
 
@@ -39,7 +39,7 @@
         var contacte = '';
         var inscrieri = USR.data.alegeri[code].reprezentanti + USR.data.alegeri[code].delegati;
         var html = '<strong>' + element.html() + '</strong><br>Secții de votare: ' +
-          USR.data.alegeri[code].sectii + '<br>Înscrieri validate: ' + inscrieri;
+          USR.data.alegeri[code].sectii + '<br>Secții acoperite: ' + inscrieri;
 
         for (var i = 0; i < USR.data.contacte[code].length; i++) {
           contacte += '<dt>' + USR.data.contacte[code][i].locatie + '</dt><dd><ul class="list-unstyled">';
@@ -88,7 +88,7 @@
         var contacte = '';
         var inscrieri = USR.data.diaspora.alegeri[code].reprezentanti + USR.data.diaspora.alegeri[code].delegati;
         var html = '<strong>' + element.html() + '</strong><br>Secții de votare: ' +
-          USR.data.diaspora.alegeri[code].sectii + '<br>Înscrieri validate: ' + inscrieri;
+          USR.data.diaspora.alegeri[code].sectii + '<br>Secții acoperite: ' + inscrieri;
 
         for (var i = 0; i < USR.data.diaspora.contacte.length; i++) {
           contacte += '<dl><dt>' + USR.data.diaspora.contacte[i].locatie + '</dt><dd><ul class="list-unstyled">';
