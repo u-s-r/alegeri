@@ -36,9 +36,9 @@ if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
   exit('false');
 }
 
-$localitate = $_POST['localitate'];
+$localitate = trim($_POST['localitate']);
 
-if (empty(trim($localitate))) {
+if (empty($localitate)) {
   $localitate = 'Sunt de acord să activez și în altă localitate din județ';
 }
 
