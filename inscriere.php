@@ -78,7 +78,7 @@ if (true !== $response->success) {
   exit('false');
 }
 
-$data array(
+$data = array(
   'entry.1'   => $_SERVER['REMOTE_ADDR'],
   'entry.3'   => $_POST['prenume'],
   'entry.4'   => $_POST['nume'],
