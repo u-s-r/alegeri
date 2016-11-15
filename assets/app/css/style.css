@@ -562,9 +562,14 @@ mark {
 .jumbotron-primary {
   margin-bottom: 30px;
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .jumbotron-primary .panel {
+    margin-top: 20px;
+  }
+}
 @media (min-width: 1200px) {
   .jumbotron-primary .panel {
-    margin-top: 30px;
+    margin-top: 60px;
   }
 }
 @media (min-width: 992px) {
