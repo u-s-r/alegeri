@@ -291,7 +291,7 @@ jQuery.fn.vectorMap('addMap', 'diaspora', {"width":89,"height":89,"paths":{"DIAS
 
       $spinner.removeClass('active');
 
-      if (response) {
+      if (true === response) {
         $form[0].reset();
 
         $('.alert-success').removeClass('hidden');

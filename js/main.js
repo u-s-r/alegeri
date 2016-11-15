@@ -169,7 +169,7 @@
 
       $spinner.removeClass('active');
 
-      if (response) {
+      if (true === response) {
         $form[0].reset();
 
         $('.alert-success').removeClass('hidden');
