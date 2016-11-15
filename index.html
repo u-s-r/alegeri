@@ -132,24 +132,16 @@
                       <div class="row">
                         <div class="col-sm-6">
                           <div class="form-group required">
-                            <label class="control-label" for="prenume-reprezentant">Prenume:</label>
-                            <input type="text" class="form-control" id="prenume-reprezentant" name="prenume" placeholder="Andrei" required>
-                          </div>
-                        </div>
-                        <div class="col-sm-6">
-                          <div class="form-group required">
                             <label class="control-label" for="nume-reprezentant">Nume de familie:</label>
                             <input type="text" class="form-control" id="nume-reprezentant" name="nume" placeholder="Popescu" required>
                           </div>
                         </div>
-                      </div>
-                      <div class="form-group required">
-                        <label class="control-label" for="email-reprezentant">Email:</label>
-                        <input type="email" class="form-control" id="email-reprezentant" name="email" placeholder="andrei.popescu@usr.ro" required>
-                      </div>
-                      <div class="form-group required">
-                        <label class="control-label" for="telefon-reprezentant">Număr de telefon:</label>
-                        <input type="tel" class="form-control" id="telefon-reprezentant" name="telefon" placeholder="+40 7xx xxx xxx" required>
+                        <div class="col-sm-6">
+                          <div class="form-group required">
+                            <label class="control-label" for="prenume-reprezentant">Prenume:</label>
+                            <input type="text" class="form-control" id="prenume-reprezentant" name="prenume" placeholder="Andrei" required>
+                          </div>
+                        </div>
                       </div>
                       <div class="form-group required">
                         <label class="control-label" for="cnp-reprezentant">CNP:</label>
@@ -505,13 +497,23 @@
                         </div>
                       </div>
                       <div class="form-group">
-                        <label class="control-label" for="localitate-delegat">Localitatea unde doresc să activez, în judeţul din actul de identitate:</label>
-                        <input type="text" class="form-control" id="localitate-delegat" name="localitate" placeholder="Prin necompletare sunt de acord să activez și în altă localitate din județ">
+                        <label class="control-label" for="localitate-reprezentant">Localitatea unde doresc să activez, în judeţul din actul de identitate:</label>
+                        <input type="text" class="form-control" id="localitate-reprezentant" name="localitate" placeholder="" aria-describedby="help-localitate-reprezentant">
+                      </div>
+                      <p class="help-block" id="help-localitate-reprezentant">Prin necompletare sunt de acord să activez și în altă localitate din județ.</p>
+                      <div class="form-group required">
+                        <label class="control-label" for="telefon-reprezentant">Număr de telefon:</label>
+                        <input type="tel" class="form-control" id="telefon-reprezentant" name="telefon" placeholder="+40 7xx xxx xxx" required>
+                      </div>
+                      <div class="form-group required">
+                        <label class="control-label" for="email-reprezentant">Email:</label>
+                        <input type="email" class="form-control" id="email-reprezentant" name="email" placeholder="andrei.popescu@usr.ro" required>
                       </div>
                       <div class="form-group">
                         <label class="control-label" for="observatii-reprezentant">Observații:</label>
-                        <textarea class="form-control" id="observatii-reprezentant" name="observatii" rows="3" placeholder="De exemplu zona din localitate unde doresc repartizare. Dacă doriţi să fiţi distribuiţi într-o localitate din alt judeţ, nu veţi putea vota."></textarea>
+                        <textarea class="form-control" id="observatii-reprezentant" name="observatii" rows="3" placeholder="De exemplu zona din localitate unde doresc repartizare" aria-describedby="help-observatii-reprezentant"></textarea>
                       </div>
+                      <p class="help-block" id="help-observatii-reprezentant">Dacă doriţi să fiţi distribuiţi într-o localitate din alt judeţ, nu veţi putea vota.</p>
                       <div class="checkbox required">
                         <label class="control-label">
                           <input type="checkbox" name="acord" required>
@@ -541,24 +543,16 @@
                       <div class="row">
                         <div class="col-sm-6">
                           <div class="form-group required">
-                            <label class="control-label" for="prenume-delegat">Prenume:</label>
-                            <input type="text" class="form-control" id="prenume-delegat" name="prenume" placeholder="Andrei" required>
-                          </div>
-                        </div>
-                        <div class="col-sm-6">
-                          <div class="form-group required">
                             <label class="control-label" for="nume-delegat">Nume de familie:</label>
                             <input type="text" class="form-control" id="nume-delegat" name="nume" placeholder="Popescu" required>
                           </div>
                         </div>
-                      </div>
-                      <div class="form-group required">
-                        <label class="control-label" for="email-delegat">Email:</label>
-                        <input type="email" class="form-control" id="email-delegat" name="email" placeholder="andrei.popescu@usr.ro" required>
-                      </div>
-                      <div class="form-group required">
-                        <label class="control-label" for="telefon-delegat">Număr de telefon:</label>
-                        <input type="tel" class="form-control" id="telefon-delegat" name="telefon" placeholder="+40 7xx xxx xxx" required>
+                        <div class="col-sm-6">
+                          <div class="form-group required">
+                            <label class="control-label" for="prenume-delegat">Prenume:</label>
+                            <input type="text" class="form-control" id="prenume-delegat" name="prenume" placeholder="Andrei" required>
+                          </div>
+                        </div>
                       </div>
                       <div class="form-group required">
                         <label class="control-label" for="cnp-delegat">CNP:</label>
@@ -915,12 +909,22 @@
                       </div>
                       <div class="form-group">
                         <label class="control-label" for="localitate-delegat">Localitatea unde doresc să activez, în judeţul din actul de identitate:</label>
-                        <input type="text" class="form-control" id="localitate-delegat" name="localitate" placeholder="Prin necompletare sunt de acord să activez și în altă localitate din județ">
+                        <input type="text" class="form-control" id="localitate-delegat" name="localitate" placeholder="" aria-describedby="help-localitate-delegat">
+                      </div>
+                      <p class="help-block" id="help-localitate-delegat">Prin necompletare sunt de acord să activez și în altă localitate din județ.</p>
+                      <div class="form-group required">
+                        <label class="control-label" for="telefon-delegat">Număr de telefon:</label>
+                        <input type="tel" class="form-control" id="telefon-delegat" name="telefon" placeholder="+40 7xx xxx xxx" required>
+                      </div>
+                      <div class="form-group required">
+                        <label class="control-label" for="email-delegat">Email:</label>
+                        <input type="email" class="form-control" id="email-delegat" name="email" placeholder="andrei.popescu@usr.ro" required>
                       </div>
                       <div class="form-group">
                         <label class="control-label" for="observatii-delegat">Observații:</label>
-                        <textarea class="form-control" id="observatii-delegat" name="observatii" rows="3" placeholder="De exemplu zona din localitate unde doresc repartizare. Dacă doriţi să fiţi distribuiţi într-o localitate din alt judeţ, nu veţi putea vota."></textarea>
+                        <textarea class="form-control" id="observatii-delegat" name="observatii" rows="3" placeholder="De exemplu zona din localitate unde doresc repartizare" aria-describedby="help-observatii-delegat"></textarea>
                       </div>
+                      <p class="help-block" id="help-observatii-delegat">Dacă doriţi să fiţi distribuiţi într-o localitate din alt judeţ, nu veţi putea vota.</p>
                       <div class="checkbox required">
                         <label class="control-label">
                           <input type="checkbox" name="acord" required>
