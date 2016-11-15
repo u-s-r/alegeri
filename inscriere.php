@@ -66,13 +66,13 @@ $response = post(RECAPTCHA_URL, array(
   'remoteip' => $_SERVER['REMOTE_ADDR']
 ));
 
-if (false === $response) {
+if (true !== $response) {
   exit('false');
 }
 
 $response = json_decode($response);
 
-if (false === $response->success) {
+if (true !== $response->success) {
   exit('false');
 }
 
@@ -97,7 +97,7 @@ $response = post(SPREADSHEET_ALEGERI_URL, array(
   'sheetName' => 'Sheet1'
 ));
 
-if (false === $response) {
+if (true !== $response) {
   exit('false');
 }
 
