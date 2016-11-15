@@ -42,6 +42,8 @@ if (empty($localitate)) {
   $localitate = 'Sunt de acord să activez și în altă localitate din județ';
 }
 
+$observatii = trim($_POST['observatii']);
+
 function post($url, $data = array()) {
   $ch = curl_init();
 
@@ -76,7 +78,7 @@ if (true !== $response->success) {
   exit('false');
 }
 
-$response = post(SPREADSHEET_ALEGERI_URL, array(
+$data array(
   'entry.1'   => $_SERVER['REMOTE_ADDR'],
   'entry.3'   => $_POST['prenume'],
   'entry.4'   => $_POST['nume'],
@@ -86,7 +88,6 @@ $response = post(SPREADSHEET_ALEGERI_URL, array(
   'entry.9'   => $localitate,
   'entry.10'  => $_POST['tara'],
   'entry.22'  => 'Sunt de acord să intru în baza de date USR',
-  'entry.25'  => $_POST['observatii'],
   'entry.27'  => 'FormularAlegeri',
   'entry.28'  => 'update',
   'entry.29'  => $tip,
@@ -96,7 +97,13 @@ $response = post(SPREADSHEET_ALEGERI_URL, array(
   'entry.33'  => $_POST['numar'],
   'entry.34'  => $_POST['adresa'],
   'sheetName' => 'Sheet1'
-));
+);
+
+if (!empty($observatii)) {
+  $data['entry.25'] = $observatii;
+}
+
+$response = post(SPREADSHEET_ALEGERI_URL, $data);
 
 if (false === $response) {
   exit('false');
@@ -117,7 +124,7 @@ $data = array(
   'regiune'    => $_POST['regiune'],
   'localitate' => $localitate,
   'tara'       => $_POST['tara'],
-  'observatii' => $_POST['observatii']
+  'observatii' => $observatii
 );
 
 if (isset($_POST['delegat'])) {
