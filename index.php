@@ -520,8 +520,8 @@ $data = get_data();
                       <p class="help-block" id="help-observatii-reprezentant"></p>
                       <div class="checkbox">
                         <label class="control-label">
-                          <input type="checkbox" name="acord">
-                          Sunt de acord să primesc  ocazional newslettere din partea Uniunii Salvați România
+                          <input type="checkbox" name="acord" checked>
+                          Sunt de acord să primesc ocazional newslettere din partea Uniunii Salvați România
                         </label>
                       </div>
                       <div class="form-group">
@@ -931,8 +931,8 @@ $data = get_data();
                       <p class="help-block" id="help-observatii-delegat"></p>
                       <div class="checkbox">
                         <label class="control-label">
-                          <input type="checkbox" name="acord">
-                          Sunt de acord să intru în baza de date a Uniunii Salvați România şi să primesc newslettere ocazional
+                          <input type="checkbox" name="acord" checked>
+                          Sunt de acord să primesc ocazional newslettere din partea Uniunii Salvați România
                         </label>
                       </div>
                       <div class="form-group">
