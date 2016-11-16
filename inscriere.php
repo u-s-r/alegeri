@@ -131,7 +131,6 @@ $data = array(
   'localitate' => $localitate,
   'telefon'    => $_POST['telefon'],
   'email'      => $_POST['email'],
-  'observatii' => $observatii,
   'acord' => $acord
 );
 
@@ -141,6 +140,10 @@ if (isset($_POST['delegat'])) {
 
 if (isset($_POST['confirmare'])) {
   $data['confirmare'] = $_POST['confirmare'];
+}
+
+if (!empty($observatii)) {
+  $data['observatii'] = $observatii;
 }
 
 $message = $templates->render('email', $data);

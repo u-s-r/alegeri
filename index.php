@@ -500,14 +500,14 @@ $data = get_data();
                           </div>
                         </div>
                       </div>
-                      <div style="display:none" class="form-group">
+                      <div class="form-group hidden">
                         <label class="control-label" for="localitate-reprezentant">Localitatea unde doresc să activez, în judeţul din actul de identitate:</label>
                         <input type="text" class="form-control" id="localitate-reprezentant" name="localitate" placeholder="Sunt de acord să activez și în altă localitate din județ" aria-describedby="help-localitate-reprezentant">
                       </div>
-                      <p style="display:none" class="help-block" id="help-localitate-reprezentant">Prin necompletare sunt de acord să activez și în altă localitate din județ.</p>
+                      <p class="help-block hidden" id="help-localitate-reprezentant">Prin necompletare sunt de acord să activez și în altă localitate din județ.</p>
                       <div class="form-group required">
                         <label class="control-label" for="telefon-reprezentant">Număr de telefon:</label>
-                        <input type="tel" class="form-control" id="telefon-reprezentant" name="telefon" placeholder="+40 7xx xxx xxx" required>
+                        <input type="tel" class="form-control" id="telefon-reprezentant" name="telefon" placeholder="0712345678" required>
                       </div>
                       <div class="form-group required">
                         <label class="control-label" for="email-reprezentant">E-mail (pentru fiecare înscriere obligatoriu adresă separată):</label>
@@ -521,7 +521,7 @@ $data = get_data();
                       <div class="checkbox">
                         <label class="control-label">
                           <input type="checkbox" name="acord">
-                          Sunt de acord să primesc  ocazional newslettere din partea Uniunii Salvați România 
+                          Sunt de acord să primesc  ocazional newslettere din partea Uniunii Salvați România
                         </label>
                       </div>
                       <div class="form-group">
@@ -911,14 +911,14 @@ $data = get_data();
                           </div>
                         </div>
                       </div>
-                      <div style="display:none" class="form-group">
+                      <div class="form-group hidden">
                         <label class="control-label" for="localitate-delegat">Localitatea unde doresc să activez, în judeţul din actul de identitate:</label>
                         <input type="text" class="form-control" id="localitate-delegat" name="localitate" placeholder="Sunt de acord să activez și în altă localitate din județ" aria-describedby="help-localitate-delegat">
                       </div>
-                      <p style="display:none" class="help-block" id="help-localitate-delegat">Prin necompletare sunt de acord să activez și în altă localitate din județ.</p>
+                      <p class="help-block hidden" id="help-localitate-delegat">Prin necompletare sunt de acord să activez și în altă localitate din județ.</p>
                       <div class="form-group required">
                         <label class="control-label" for="telefon-delegat">Număr de telefon:</label>
-                        <input type="tel" class="form-control" id="telefon-delegat" name="telefon" placeholder="+40 7xx xxx xxx" required>
+                        <input type="tel" class="form-control" id="telefon-delegat" name="telefon" placeholder="0712345678" required>
                       </div>
                       <div class="form-group required">
                         <label class="control-label" for="email-delegat">E-mail (pentru fiecare înscriere obligatoriu adresă separată):</label>

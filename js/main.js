@@ -185,17 +185,10 @@
       confirmare: {
         required: true
       },
-      prenume: {
-        required: true
-      },
       nume: {
         required: true
       },
-      email: {
-        email: true,
-        required: true
-      },
-      telefon: {
+      prenume: {
         required: true
       },
       cnp: {
@@ -222,6 +215,14 @@
         required: true
       },
       tara: {
+        required: true
+      },
+      telefon: {
+        digits: true,
+        required: true
+      },
+      email: {
+        email: true,
         required: true
       },
       recaptcha: {
@@ -236,17 +237,10 @@
   $('.form-delegat').validate({
     invalidHandler: onFormError,
     rules: {
-      prenume: {
-        required: true
-      },
       nume: {
         required: true
       },
-      email: {
-        email: true,
-        required: true
-      },
-      telefon: {
+      prenume: {
         required: true
       },
       cnp: {
@@ -273,6 +267,14 @@
         required: true
       },
       tara: {
+        required: true
+      },
+      telefon: {
+        digits: true,
+        required: true
+      },
+      email: {
+        email: true,
         required: true
       },
       recaptcha: {

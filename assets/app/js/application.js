@@ -307,17 +307,10 @@ jQuery.fn.vectorMap('addMap', 'diaspora', {"width":89,"height":89,"paths":{"DIAS
       confirmare: {
         required: true
       },
-      prenume: {
-        required: true
-      },
       nume: {
         required: true
       },
-      email: {
-        email: true,
-        required: true
-      },
-      telefon: {
+      prenume: {
         required: true
       },
       cnp: {
@@ -344,6 +337,14 @@ jQuery.fn.vectorMap('addMap', 'diaspora', {"width":89,"height":89,"paths":{"DIAS
         required: true
       },
       tara: {
+        required: true
+      },
+      telefon: {
+        digits: true,
+        required: true
+      },
+      email: {
+        email: true,
         required: true
       },
       recaptcha: {
@@ -358,17 +359,10 @@ jQuery.fn.vectorMap('addMap', 'diaspora', {"width":89,"height":89,"paths":{"DIAS
   $('.form-delegat').validate({
     invalidHandler: onFormError,
     rules: {
-      prenume: {
-        required: true
-      },
       nume: {
         required: true
       },
-      email: {
-        email: true,
-        required: true
-      },
-      telefon: {
+      prenume: {
         required: true
       },
       cnp: {
@@ -395,6 +389,14 @@ jQuery.fn.vectorMap('addMap', 'diaspora', {"width":89,"height":89,"paths":{"DIAS
         required: true
       },
       tara: {
+        required: true
+      },
+      telefon: {
+        digits: true,
+        required: true
+      },
+      email: {
+        email: true,
         required: true
       },
       recaptcha: {
