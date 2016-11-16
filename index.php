@@ -1491,6 +1491,7 @@ $data = get_data();
         </div>
       </div>
     </div>
+    <script><?php printf('remoteData = %s;', json_encode($data)); ?></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="assets/vendor/jquery/jquery.min.js"><\/script>')</script>
     <script src="assets/vendor/jquery-validation/jquery.validate.js"></script>
