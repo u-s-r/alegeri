@@ -166,7 +166,7 @@ $data = get_data();
                         </div>
                       </div>
                       <div class="form-group required">
-                        <label class="control-label" for="adresa-reprezentant">Domiciliul sau reşedinţa din actul de identitate:</label>
+                        <label class="control-label" for="adresa-reprezentant">Domiciliul din actul de identitate (sau reşedinţa din viza de flotant):</label>
                         <textarea class="form-control" id="adresa-reprezentant" name="adresa" rows="3" placeholder="Str. Carol Davila Nr. 91, Parter, Ap. 1, Sector 5, Bucureşti" required></textarea>
                       </div>
                       <div class="row">
@@ -500,28 +500,28 @@ $data = get_data();
                           </div>
                         </div>
                       </div>
-                      <div class="form-group">
+                      <div style="display:none" class="form-group">
                         <label class="control-label" for="localitate-reprezentant">Localitatea unde doresc să activez, în judeţul din actul de identitate:</label>
                         <input type="text" class="form-control" id="localitate-reprezentant" name="localitate" placeholder="Sunt de acord să activez și în altă localitate din județ" aria-describedby="help-localitate-reprezentant">
                       </div>
-                      <p class="help-block" id="help-localitate-reprezentant">Prin necompletare sunt de acord să activez și în altă localitate din județ.</p>
+                      <p style="display:none" class="help-block" id="help-localitate-reprezentant">Prin necompletare sunt de acord să activez și în altă localitate din județ.</p>
                       <div class="form-group required">
                         <label class="control-label" for="telefon-reprezentant">Număr de telefon:</label>
                         <input type="tel" class="form-control" id="telefon-reprezentant" name="telefon" placeholder="+40 7xx xxx xxx" required>
                       </div>
                       <div class="form-group required">
-                        <label class="control-label" for="email-reprezentant">Email:</label>
+                        <label class="control-label" for="email-reprezentant">E-mail (pentru fiecare înscriere obligatoriu adresă separată):</label>
                         <input type="email" class="form-control" id="email-reprezentant" name="email" placeholder="andrei.popescu@usr.ro" required>
                       </div>
                       <div class="form-group">
                         <label class="control-label" for="observatii-reprezentant">Observații:</label>
-                        <textarea class="form-control" id="observatii-reprezentant" name="observatii" rows="3" placeholder="De exemplu zona din localitate unde doresc repartizare" aria-describedby="help-observatii-reprezentant"></textarea>
+                        <textarea class="form-control" id="observatii-reprezentant" name="observatii" rows="3" placeholder="" aria-describedby="help-observatii-reprezentant"></textarea>
                       </div>
-                      <p class="help-block" id="help-observatii-reprezentant">Dacă dorești să fii distribuit într-o localitate din alt judeţ nu vei putea vota.</p>
+                      <p class="help-block" id="help-observatii-reprezentant"></p>
                       <div class="checkbox">
                         <label class="control-label">
                           <input type="checkbox" name="acord">
-                          Sunt de acord să intru în baza de date a Uniunii Salvați România şi să primesc newslettere ocazional
+                          Sunt de acord să primesc  ocazional newslettere din partea Uniunii Salvați România 
                         </label>
                       </div>
                       <div class="form-group">
@@ -577,7 +577,7 @@ $data = get_data();
                         </div>
                       </div>
                       <div class="form-group required">
-                        <label class="control-label" for="adresa-delegat">Domiciliul sau reşedinţa din actul de identitate:</label>
+                        <label class="control-label" for="adresa-delegat">Domiciliul din actul de identitate (sau reşedinţa din viza de flotant):</label>
                         <textarea class="form-control" id="adresa-delegat" name="adresa" rows="3" placeholder="Str. Carol Davila Nr. 91, Parter, Ap. 1, Sector 5, Bucureşti" required></textarea>
                       </div>
                       <div class="row">
@@ -911,24 +911,24 @@ $data = get_data();
                           </div>
                         </div>
                       </div>
-                      <div class="form-group">
+                      <div style="display:none" class="form-group">
                         <label class="control-label" for="localitate-delegat">Localitatea unde doresc să activez, în judeţul din actul de identitate:</label>
                         <input type="text" class="form-control" id="localitate-delegat" name="localitate" placeholder="Sunt de acord să activez și în altă localitate din județ" aria-describedby="help-localitate-delegat">
                       </div>
-                      <p class="help-block" id="help-localitate-delegat">Prin necompletare sunt de acord să activez și în altă localitate din județ.</p>
+                      <p style="display:none" class="help-block" id="help-localitate-delegat">Prin necompletare sunt de acord să activez și în altă localitate din județ.</p>
                       <div class="form-group required">
                         <label class="control-label" for="telefon-delegat">Număr de telefon:</label>
                         <input type="tel" class="form-control" id="telefon-delegat" name="telefon" placeholder="+40 7xx xxx xxx" required>
                       </div>
                       <div class="form-group required">
-                        <label class="control-label" for="email-delegat">Email:</label>
+                        <label class="control-label" for="email-delegat">E-mail (pentru fiecare înscriere obligatoriu adresă separată):</label>
                         <input type="email" class="form-control" id="email-delegat" name="email" placeholder="andrei.popescu@usr.ro" required>
                       </div>
                       <div class="form-group">
                         <label class="control-label" for="observatii-delegat">Observații:</label>
-                        <textarea class="form-control" id="observatii-delegat" name="observatii" rows="3" placeholder="De exemplu zona din localitate unde doresc repartizare" aria-describedby="help-observatii-delegat"></textarea>
+                        <textarea class="form-control" id="observatii-delegat" name="observatii" rows="3" placeholder="" aria-describedby="help-observatii-delegat"></textarea>
                       </div>
-                      <p class="help-block" id="help-observatii-delegat">Dacă dorești să fii distribuit într-o localitate din alt judeţ nu vei putea vota.</p>
+                      <p class="help-block" id="help-observatii-delegat"></p>
                       <div class="checkbox">
                         <label class="control-label">
                           <input type="checkbox" name="acord">
@@ -966,16 +966,6 @@ $data = get_data();
                 <dl>
                   <dt>Trebuie să fiu membru al Uniunii Salvați România pentru a fi reprezentant sau delegat?</dt>
                   <dd>Nu, acest lucru nu este obligatoriu.</dd>
-                </dl>
-                <dl>
-                  <dt>Trebuie să am reședinta sau domiciliul în județul unde voi observa procesul electoral?</dt>
-                  <dd>
-                    <p>Nu, acest lucru nu este obligatoriu. Dar dacă doriţi să fiţi distribuiţi ca reprezentant sau delegat într-o localitate din alt judeţ, e important de ştiut că <u>nu veţi putea vota</u>. Un cetăţean român cu drept de vot poate vota doar în:</p>
-                    <ul class="list list-bulleted">
-                      <li>localitatea de domiciliu sau de reședință (la secția de vot unde este arondat);</li>
-                      <li>interiorul județului în care are domiciliul sau reședința, pe liste suplimentare, în caz că este plecat din localitatea în care locuiește.</li>
-                    </ul>
-                  </dd>
                 </dl>
                 <dl>
                   <dt>Ce putere are un reprezentant în secţia de vot? Dar un delegat?</dt>
