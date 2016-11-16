@@ -81,7 +81,7 @@ function get_data() {
   $data['sectii']          = $sectii;
   $data['sectiiAcoperite'] = $sectiiAcoperite;
   $data['min']             = $min;
-  $data['max']             = $min === $max ? $max + 1 : $max;
+  $data['max']             = 100;
 
   return $data;
 }

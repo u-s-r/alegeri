@@ -69,6 +69,12 @@
 
           for (var code in USR.data.alegeri) {
             values[code] = USR.data.alegeri[code].reprezentanti + USR.data.alegeri[code].delegati;
+
+            if (values[code] > USR.data.alegeri[code].sectii) {
+              values[code] = 100;
+            } else if (0 !== values[code]) {
+              values[code] = values[code] / USR.data.alegeri[code].sectii * 100;
+            }
           }
 
           return values;
@@ -119,6 +125,12 @@
 
           for (var code in USR.data.diaspora.alegeri) {
             values[code] = USR.data.diaspora.alegeri[code].reprezentanti + USR.data.diaspora.alegeri[code].delegati;
+
+            if (values[code] > USR.data.diaspora.alegeri[code].sectii) {
+              values[code] = 100;
+            } else if (0 !== values[code]) {
+              values[code] = values[code] / USR.data.diaspora.alegeri[code].sectii * 100;
+            }
           }
 
           return values;

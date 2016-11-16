@@ -111,5 +111,5 @@ if ('undefined' === typeof window.USR) {
   };
 
   USR.data.min = 0;
-  USR.data.max = 0;
+  USR.data.max = 100;
 })(USR);

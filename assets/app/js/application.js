@@ -111,7 +111,7 @@ if ('undefined' === typeof window.USR) {
   };
 
   USR.data.min = 0;
-  USR.data.max = 0;
+  USR.data.max = 100;
 })(USR);
 
 /* jscs:disable */
@@ -191,6 +191,12 @@ jQuery.fn.vectorMap('addMap', 'diaspora', {"width":89,"height":89,"paths":{"DIAS
 
           for (var code in USR.data.alegeri) {
             values[code] = USR.data.alegeri[code].reprezentanti + USR.data.alegeri[code].delegati;
+
+            if (values[code] > USR.data.alegeri[code].sectii) {
+              values[code] = 100;
+            } else if (0 !== values[code]) {
+              values[code] = values[code] / USR.data.alegeri[code].sectii * 100;
+            }
           }
 
           return values;
@@ -241,6 +247,12 @@ jQuery.fn.vectorMap('addMap', 'diaspora', {"width":89,"height":89,"paths":{"DIAS
 
           for (var code in USR.data.diaspora.alegeri) {
             values[code] = USR.data.diaspora.alegeri[code].reprezentanti + USR.data.diaspora.alegeri[code].delegati;
+
+            if (values[code] > USR.data.diaspora.alegeri[code].sectii) {
+              values[code] = 100;
+            } else if (0 !== values[code]) {
+              values[code] = values[code] / USR.data.diaspora.alegeri[code].sectii * 100;
+            }
           }
 
           return values;
