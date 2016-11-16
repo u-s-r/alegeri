@@ -544,7 +544,7 @@ mark {
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .jumbotron-primary .panel {
-    margin-top: 20px;
+    margin-top: 10px;
   }
 }
 @media (min-width: 1200px) {
@@ -560,7 +560,6 @@ mark {
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .map-ro {
-    margin-top: 25px;
     padding-right: 90px;
   }
 }
