@@ -562,7 +562,7 @@ $data = get_data();
                         </div>
                       </div>
                       <div class="form-group required">
-                        <label class="control-label" for="adresa-delegat">Domiciliul din actul de identate / Adresa de reşedinţa (din viza de flotant) în cazul în care doresc să fiu reprezentant în secţia de votare la adresa de reşedinţa:</label>
+                        <label class="control-label" for="adresa-delegat">Domiciliul din actul de identate / Adresa de reşedinţa (din viza de flotant) în cazul în care doresc să fiu delegat în secţia de votare la adresa de reşedinţa:</label>
                         <textarea class="form-control" id="adresa-delegat" name="adresa" rows="3" placeholder="Str. Carol Davila Nr. 91, Parter, Ap. 1, Sector 5, Bucureşti" required></textarea>
                       </div>
                       <div class="row">
@@ -942,9 +942,8 @@ $data = get_data();
                   <dd>Principala diferență dintre reprezentant și delegat este aceea că reprezentantul participă la operațiunile biroului electoral al secţiei de votare (având calitatea de membru al biroului), în timp ce delegatul doar asistă la operațiunile biroului electoral al secţiei de votare. Atât reprezentantul, cât și delegatul au dreptul de a sesiza (în scris) președintele biroului secției de votare cu privire la nereguli, iar președintele biroului secției de votare trebuie să soluționeze sesizarea. În plus față de delegați, legea conferă reprezentanților dreptul de a contesta identitatea persoanei care se prezintă la vot.</dd>
                 </dl>
                 <dl>
-                  <dt>Ca reprezentant sau delegat, trebuie să stau într-o secţie de vot anume sau pot să participe la operaţiunile mai multor secţii de votare?</dt>
-                  <dd>Ambii vor putea monitoriza procesul electoral doar în secţia de vot unde au acreditare. Reprezentantul are <em>obligaţia legală</em> să fie în secţia de votare unde a fost desemnat (vezi mai jos întrebarea următoare).<br><br>
-                      Delegatul nu are această obligaţie legală, dar poate asista doar la operaţiunile din secţia de votare pentru care a fost acreditat (în conformitate cu dispoziţiile art. 90 din <a href="http://legislatie.just.ro/Public/DetaliiDocument/170037" target="_blank">Legea nr. 208/2015</a>).
+                  <dt>Reprezentantul poate participa la operaţiunile mai multor secţii de votare? Delegatul poate asista la operaţiunile mai multor secţii de votare?</dt>
+                  <dd>Nu. Reprezentantul poate participa doar la operaţiunile din secţia de votare în care a fost desemnat, iar delegatul poate asista doar la operaţiunile din secţia de votare pentru care a fost acreditat de către biroul electoral de circumscripţie.
                   </dd>
                 </dl>
                 <dl>
