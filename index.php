@@ -944,7 +944,7 @@ $data = get_data();
                 <dl>
                   <dt>Ca reprezentant sau delegat, trebuie să stau într-o secţie de vot anume sau pot să participe la operaţiunile mai multor secţii de votare?</dt>
                   <dd>Ambii vor putea monitoriza procesul electoral doar în secţia de vot unde au acreditare. Reprezentantul are <em>obligaţia legală</em> să fie în secţia de votare unde a fost desemnat (vezi mai jos întrebarea următoare).<br><br>
-                      Delegatul nu are această obligaţie legală, dar poate asista doar la operaţiunile din secţia de votare pentru care a fost acreditat (în conformitate cu dispoziţiile art. 90 alin. (3) din <a href="http://legislatie.just.ro/Public/DetaliiDocument/170037" target="_blank">Legea nr. 208/2015</a>).
+                      Delegatul nu are această obligaţie legală, dar poate asista doar la operaţiunile din secţia de votare pentru care a fost acreditat (în conformitate cu dispoziţiile art. 90 din <a href="http://legislatie.just.ro/Public/DetaliiDocument/170037" target="_blank">Legea nr. 208/2015</a>).
                   </dd>
                 </dl>
                 <dl>
