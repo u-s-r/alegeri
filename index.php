@@ -116,14 +116,14 @@ $data = get_data();
                       <p><strong>Reprezentantul</strong> are <em>obligaţia legală</em> de a participa la activitatea biroului electoral al secţiei de votare din care face parte (în conformitate cu dispoziţiile art. 98 din <a href="http://legislatie.just.ro/Public/DetaliiDocument/170037" target="_blank">Legea nr. 208/2015</a>). Trebuie să fie prezent în secţia de votare atât în:</p>
                       <ul class="list list-bulleted">
                         <li><strong>preziua alegerilor</strong> (10 decembrie 2016) la ora 18:00, cât şi în</li>
-                        <li><strong>ziua alegerilor</strong> (11 decembrie 2016) de la ora 6:00 până la momentul întocmirii proceselor-verbale de constatare a rezultatelor votării şi a dosarelor cu rezultatele votării din secţia respectivă (aprox. ora 1-2 noaptea).</li>
+                        <li><strong>ziua alegerilor</strong> (11 decembrie 2016) de la ora 6:00 până la momentul întocmirii proceselor-verbale de constatare a rezultatelor votării şi a dosarelor cu rezultatele votării din secţia respectivă (aprox. ora 12 noaptea).</li>
                       </ul>
                       <p>Potrivit dispoziţiilor H.G. nr. 637/2016, va primi din partea statului o <strong>indemnizaţie de 65 de lei</strong> pentru fiecare zi de activitate, dar nu mai mult de 3 zile (prin zi de activitate se înţelege munca desfăşurată pe parcursul unei zile calendaristice, indiferent de numărul de ore prestate, dar nu mai puţin de 6 ore pe zi).</p>
                       <p><strong>Termen limită înscriere:</strong> <mark>23 noiembrie</mark></p>
                       <div class="checkbox">
                         <label class="control-label">
                           <input type="checkbox" name="delegat" checked>
-                          Dacă nu sunt atribuit ca reprezentant, sunt de acord să fiu delegat;
+                          Dacă nu voi fi desemnat ca reprezentant, sunt de acord să fiu acreditat ca delegat;
                         </label>
                       </div>
                       <div class="checkbox required">
@@ -166,13 +166,13 @@ $data = get_data();
                         </div>
                       </div>
                       <div class="form-group required">
-                        <label class="control-label" for="adresa-reprezentant">Domiciliul din actul de identitate (sau reşedinţa din viza de flotant):</label>
+                        <label class="control-label" for="adresa-reprezentant">Domiciliul din actul de identate / Adresa de reşedinţa (din viza de flotant) în cazul în care doresc să fiu reprezentant în secţia de votare la adresa de reşedinţa:</label>
                         <textarea class="form-control" id="adresa-reprezentant" name="adresa" rows="3" placeholder="Str. Carol Davila Nr. 91, Parter, Ap. 1, Sector 5, Bucureşti" required></textarea>
                       </div>
                       <div class="row">
                         <div class="col-sm-6">
                           <div class="form-group required">
-                            <label class="control-label" for="regiune-reprezentant">Județul din actul de identitate:</label>
+                            <label class="control-label" for="regiune-reprezentant">Județ:</label>
                             <select class="form-control" id="regiune-reprezentant" name="regiune" required>
                               <option class="hidden" selected disabled>&mdash; Alege regiunea &mdash;</option>
                               <option value="Diaspora">Diaspora</option>
@@ -498,17 +498,17 @@ $data = get_data();
                         <label class="control-label" for="email-reprezentant">E-mail (pentru fiecare înscriere obligatoriu adresă separată):</label>
                         <input type="email" class="form-control" id="email-reprezentant" name="email" placeholder="andrei.popescu@usr.ro" required>
                       </div>
-                      <div class="form-group">
-                        <label class="control-label" for="observatii-reprezentant">Observații:</label>
-                        <textarea class="form-control" id="observatii-reprezentant" name="observatii" rows="3" placeholder="" aria-describedby="help-observatii-reprezentant"></textarea>
-                      </div>
-                      <p class="help-block" id="help-observatii-reprezentant"></p>
                       <div class="checkbox">
                         <label class="control-label">
                           <input type="checkbox" name="acord" checked>
                           Sunt de acord să primesc ocazional newslettere din partea Uniunii Salvați România
                         </label>
                       </div>
+                      <div class="form-group">
+                        <label class="control-label" for="observatii-reprezentant">Observații:</label>
+                        <textarea class="form-control" id="observatii-reprezentant" name="observatii" rows="3" placeholder="" aria-describedby="help-observatii-reprezentant"></textarea>
+                      </div>
+                      <p class="help-block" id="help-observatii-reprezentant"></p>
                       <div class="form-group">
                         <div class="g-recaptcha" data-sitekey="6LcJvQsUAAAAANyRcfLvhPMuS6tp9Z2ngT8TLUlg"></div>
                         <input type="hidden" name="recaptcha">
@@ -524,7 +524,7 @@ $data = get_data();
                   <div role="tabpanel" class="tab-pane fade" id="delegat">
                     <form class="form-delegat" method="post">
                       <input type="hidden" name="tip" value="delegat">
-                      <p>În plus faţă de alegerile locale din acest an, <strong>delegatul</strong> poate asista la <em>toate</em> operaţiunile electorale dintr-o secţie de votare în ziua alegerilor (11 decembrie 2016), începând cu ora 6:00 şi terminând cu momentul întocmirii proceselor-verbale de constatare a rezultatelor votării şi a dosarelor cu rezultatele votării din secţia respectivă (aprox. ora 1-2 noaptea).</p>
+                      <p>În plus faţă de alegerile locale din acest an, <strong>delegatul</strong> poate asista la <em>toate</em> operaţiunile electorale dintr-o secţie de votare în ziua alegerilor (11 decembrie 2016), începând cu ora 6:00 şi terminând cu momentul întocmirii proceselor-verbale de constatare a rezultatelor votării şi a dosarelor cu rezultatele votării din secţia respectivă (aprox. ora 12 noaptea).</p>
                       <p>Aşadar, acesta poate asista inclusiv la operaţiunea de numărare a voturilor din secţia respectivă (operaţiune care începe în ziua alegerilor la ora 21:00, după închiderea localului secţiei de votare).</p>
                       <p>Poate staţiona în spaţiul stabilit în sala de votare de către preşedintele biroului electoral al secţiei de votare şi are dreptul de a sesiza în scris preşedintele biroului electoral în cazul constatării unor neregularităţi. Nu primeşte indemnizaţie din partea statului.</p>
                       <p><strong>Termen limită înscriere:</strong> <mark>2 decembrie</mark></p>
@@ -562,13 +562,13 @@ $data = get_data();
                         </div>
                       </div>
                       <div class="form-group required">
-                        <label class="control-label" for="adresa-delegat">Domiciliul din actul de identitate (sau reşedinţa din viza de flotant):</label>
+                        <label class="control-label" for="adresa-delegat">Domiciliul din actul de identate / Adresa de reşedinţa (din viza de flotant) în cazul în care doresc să fiu reprezentant în secţia de votare la adresa de reşedinţa:</label>
                         <textarea class="form-control" id="adresa-delegat" name="adresa" rows="3" placeholder="Str. Carol Davila Nr. 91, Parter, Ap. 1, Sector 5, Bucureşti" required></textarea>
                       </div>
                       <div class="row">
                         <div class="col-sm-6">
                           <div class="form-group required">
-                            <label class="control-label" for="regiune-delegat">Județul din actul de identitate:</label>
+                            <label class="control-label" for="regiune-delegat">Județ:</label>
                             <select class="form-control" id="regiune-delegat" name="regiune" required>
                               <option class="hidden" selected disabled>&mdash; Alege regiunea &mdash;</option>
                               <option value="Diaspora">Diaspora</option>
@@ -894,17 +894,17 @@ $data = get_data();
                         <label class="control-label" for="email-delegat">E-mail (pentru fiecare înscriere obligatoriu adresă separată):</label>
                         <input type="email" class="form-control" id="email-delegat" name="email" placeholder="andrei.popescu@usr.ro" required>
                       </div>
-                      <div class="form-group">
-                        <label class="control-label" for="observatii-delegat">Observații:</label>
-                        <textarea class="form-control" id="observatii-delegat" name="observatii" rows="3" placeholder="" aria-describedby="help-observatii-delegat"></textarea>
-                      </div>
-                      <p class="help-block" id="help-observatii-delegat"></p>
                       <div class="checkbox">
                         <label class="control-label">
                           <input type="checkbox" name="acord" checked>
                           Sunt de acord să primesc ocazional newslettere din partea Uniunii Salvați România
                         </label>
                       </div>
+                      <div class="form-group">
+                        <label class="control-label" for="observatii-delegat">Observații:</label>
+                        <textarea class="form-control" id="observatii-delegat" name="observatii" rows="3" placeholder="" aria-describedby="help-observatii-delegat"></textarea>
+                      </div>
+                      <p class="help-block" id="help-observatii-delegat"></p>
                       <div class="form-group">
                         <div class="g-recaptcha" data-sitekey="6LcJvQsUAAAAANyRcfLvhPMuS6tp9Z2ngT8TLUlg"></div>
                         <input type="hidden" name="recaptcha">
@@ -939,7 +939,13 @@ $data = get_data();
                 </dl>
                 <dl>
                   <dt>Ce putere are un reprezentant în secţia de vot? Dar un delegat?</dt>
-                  <dd>Atât reprezentantul, cât și delegatul au dreptul de a sesiza (în scris) președintele biroului secției de votare cu privire la nereguli, iar președintele biroului secției de votare trebuie să soluționeze sesizarea. În plus față de delegați, legea conferă reprezentanților (și candidaților) dreptul de a contesta identitatea persoanei care se prezintă la vot. În rest, principala diferență dintre reprezentant și delegat este aceea că reprezentantul participă la operațiunile biroului electoral, în timp ce delegatul asistă la aceste operațiuni.</dd>
+                  <dd>Principala diferență dintre reprezentant și delegat este aceea că reprezentantul participă la operațiunile biroului electoral al secţiei de votare (având calitatea de membru al biroului), în timp ce delegatul doar asistă la operațiunile biroului electoral al secţiei de votare. Atât reprezentantul, cât și delegatul au dreptul de a sesiza (în scris) președintele biroului secției de votare cu privire la nereguli, iar președintele biroului secției de votare trebuie să soluționeze sesizarea. În plus față de delegați, legea conferă reprezentanților dreptul de a contesta identitatea persoanei care se prezintă la vot.</dd>
+                </dl>
+                <dl>
+                  <dt>Ca reprezentant sau delegat, trebuie să stau într-o secţie de vot anume sau pot să participe la operaţiunile mai multor secţii de votare?</dt>
+                  <dd>Ambii vor putea monitoriza procesul electoral doar în secţia de vot unde au acreditare. Reprezentantul are <em>obligaţia legală</em> să fie în secţia de votare unde a fost desemnat (vezi mai jos întrebarea următoare).<br><br>
+                      Delegatul nu are această obligaţie legală, dar poate asista doar la operaţiunile din secţia de votare pentru care a fost acreditat (în conformitate cu dispoziţiile art. 90 alin. (3) din <a href="http://legislatie.just.ro/Public/DetaliiDocument/170037" target="_blank">Legea nr. 208/2015</a>).
+                  </dd>
                 </dl>
                 <dl>
                   <dt>Sunt reprezentant. Dacă nu mai reușesc să ajung în biroul secției de vot pe 11 decembrie?</dt>
