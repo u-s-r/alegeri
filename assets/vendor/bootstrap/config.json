@@ -6,11 +6,11 @@
     "@gray": "lighten(@gray-base, 33.5%)",
     "@gray-light": "lighten(@gray-base, 46.7%)",
     "@gray-lighter": "lighten(@gray-base, 93.5%)",
-    "@brand-primary": "#148bff",
+    "@brand-primary": "#00a1e4",
     "@brand-success": "#20bb33",
     "@brand-info": "#7fc1ff",
     "@brand-warning": "#f0ad4e",
-    "@brand-danger": "#ff374f",
+    "@brand-danger": "#eb0000",
     "@body-bg": "#fff",
     "@text-color": "@gray-dark",
     "@link-color": "@brand-primary",
@@ -404,5 +404,5 @@
     "tab.js",
     "transition.js"
   ],
-  "customizerUrl": "http://getbootstrap.com/customize/?id=dd3028069789776fe26d9af5bb06745b"
+  "customizerUrl": "http://getbootstrap.com/customize/?id=9bf19b280b4708c40f504a26abf1760c"
 }
