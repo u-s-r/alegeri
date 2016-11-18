@@ -129,7 +129,7 @@ $data = get_data();
                       <div class="checkbox required">
                         <label class="control-label">
                           <input type="checkbox" name="confirmare" required>
-                          Confirm pe propria răspundere că sunt cetăţean român cu drept de vot şi nu sunt candidat în alegeri, soţ/soţie, rudă sau afin până la gradul al doilea inclusiv cu vreunul dintre candidaţii în alegeri (<a href="#candidati" data-toggle="modal" role="button">vezi toți candidații Uniunii Salvați România</a>)
+                          Confirm pe propria răspundere că sunt cetăţean român cu drept de vot şi nu sunt candidat în alegeri, soţ/soţie, rudă sau afin până la gradul al doilea inclusiv cu vreunul dintre <a href="http://parlamentare2016.bec.ro/wp-content/uploads/2016/11/candidati.xlsx" target="_blank">candidaţii în alegeri.</a>
                         </label>
                       </div>
                       <p>Completează următoarele date întocmai ca în actul de identitate:</p>
