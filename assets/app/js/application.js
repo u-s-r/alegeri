@@ -185,7 +185,7 @@ jQuery.fn.vectorMap('addMap', 'diaspora', {"width":89,"height":89,"paths":{"DIAS
         max: USR.data.max,
         min: USR.data.min,
         normalizeFunction: 'polynomial',
-        scale: ['#7fc1ff', '#ffffff'],
+        scale: ['#99d9f4', '#ffffff'],
         values: (function () {
           var values = [];
 
@@ -241,7 +241,7 @@ jQuery.fn.vectorMap('addMap', 'diaspora', {"width":89,"height":89,"paths":{"DIAS
         max: USR.data.max,
         min: USR.data.min,
         normalizeFunction: 'polynomial',
-        scale: ['#7fc1ff', '#ffffff'],
+        scale: ['#99d9f4', '#ffffff'],
         values: (function () {
           var values = [];
 

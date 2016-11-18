@@ -63,7 +63,7 @@
         max: USR.data.max,
         min: USR.data.min,
         normalizeFunction: 'polynomial',
-        scale: ['#7fc1ff', '#ffffff'],
+        scale: ['#99d9f4', '#ffffff'],
         values: (function () {
           var values = [];
 
@@ -119,7 +119,7 @@
         max: USR.data.max,
         min: USR.data.min,
         normalizeFunction: 'polynomial',
-        scale: ['#7fc1ff', '#ffffff'],
+        scale: ['#99d9f4', '#ffffff'],
         values: (function () {
           var values = [];
 

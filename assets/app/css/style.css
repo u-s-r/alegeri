@@ -51,12 +51,12 @@
   top: 0;
 }
 .list-bulleted li:before {
-  color: #ff374f;
+  color: #eb0000;
   content: "\25cf";
 }
 /* Labels */
 .label {
-  color: #148bff;
+  color: #00a1e4;
   font-size: 75%;
   font-weight: bold;
   text-transform: uppercase;
@@ -77,16 +77,16 @@
   }
 }
 .statistic-primary .value {
-  color: #ff374f;
+  color: #eb0000;
 }
 .statistic-secondary .value {
-  color: #7fc1ff;
+  color: #80d0f2;
 }
 .statistic-separator {
   vertical-align: top;
 }
 .statistic-separator .value {
-  color: #d4f0fd;
+  color: #ccecfa;
   font-weight: 200;
 }
 /* Tags */
@@ -101,7 +101,7 @@
 }
 /* Forms */
 .required label:after {
-  color: #ff374f;
+  color: #eb0000;
   content: "*";
   font-weight: normal;
   margin-left: 2px;
@@ -113,7 +113,7 @@ em {
   text-decoration: underline;
 }
 mark {
-  background-color: #d4f0fd;
+  background-color: #ccecfa;
 }
 .btn {
   border-radius: 20px;
@@ -129,12 +129,12 @@ mark {
   top: 2px;
 }
 .btn-default {
-  background-color: #ff374f;
+  background-color: #eb0000;
   color: #fff;
 }
 .btn-inverted {
   background-color: #fff;
-  color: #ff374f;
+  color: #eb0000;
 }
 .jumbotron {
   padding-bottom: 30px;
@@ -144,7 +144,7 @@ mark {
   font-weight: inherit;
 }
 .jumbotron-primary {
-  background-color: #148bff;
+  background-color: #00a1e4;
   background-image: url("../img/overlay-jumbotron.jpg");
   background-position: center center;
   background-repeat: no-repeat;
@@ -166,7 +166,7 @@ mark {
   text-align: center;
 }
 .panel-primary {
-  background-color: #148bff;
+  background-color: #00a1e4;
   background-image: url("../img/overlay-panel.jpg");
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -304,7 +304,7 @@ mark {
   max-width: 90px;
 }
 .media-list .media-heading {
-  color: #148bff;
+  color: #00a1e4;
   margin-bottom: 10px;
 }
 .media-list .media-left {
@@ -484,9 +484,9 @@ mark {
 }
 .irs-min,
 .irs-max {
-  background: #d4f0fd;
+  background: #ccecfa;
   border-radius: 4px;
-  color: #148bff;
+  color: #00a1e4;
   font-size: 10px;
   line-height: 1.333;
   padding: 1px 3px;
@@ -496,7 +496,7 @@ mark {
 .irs-from,
 .irs-to,
 .irs-single {
-  background: #148bff;
+  background: #00a1e4;
   border-radius: 4px;
   color: #fff;
   font-size: 10px;
@@ -509,7 +509,7 @@ mark {
 .irs-from:after,
 .irs-to:after,
 .irs-single:after {
-  border-top-color: #148bff;
+  border-top-color: #00a1e4;
   border: 3px solid transparent;
   bottom: -6px;
   content: " ";
@@ -522,10 +522,10 @@ mark {
   width: 0;
 }
 .irs-grid-pol {
-  background: #d4f0fd;
+  background: #ccecfa;
 }
 .irs-grid-text {
-  color: #148bff;
+  color: #00a1e4;
 }
 .jvectormap-tip {
   max-width: 42em;
@@ -669,7 +669,7 @@ textarea.form-control {
   width: 50%;
 }
 .nav-pills > li > a {
-  border: 1px solid #148bff;
+  border: 1px solid #00a1e4;
 }
 .nav-pills > li + li {
   margin-left: 0;
