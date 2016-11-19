@@ -32,7 +32,7 @@ $data = get_data();
       <div class="container">
         <div class="media media-brand">
           <div class="media-left">
-            <a href="https://usr.ro/alegeri/">
+            <a href="https://usr.ro/">
               <img class="media-object" src="assets/app/img/logo.png" alt="USR">
             </a>
           </div>
@@ -40,7 +40,7 @@ $data = get_data();
             <h1>Asigură corectitudinea procesului electoral din ziua votului!</h1>
           </div>
           <div class="media-right">
-            <a class="btn btn-inverted" href="https://www.nicusordan.ro/doneaza/" target="_blank" onclick="ga('send', 'event', 'pagina_alegeri', 'buton', 'doneaza')">Donează</a>
+            <a class="btn btn-inverted" href="https://usr.ro/doneaza/" target="_blank" onclick="ga('send', 'event', 'pagina_alegeri', 'buton', 'doneaza')">Donează</a>
           </div>
         </div>
         <div class="row">
@@ -66,7 +66,7 @@ $data = get_data();
                 <p>În ziua alegerilor, este important să ne asigurăm că procesul electoral va fi unul corect în <strong>secțiile de votare</strong>. Dacă noi îi putem observa, ei nu ne mai pot frauda!</p>
               </div>
               <div class="panel-footer">
-                <a class="btn btn-default" href="#inscriere" data-trigger="scroll" onclick="ga('send', 'event', 'pagina_alegeri', 'buton', 'scroll_formular')">
+                <a class="btn btn-default" href="#inscriere" data-trigger="scroll" onclick="ga('send', 'event', 'pagina_reprezentanti', 'buton', 'buton_inscriere')">
                   <span class="glyphicon glyphicon-menu-right"></span>
                   Înscrie-te ca reprezentant/delegat
                 </a>
@@ -151,19 +151,9 @@ $data = get_data();
                         <label class="control-label" for="cnp-reprezentant">CNP:</label>
                         <input type="text" class="form-control" id="cnp-reprezentant" name="cnp" placeholder="SAALLZZJJNNNC" required>
                       </div>
-                      <div class="row">
-                        <div class="col-sm-4">
-                          <div class="form-group required">
-                            <label class="control-label" for="serie-reprezentant">Serie act identitate:</label>
-                            <input type="text" class="form-control" id="serie-reprezentant" name="serie" placeholder="XY" required>
-                          </div>
-                        </div>
-                        <div class="col-sm-8">
-                          <div class="form-group required">
-                            <label class="control-label" for="numar-reprezentant">Număr act identitate:</label>
-                            <input type="text" class="form-control" id="numar-reprezentant" name="numar" placeholder="123456" required>
-                          </div>
-                        </div>
+                      <div class="form-group required">
+                        <label class="control-label" for="numar-reprezentant">Serie şi număr act identitate (pentru carte de identitate) sau număr Paşaport:</label>
+                        <input type="text" class="form-control" id="numar-reprezentant" name="numar" placeholder="XY123456 sau 123456789" required>
                       </div>
                       <div class="form-group required">
                         <label class="control-label" for="adresa-reprezentant">Domiciliul din actul de identate / Adresa de reşedinţa (din viza de flotant) în cazul în care doresc să fiu reprezentant în secţia de votare la adresa de reşedinţa:</label>
@@ -485,11 +475,6 @@ $data = get_data();
                           </div>
                         </div>
                       </div>
-                      <div class="form-group hidden">
-                        <label class="control-label" for="localitate-reprezentant">Localitatea unde doresc să activez, în judeţul din actul de identitate:</label>
-                        <input type="text" class="form-control" id="localitate-reprezentant" name="localitate" placeholder="Sunt de acord să activez și în altă localitate din județ" aria-describedby="help-localitate-reprezentant">
-                      </div>
-                      <p class="help-block hidden" id="help-localitate-reprezentant">Prin necompletare sunt de acord să activez și în altă localitate din județ.</p>
                       <div class="form-group required">
                         <label class="control-label" for="telefon-reprezentant">Număr de telefon:</label>
                         <input type="tel" class="form-control" id="telefon-reprezentant" name="telefon" placeholder="0712345678" required>
@@ -547,19 +532,9 @@ $data = get_data();
                         <label class="control-label" for="cnp-delegat">CNP:</label>
                         <input type="text" class="form-control" id="cnp-delegat" name="cnp" placeholder="SAALLZZJJNNNC" required>
                       </div>
-                      <div class="row">
-                        <div class="col-sm-4">
-                          <div class="form-group required">
-                            <label class="control-label" for="serie-delegat">Serie act identitate:</label>
-                            <input type="text" class="form-control" id="serie-delegat" name="serie" placeholder="XY" required>
-                          </div>
-                        </div>
-                        <div class="col-sm-8">
-                          <div class="form-group required">
-                            <label class="control-label" for="numar-delegat">Număr act identitate:</label>
-                            <input type="text" class="form-control" id="numar-delegat" name="numar" placeholder="123456" required>
-                          </div>
-                        </div>
+                      <div class="form-group required">
+                        <label class="control-label" for="numar-delegat">Serie şi număr act identitate (pentru carte de identitate) sau număr Paşaport:</label>
+                        <input type="text" class="form-control" id="numar-delegat" name="numar" placeholder="XY123456 sau 123456789" required>
                       </div>
                       <div class="form-group required">
                         <label class="control-label" for="adresa-delegat">Domiciliul din actul de identate / Adresa de reşedinţa (din viza de flotant) în cazul în care doresc să fiu delegat în secţia de votare la adresa de reşedinţa:</label>
@@ -881,11 +856,6 @@ $data = get_data();
                           </div>
                         </div>
                       </div>
-                      <div class="form-group hidden">
-                        <label class="control-label" for="localitate-delegat">Localitatea unde doresc să activez, în judeţul din actul de identitate:</label>
-                        <input type="text" class="form-control" id="localitate-delegat" name="localitate" placeholder="Sunt de acord să activez și în altă localitate din județ" aria-describedby="help-localitate-delegat">
-                      </div>
-                      <p class="help-block hidden" id="help-localitate-delegat">Prin necompletare sunt de acord să activez și în altă localitate din județ.</p>
                       <div class="form-group required">
                         <label class="control-label" for="telefon-delegat">Număr de telefon:</label>
                         <input type="tel" class="form-control" id="telefon-delegat" name="telefon" placeholder="0712345678" required>
@@ -973,7 +943,7 @@ $data = get_data();
                   <p>Ajută-ne să intrăm în Parlament, acolo unde se decid lucrurile cele mai importante pentru țară, pentru a te reprezenta oameni cu adevărat interesați de a schimba în bine România. Mulțumim!</p>
                 </div>
                 <div class="media-right media-middle">
-                  <a class="btn btn-default" href="https://www.nicusordan.ro/doneaza/" target="_blank" onclick="ga('send', 'event', 'pagina_alegeri', 'buton', 'doneaza')">
+                  <a class="btn btn-default" href="https://usr.ro/doneaza/" target="_blank" onclick="ga('send', 'event', 'pagina_alegeri', 'buton', 'doneaza')">
                     <span class="glyphicon glyphicon-menu-right"></span>
                     Donează acum
                   </a>

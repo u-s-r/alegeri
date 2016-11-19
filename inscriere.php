@@ -9,7 +9,6 @@ $required_fields = array(
   'nume',
   'prenume',
   'cnp',
-  'serie',
   'numar',
   'adresa',
   'regiune',
@@ -29,12 +28,6 @@ $tip = 'delegat' === $_POST['tip'] ? 'Delegat' : 'Reprezentant';
 
 if ('Reprezentant' === $tip && !isset($_POST['confirmare'])) {
   exit('false');
-}
-
-$localitate = trim($_POST['localitate']);
-
-if (empty($localitate)) {
-  $localitate = 'Sunt de acord să activez și în altă localitate din județ';
 }
 
 if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
@@ -86,7 +79,6 @@ $data = array(
   'entry.6'   => $_POST['telefon'],
   'entry.7'   => $_POST['email'],
   'entry.8'   => $_POST['regiune'],
-  'entry.9'   => $localitate,
   'entry.10'  => $_POST['tara'],
   'entry.22'  => $acord,
   'entry.27'  => 'FormularAlegeri',
@@ -94,7 +86,6 @@ $data = array(
   'entry.29'  => $tip,
   'entry.30'  => isset($_POST['delegat']) ? 'Da' : 'Nu',
   'entry.31'  => $_POST['cnp'],
-  'entry.32'  => $_POST['serie'],
   'entry.33'  => $_POST['numar'],
   'entry.34'  => $_POST['adresa'],
   'sheetName' => 'Sheet1'
@@ -123,12 +114,10 @@ $data = array(
   'nume'       => $_POST['nume'],
   'prenume'    => $_POST['prenume'],
   'cnp'        => $_POST['cnp'],
-  'serie'      => $_POST['serie'],
   'numar'      => $_POST['numar'],
   'adresa'     => $_POST['adresa'],
   'regiune'    => $_POST['regiune'],
   'tara'       => $_POST['tara'],
-  'localitate' => $localitate,
   'telefon'    => $_POST['telefon'],
   'email'      => $_POST['email'],
   'acord' => $acord

@@ -329,15 +329,7 @@ jQuery.fn.vectorMap('addMap', 'diaspora', {"width":89,"height":89,"paths":{"DIAS
         minlength: 13,
         required: true
       },
-      serie: {
-        maxlength: 2,
-        minlength: 2,
-        required: true
-      },
       numar: {
-        digits: true,
-        maxlength: 6,
-        minlength: 6,
         required: true
       },
       adresa: {
@@ -381,15 +373,7 @@ jQuery.fn.vectorMap('addMap', 'diaspora', {"width":89,"height":89,"paths":{"DIAS
         minlength: 13,
         required: true
       },
-      serie: {
-        maxlength: 2,
-        minlength: 2,
-        required: true
-      },
       numar: {
-        digits: true,
-        maxlength: 6,
-        minlength: 6,
         required: true
       },
       adresa: {
