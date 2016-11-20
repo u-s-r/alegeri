@@ -66,7 +66,7 @@ $data = get_data();
                 <p>În ziua alegerilor, este important să ne asigurăm că procesul electoral va fi unul corect în <strong>secțiile de votare</strong>. Dacă noi îi putem observa, ei nu ne mai pot frauda!</p>
               </div>
               <div class="panel-footer">
-                <a class="btn btn-default" href="#inscriere" data-trigger="scroll" onclick="ga('send', 'event', 'pagina_reprezentanti', 'buton', 'buton_inscriere')">
+                <a class="btn btn-default" href="#inscriere" data-trigger="scroll" onclick="ga('send', 'event', 'pagina_alegeri', 'buton', 'scroll_formular')">
                   <span class="glyphicon glyphicon-menu-right"></span>
                   Înscrie-te ca reprezentant/delegat
                 </a>
