@@ -395,14 +395,11 @@
     "media.less",
     "panels.less",
     "responsive-embed.less",
-    "close.less",
-    "component-animations.less",
-    "modals.less"
+    "component-animations.less"
   ],
   "js": [
-    "modal.js",
     "tab.js",
     "transition.js"
   ],
-  "customizerUrl": "http://getbootstrap.com/customize/?id=9bf19b280b4708c40f504a26abf1760c"
+  "customizerUrl": "http://getbootstrap.com/customize/?id=577809f78865224b4936007b94130dc8"
 }
