@@ -501,9 +501,8 @@ $data = get_data();
                       </div>
                       <div class="form-group">
                         <label class="control-label" for="observatii-reprezentant">Observații:</label>
-                        <textarea class="form-control" id="observatii-reprezentant" name="observatii" rows="3" placeholder="" aria-describedby="help-observatii-reprezentant"></textarea>
+                        <textarea class="form-control" id="observatii-reprezentant" name="observatii" rows="3" aria-describedby="help-observatii-reprezentant"></textarea>
                       </div>
-                      <p class="help-block" id="help-observatii-reprezentant"></p>
                       <div class="form-group">
                         <div class="g-recaptcha" data-sitekey="6LcJvQsUAAAAANyRcfLvhPMuS6tp9Z2ngT8TLUlg"></div>
                         <input type="hidden" name="recaptcha">
@@ -892,9 +891,8 @@ $data = get_data();
                       </div>
                       <div class="form-group">
                         <label class="control-label" for="observatii-delegat">Observații:</label>
-                        <textarea class="form-control" id="observatii-delegat" name="observatii" rows="3" placeholder="" aria-describedby="help-observatii-delegat"></textarea>
+                        <textarea class="form-control" id="observatii-delegat" name="observatii" rows="3" aria-describedby="help-observatii-delegat"></textarea>
                       </div>
-                      <p class="help-block" id="help-observatii-delegat"></p>
                       <div class="form-group">
                         <div class="g-recaptcha" data-sitekey="6LcJvQsUAAAAANyRcfLvhPMuS6tp9Z2ngT8TLUlg"></div>
                         <input type="hidden" name="recaptcha">
