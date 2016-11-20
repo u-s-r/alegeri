@@ -1,7 +1,7 @@
 {
   "name": "usr",
   "version": "1.0.0",
-  "description": "Înscrie-te ca să asigurăm corectitudinea procesului electoral din ziua votului!",
+  "description": "Asigură corectitudinea procesului electoral din ziua votului!",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/u-s-r/alegeri/issues"
   },
-  "homepage": "https://alegeri.usr.ro/",
+  "homepage": "https://usr.ro/alegeri/",
   "dependencies": {
     "ion-rangeslider": "^2.1.4",
     "jquery": "^1.12.4",
