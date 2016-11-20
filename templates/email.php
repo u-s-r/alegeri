@@ -120,7 +120,8 @@
                         <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;"><b>Nume de familie:</b><br><?php echo $this->e($nume); ?></p>
                         <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;"><b>Prenume:</b><br><?php echo $this->e($prenume); ?></p>
                         <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;"><b>CNP:</b><br><?php echo $this->e($cnp); ?></p>
-                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;"><b>Serie şi număr act identitate (pentru carte de identitate) sau număr Paşaport:</b><br><?php echo $this->e($numar); ?></p>
+                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;"><b>Serie act identitate:</b><br><?php echo $this->e($serie); ?></p>
+                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;"><b>Număr act identitate:</b><br><?php echo $this->e($numar); ?></p>
                         <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;"><b>Domiciliul sau reşedinţa din actul de identitate:</b><br><?php echo $this->e($adresa); ?></p>
                         <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;"><b>Județul din actul de identitate:</b><br><?php echo $this->e($regiune); ?></p>
                         <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;"><b>Țara:</b><br><?php echo $this->e($tara); ?></p>

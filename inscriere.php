@@ -9,6 +9,7 @@ $required_fields = array(
   'nume',
   'prenume',
   'cnp',
+  'serie',
   'numar',
   'adresa',
   'regiune',
@@ -86,6 +87,7 @@ $data = array(
   'entry.29'  => $tip,
   'entry.30'  => isset($_POST['delegat']) ? 'Da' : 'Nu',
   'entry.31'  => $_POST['cnp'],
+  'entry.32'  => $_POST['serie'],
   'entry.33'  => $_POST['numar'],
   'entry.34'  => $_POST['adresa'],
   'sheetName' => 'Sheet1'
@@ -114,6 +116,7 @@ $data = array(
   'nume'       => $_POST['nume'],
   'prenume'    => $_POST['prenume'],
   'cnp'        => $_POST['cnp'],
+  'serie'      => $_POST['serie'],
   'numar'      => $_POST['numar'],
   'adresa'     => $_POST['adresa'],
   'regiune'    => $_POST['regiune'],

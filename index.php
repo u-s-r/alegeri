@@ -151,9 +151,19 @@ $data = get_data();
                         <label class="control-label" for="cnp-reprezentant">CNP:</label>
                         <input type="text" class="form-control" id="cnp-reprezentant" name="cnp" placeholder="SAALLZZJJNNNC" required>
                       </div>
-                      <div class="form-group required">
-                        <label class="control-label" for="numar-reprezentant">Serie şi număr act identitate (pentru carte de identitate) sau număr Paşaport:</label>
-                        <input type="text" class="form-control" id="numar-reprezentant" name="numar" placeholder="XY123456 sau 123456789" required>
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <div class="form-group required">
+                            <label class="control-label" for="serie-reprezentant">Serie act identitate:</label>
+                            <input type="text" class="form-control" id="serie-reprezentant" name="serie" placeholder="XY" required>
+                          </div>
+                        </div>
+                        <div class="col-sm-8">
+                          <div class="form-group required">
+                            <label class="control-label" for="numar-reprezentant">Număr act identitate:</label>
+                            <input type="text" class="form-control" id="numar-reprezentant" name="numar" placeholder="123456" required>
+                          </div>
+                        </div>
                       </div>
                       <div class="form-group required">
                         <label class="control-label" for="adresa-reprezentant">Domiciliul din actul de identate / Adresa de reşedinţa (din viza de flotant) în cazul în care doresc să fiu reprezentant în secţia de votare la adresa de reşedinţa:</label>
@@ -532,9 +542,19 @@ $data = get_data();
                         <label class="control-label" for="cnp-delegat">CNP:</label>
                         <input type="text" class="form-control" id="cnp-delegat" name="cnp" placeholder="SAALLZZJJNNNC" required>
                       </div>
-                      <div class="form-group required">
-                        <label class="control-label" for="numar-delegat">Serie şi număr act identitate (pentru carte de identitate) sau număr Paşaport:</label>
-                        <input type="text" class="form-control" id="numar-delegat" name="numar" placeholder="XY123456 sau 123456789" required>
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <div class="form-group required">
+                            <label class="control-label" for="serie-delegat">Serie act identitate:</label>
+                            <input type="text" class="form-control" id="serie-delegat" name="serie" placeholder="XY" required>
+                          </div>
+                        </div>
+                        <div class="col-sm-8">
+                          <div class="form-group required">
+                            <label class="control-label" for="numar-delegat">Număr act identitate:</label>
+                            <input type="text" class="form-control" id="numar-delegat" name="numar" placeholder="123456" required>
+                          </div>
+                        </div>
                       </div>
                       <div class="form-group required">
                         <label class="control-label" for="adresa-delegat">Domiciliul din actul de identate / Adresa de reşedinţa (din viza de flotant) în cazul în care doresc să fiu delegat în secţia de votare la adresa de reşedinţa:</label>
