@@ -491,7 +491,7 @@ $data = get_data();
                         <input type="tel" class="form-control" id="telefon-reprezentant" name="telefon" placeholder="0712345678" required>
                       </div>
                       <div class="form-group required">
-                        <label class="control-label" for="email-reprezentant">E-mail (pentru fiecare înscriere obligatoriu adresă separată):</label>
+                        <label class="control-label" for="email-reprezentant">E-mail (pentru fiecare înscriere a unui reprezentant sau delegat introduceţi <em>obligatoriu</em> o adresă de e-mail unică pentru aceea persoană):</label>
                         <input type="email" class="form-control" id="email-reprezentant" name="email" placeholder="andrei.popescu@usr.ro" required>
                       </div>
                       <div class="checkbox">
@@ -881,7 +881,7 @@ $data = get_data();
                         <input type="tel" class="form-control" id="telefon-delegat" name="telefon" placeholder="0712345678" required>
                       </div>
                       <div class="form-group required">
-                        <label class="control-label" for="email-delegat">E-mail (pentru fiecare înscriere obligatoriu adresă separată):</label>
+                        <label class="control-label" for="email-delegat">E-mail (pentru fiecare înscriere a unui reprezentant sau delegat introduceţi <em>obligatoriu</em> o adresă de e-mail unică pentru aceea persoană):</label>
                         <input type="email" class="form-control" id="email-delegat" name="email" placeholder="andrei.popescu@usr.ro" required>
                       </div>
                       <div class="checkbox">
