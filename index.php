@@ -63,7 +63,7 @@ $data = get_data();
             <div class="panel panel-default">
               <div class="panel-body">
                 <p>Înscrie-te ca reprezentant sau delegat al Uniunii Salvaţi România în secţiile de votare! Dacă noi îi putem observa, ei nu ne mai pot frauda! Termene limită de înscriere:</p>
-                <p>REPREZENTANT: <strong>23 NOIEMBRIE</strong></p>
+                <p>REPREZENTANT: <strong>24 NOIEMBRIE</strong></p>
                 <p>DELEGAT: <strong>2 DECEMBRIE</strong></p>
               </div>
               <div class="panel-footer">
