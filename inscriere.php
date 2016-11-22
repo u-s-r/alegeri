@@ -29,7 +29,6 @@ $tip        = 'delegat' === $_POST['tip'] ? 'Delegat' : 'Reprezentant';
 $nume       = mb_convert_case($_POST['nume'], MB_CASE_TITLE, 'UTF-8');
 $prenume    = mb_convert_case($_POST['prenume'], MB_CASE_TITLE, 'UTF-8');
 $serie      = strtoupper($_POST['serie']);
-$numar      = ' ' . $_POST['numar'];
 $observatii = trim($_POST['observatii']);
 $acord      = isset($_POST['acord']) ? 'Sunt de acord să intru în baza de date USR' : 'Nu sunt de acord să intru în baza de date USR';
 
@@ -79,7 +78,7 @@ $data = array(
   'entry.1'   => $_SERVER['REMOTE_ADDR'],
   'entry.3'   => $prenume,
   'entry.4'   => $nume,
-  'entry.6'   => $_POST['telefon'],
+  'entry.6'   => '\'' . $_POST['telefon'],
   'entry.7'   => $_POST['email'],
   'entry.8'   => $_POST['regiune'],
   'entry.10'  => $_POST['tara'],
@@ -90,7 +89,7 @@ $data = array(
   'entry.30'  => isset($_POST['delegat']) ? 'Da' : 'Nu',
   'entry.31'  => $_POST['cnp'],
   'entry.32'  => $serie,
-  'entry.33'  => $numar,
+  'entry.33'  => '\'' . $_POST['numar'],
   'entry.34'  => $_POST['adresa'],
   'sheetName' => 'Sheet1'
 );
@@ -119,7 +118,7 @@ $data = array(
   'prenume' => $prenume,
   'cnp'     => $_POST['cnp'],
   'serie'   => $serie,
-  'numar'   => $numar,
+  'numar'   => $_POST['numar'],
   'adresa'  => $_POST['adresa'],
   'regiune' => $_POST['regiune'],
   'tara'    => $_POST['tara'],
