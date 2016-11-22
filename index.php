@@ -62,8 +62,9 @@ $data = get_data();
           <div class="col-md-5">
             <div class="panel panel-default">
               <div class="panel-body">
-                <p>Cu ajutorul tău am strans 350.781 de semnături! Am selectat candidați onești și competenți, iar pe 11 decembrie vom fi pe buletinele de vot în toate județele din România.</p>
-                <p>În ziua alegerilor, este important să ne asigurăm că procesul electoral va fi unul corect în <strong>secțiile de votare</strong>. Dacă noi îi putem observa, ei nu ne mai pot frauda!</p>
+                <p>Înscrie-te ca reprezentant sau delegat al Uniunii Salvaţi România în secţiile de votare! Dacă noi îi putem observa, ei nu ne mai pot frauda! Termene limită de înscriere:</p>
+                <p>REPREZENTANT: <strong>23 NOIEMBRIE</strong></p>
+                <p>DELEGAT: <strong>2 DECEMBRIE</strong></p>
               </div>
               <div class="panel-footer">
                 <a class="btn btn-default" href="#inscriere" data-trigger="scroll" onclick="ga('send', 'event', 'pagina_alegeri', 'buton', 'scroll_formular')">
@@ -941,7 +942,7 @@ $data = get_data();
                 <dl>
                   <dt>De unde şi când îmi iau indemnizaţia după ziua votului?</dt>
                   <dd>
-                    <p>Reprezentanţii vor afla, de la preşedintele biroului electoral al secţiei de votare, locul şi data la care îşi vor primi indemnizaţia. <a href="http://legeaz.net/monitorul-oficial-691-2016/hg-637-2016-cheltuieli-pregatire-organizare-alegeri-senat-cdep-2016" target="_blank">H.G. nr. 637/2016</a> prevede că plata indemnizaţiilor şi drepturilor cuvenite membrilor birourilor electorale ale secţiilor de votare se face de către instituţiile prefectului sau Ministerul Afacerilor Externe, după caz.</p>
+                    <p>Reprezentantul va afla, de la preşedintele biroului electoral al secţiei de votare, detalii privind locul şi data la care îşi va primi indemnizaţia. <a href="http://legeaz.net/monitorul-oficial-691-2016/hg-637-2016-cheltuieli-pregatire-organizare-alegeri-senat-cdep-2016" target="_blank">H.G. nr. 637/2016</a> prevede că plata indemnizaţiilor şi drepturilor cuvenite membrilor birourilor electorale ale secţiilor de votare se face de către instituţiile prefectului sau Ministerul Afacerilor Externe, după caz.</p>
                     <p> Membrii birourilor electorale ale secţiilor de votare primesc din partea statului câte o indemnizaţie de 65 de lei pentru fiecare zi de activitate, dar nu mai mult de 3 zile (prin zi de activitate se înţelege munca desfăşurată pe parcursul unei zile calendaristice, indiferent de numărul de ore prestate, dar nu mai puţin de 6 ore pe zi). Membrii birourilor electorale ale secţiilor de votare din străinătate primesc în plus 150 de lei pentru fiecare zi de activitate, tot din partea statului. </p>
                   </dd>
                 </dl>
