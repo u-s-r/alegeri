@@ -120,7 +120,7 @@ $data = get_data();
                         <li><strong>ziua alegerilor</strong> (11 decembrie 2016) de la ora 6:00 până la momentul întocmirii proceselor-verbale de constatare a rezultatelor votării şi a dosarelor cu rezultatele votării din secţia respectivă (aprox. ora 12 noaptea).</li>
                       </ul>
                       <p>Potrivit dispoziţiilor <a href="http://legeaz.net/monitorul-oficial-691-2016/hg-637-2016-cheltuieli-pregatire-organizare-alegeri-senat-cdep-2016" target="_blank">H.G. nr. 637/2016</a>, va primi din partea statului o <strong>indemnizaţie de 65 de lei</strong> pentru fiecare zi de activitate, dar nu mai mult de 3 zile (prin zi de activitate se înţelege munca desfăşurată pe parcursul unei zile calendaristice, indiferent de numărul de ore prestate, dar nu mai puţin de 6 ore pe zi). Reprezentantul din secţia de votare din străinătate va primi în plus 150 de lei pentru fiecare zi de activitate, tot din partea statului.</p>
-                      <p><strong>Termen limită înscriere:</strong> <mark>23 noiembrie</mark></p>
+                      <p><strong>Termen limită înscriere:</strong> <mark>24 noiembrie</mark></p>
                       <div class="checkbox">
                         <label class="control-label">
                           <input type="checkbox" name="delegat" checked>
