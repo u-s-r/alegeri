@@ -25,7 +25,13 @@ foreach ($required_fields as $key) {
   }
 }
 
-$tip = 'delegat' === $_POST['tip'] ? 'Delegat' : 'Reprezentant';
+$tip        = 'delegat' === $_POST['tip'] ? 'Delegat' : 'Reprezentant';
+$nume       = mb_convert_case($_POST['nume'], MB_CASE_TITLE, 'UTF-8');
+$prenume    = mb_convert_case($_POST['prenume'], MB_CASE_TITLE, 'UTF-8');
+$serie      = strtoupper($_POST['serie']);
+$numar      = ' ' . $_POST['numar'];
+$observatii = trim($_POST['observatii']);
+$acord      = isset($_POST['acord']) ? 'Sunt de acord să intru în baza de date USR' : 'Nu sunt de acord să intru în baza de date USR';
 
 if ('Reprezentant' === $tip && !isset($_POST['confirmare'])) {
   exit('false');
@@ -34,10 +40,6 @@ if ('Reprezentant' === $tip && !isset($_POST['confirmare'])) {
 if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
   exit('false');
 }
-
-$observatii = trim($_POST['observatii']);
-
-$acord = isset($_POST['acord']) ? 'Sunt de acord să intru în baza de date USR' : 'Nu sunt de acord să intru în baza de date USR';
 
 function post($url, $data = array()) {
   $ch = curl_init();
@@ -75,8 +77,8 @@ if (true !== $response->success) {
 
 $data = array(
   'entry.1'   => $_SERVER['REMOTE_ADDR'],
-  'entry.3'   => $_POST['prenume'],
-  'entry.4'   => $_POST['nume'],
+  'entry.3'   => $prenume,
+  'entry.4'   => $nume,
   'entry.6'   => $_POST['telefon'],
   'entry.7'   => $_POST['email'],
   'entry.8'   => $_POST['regiune'],
@@ -87,8 +89,8 @@ $data = array(
   'entry.29'  => $tip,
   'entry.30'  => isset($_POST['delegat']) ? 'Da' : 'Nu',
   'entry.31'  => $_POST['cnp'],
-  'entry.32'  => $_POST['serie'],
-  'entry.33'  => $_POST['numar'],
+  'entry.32'  => $serie,
+  'entry.33'  => $numar,
   'entry.34'  => $_POST['adresa'],
   'sheetName' => 'Sheet1'
 );
@@ -112,18 +114,18 @@ if (empty($response->result) || 'success' !== $response->result) {
 $templates = new League\Plates\Engine('templates');
 
 $data = array(
-  'tip'        => $tip,
-  'nume'       => $_POST['nume'],
-  'prenume'    => $_POST['prenume'],
-  'cnp'        => $_POST['cnp'],
-  'serie'      => $_POST['serie'],
-  'numar'      => $_POST['numar'],
-  'adresa'     => $_POST['adresa'],
-  'regiune'    => $_POST['regiune'],
-  'tara'       => $_POST['tara'],
-  'telefon'    => $_POST['telefon'],
-  'email'      => $_POST['email'],
-  'acord' => $acord
+  'tip'     => $tip,
+  'nume'    => $nume,
+  'prenume' => $prenume,
+  'cnp'     => $_POST['cnp'],
+  'serie'   => $serie,
+  'numar'   => $numar,
+  'adresa'  => $_POST['adresa'],
+  'regiune' => $_POST['regiune'],
+  'tara'    => $_POST['tara'],
+  'telefon' => $_POST['telefon'],
+  'email'   => $_POST['email'],
+  'acord'   => $acord
 );
 
 if (isset($_POST['delegat'])) {
