@@ -62,9 +62,12 @@ $data = get_data();
           <div class="col-md-5">
             <div class="panel panel-default">
               <div class="panel-body">
-                <p>Înscrie-te ca reprezentant sau delegat al Uniunii Salvați România în secțiile de votare! Dacă noi îi putem observa, ei nu ne mai pot frauda! Termene limită de înscriere:</p>
-                <p>REPREZENTANT: <strong>24 NOIEMBRIE</strong></p>
-                <p>DELEGAT: <strong>2 DECEMBRIE</strong></p>
+                <p>Înscrie-te ca reprezentant sau delegat al Uniunii Salvați România în secțiile de votare! Dacă noi îi putem observa, ei nu ne mai pot frauda!</p>
+                <dl class="text-center">
+                  <dt>Termene limită de înscriere:</dt>
+                  <dd>Reprezentant: <mark>24 noiembrie</mark></dd>
+                  <dd>Delegat: <mark>2 decembrie</mark></dd>
+                </dl>
               </div>
               <div class="panel-footer">
                 <a class="btn btn-default" href="#inscriere" data-trigger="scroll" onclick="ga('send', 'event', 'pagina_alegeri', 'buton', 'scroll_formular')">
