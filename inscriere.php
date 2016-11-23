@@ -81,7 +81,6 @@ $data = array(
   'entry.7'   => $_POST['email'],
   'entry.8'   => $_POST['regiune'],
   'entry.10'  => $_POST['tara'],
-  'entry.22'  => isset($_POST['acord']) ? 'Sunt de acord să intru în baza de date USR' : 'Nu sunt de acord să intru în baza de date USR',
   'entry.27'  => 'FormularAlegeri',
   'entry.28'  => 'update',
   'entry.29'  => $tip,
@@ -92,6 +91,10 @@ $data = array(
   'entry.34'  => $_POST['adresa'],
   'sheetName' => 'Sheet1'
 );
+
+if (isset($_POST['acord'])) {
+  $data['entry.22'] = 'Sunt de acord să intru în baza de date USR';
+}
 
 if (!empty($observatii)) {
   $data['entry.25'] = $observatii;
