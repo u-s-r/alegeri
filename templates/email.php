@@ -130,7 +130,7 @@
                         <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;"><b>Email (pentru fiecare înscriere a unui reprezentant sau delegat introduceți <u>obligatoriu</u> o adresă de email unică pentru acea persoană):</b><br><?php echo $this->e($email); ?></p>
                         <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;"><b>Observații:</b><br><?php echo empty($observatii) ? '&mdash;' : $this->e($observatii); ?></p>
                         <?php if (isset($acord)): ?><p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;"><b>Sunt de acord să primesc ocazional newslettere din partea Uniunii Salvați România</b></p><?php endif; ?>
-                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Ne trebuie cât mai mulți reprezentanți și delegați care să supravegheze procesul de votare, așa că te rugăm să vorbești cu prietenii, familia și vecinii tăi să completeze și ei formularul.</p>
+                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Ne trebuie câți mai mulți reprezentanți și delegați care să supravegheze procesul de votare, pentru a reduce tenativele de fraudă electorală! Te rugăm să vorbești cu prietenii, familia și vecinii să completeze și ei formularul. Dacă noi îi putem observa, ei nu ne mai pot frauda!</p>
                         <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; box-sizing: border-box;" width="100%">
                           <tbody>
                             <tr>
@@ -146,7 +146,7 @@
                             </tr>
                           </tbody>
                         </table>
-                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Termenul limită de înscriere a reprezentanților este pe 24 noiembrie, iar al delegaților pe 2 decembrie.</p>
+                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Termenul limită de înscriere al reprezentanților este pe 24 noiembrie, iar cel al delegaților pe 2 decembrie.</p>
                         <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Îți mulțumim pentru înscriere!</p>
                       </td>
                     </tr>

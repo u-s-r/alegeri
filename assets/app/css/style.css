@@ -128,6 +128,11 @@ mark {
 .btn .glyphicon {
   top: 2px;
 }
+.btn > img {
+  margin-right: 5px;
+  max-height: 20px;
+  vertical-align: top;
+}
 .btn-default {
   background-color: #eb0000;
   color: #fff;
@@ -135,6 +140,14 @@ mark {
 .btn-inverted {
   background-color: #fff;
   color: #eb0000;
+}
+.btn-facebook {
+  background-color: #3664a2;
+  color: #fff;
+}
+.btn-facebook:hover,
+.btn-facebook:focus {
+  color: #fff;
 }
 .jumbotron {
   padding-bottom: 30px;
