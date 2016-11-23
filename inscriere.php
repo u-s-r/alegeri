@@ -30,7 +30,6 @@ $nume       = mb_convert_case($_POST['nume'], MB_CASE_TITLE, 'UTF-8');
 $prenume    = mb_convert_case($_POST['prenume'], MB_CASE_TITLE, 'UTF-8');
 $serie      = strtoupper($_POST['serie']);
 $observatii = trim($_POST['observatii']);
-$acord      = isset($_POST['acord']) ? 'Sunt de acord să intru în baza de date USR' : 'Nu sunt de acord să intru în baza de date USR';
 
 if ('Reprezentant' === $tip && !isset($_POST['confirmare'])) {
   exit('false');
@@ -82,7 +81,7 @@ $data = array(
   'entry.7'   => $_POST['email'],
   'entry.8'   => $_POST['regiune'],
   'entry.10'  => $_POST['tara'],
-  'entry.22'  => $acord,
+  'entry.22'  => isset($_POST['acord']) ? 'Sunt de acord să intru în baza de date USR' : 'Nu sunt de acord să intru în baza de date USR',
   'entry.27'  => 'FormularAlegeri',
   'entry.28'  => 'update',
   'entry.29'  => $tip,
@@ -123,20 +122,23 @@ $data = array(
   'regiune' => $_POST['regiune'],
   'tara'    => $_POST['tara'],
   'telefon' => $_POST['telefon'],
-  'email'   => $_POST['email'],
-  'acord'   => $acord
+  'email'   => $_POST['email']
 );
 
-if (isset($_POST['delegat'])) {
-  $data['delegat'] = $_POST['delegat'];
-}
+if ('Reprezentant' === $tip) {
+  if (isset($_POST['delegat'])) {
+    $data['delegat'] = $_POST['delegat'];
+  }
 
-if (isset($_POST['confirmare'])) {
   $data['confirmare'] = $_POST['confirmare'];
 }
 
 if (!empty($observatii)) {
   $data['observatii'] = $observatii;
+}
+
+if (isset($_POST['acord'])) {
+  $data['acord'] = $_POST['acord'];
 }
 
 $message = $templates->render('email', $data);
