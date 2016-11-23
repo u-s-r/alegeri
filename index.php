@@ -921,6 +921,21 @@ $data = get_data();
             </li>
             <li class="media">
               <div class="media-left">
+                <img class="media-object" src="assets/app/img/icon-distribuie.png" alt="Spune-le familiei și prietenilor!">
+              </div>
+              <div class="media-body">
+                <h3 class="media-heading">Spune-le familiei și prietenilor!</h3>
+                <p>Ne trebuie câți mai mulți reprezentanți și delegați care să supravegheze procesul de votare, pentru a reduce tenativele de fraudă electorală! Te rugăm să vorbești cu prietenii, familia și vecinii să completeze și ei formularul. Dacă noi îi putem observa, ei nu ne mai pot frauda!</p>
+                <p>
+                  <a class="btn btn-facebook" href="https://www.facebook.com/sharer.php?u=https://usr.ro/alegeri/" target="_blank">
+                    <img src="assets/app/img/logo-facebook-inverted.png" alt="Facebook">
+                    Distribuie
+                  </a>
+                </p>
+              </div>
+            </li>
+            <li class="media">
+              <div class="media-left">
                 <img class="media-object" src="assets/app/img/icon-intrebari.png" alt="Întrebări frecvente">
               </div>
               <div class="media-body">
@@ -949,21 +964,6 @@ $data = get_data();
                     <p> Membrii birourilor electorale ale secțiilor de votare primesc din partea statului câte o indemnizație de 65 de lei pentru fiecare zi de activitate, dar nu mai mult de 3 zile (prin zi de activitate se înțelege munca desfășurată pe parcursul unei zile calendaristice, indiferent de numărul de ore prestate, dar nu mai puțin de 6 ore pe zi). Membrii birourilor electorale ale secțiilor de votare din străinătate primesc în plus 150 de lei pentru fiecare zi de activitate, tot din partea statului. </p>
                   </dd>
                 </dl>
-              </div>
-            </li>
-            <li class="media">
-              <div class="media-left">
-                <img class="media-object" src="assets/app/img/icon-distribuie.png" alt="Spune-le familiei și prietenilor!">
-              </div>
-              <div class="media-body">
-                <h3 class="media-heading">Spune-le familiei și prietenilor!</h3>
-                <p>Ne trebuie câți mai mulți reprezentanți și delegați care să supravegheze procesul de votare, pentru a reduce tenativele de fraudă electorală! Te rugăm să vorbești cu prietenii, familia și vecinii să completeze și ei formularul. Dacă noi îi putem observa, ei nu ne mai pot frauda!</p>
-                <p>
-                  <a class="btn btn-facebook" href="https://www.facebook.com/sharer.php?u=https://usr.ro/alegeri/" target="_blank">
-                    <img src="assets/app/img/logo-facebook-inverted.png" alt="Facebook">
-                    Distribuie
-                  </a>
-                </p>
               </div>
             </li>
           </ul>
