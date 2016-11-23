@@ -145,7 +145,7 @@
                             </tr>
                           </tbody>
                         </table>
-                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Termenul limită de înscriere a reprezentanților este pe 23 noiembrie, iar al delegaților pe 2 decembrie.</p>
+                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Termenul limită de înscriere a reprezentanților este pe 24 noiembrie, iar al delegaților pe 2 decembrie.</p>
                         <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Îți mulțumim pentru înscriere!</p>
                       </td>
                     </tr>
