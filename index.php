@@ -189,7 +189,6 @@ $data = get_data();
                               <option value="Botosani">Botosani</option>
                               <option value="Brasov">Brasov</option>
                               <option value="Braila">Braila</option>
-                              <option value="Bucuresti - Sector 1">Bucuresti - Sector 1</option>
                               <option value="Bucuresti - Sector 2">Bucuresti - Sector 2</option>
                               <option value="Bucuresti - Sector 3">Bucuresti - Sector 3</option>
                               <option value="Bucuresti - Sector 4">Bucuresti - Sector 4</option>
