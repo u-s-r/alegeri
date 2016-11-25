@@ -183,9 +183,9 @@ $data = get_data();
                               <option value="Alba">Alba</option>
                               <option value="Arad">Arad</option>
                               <option value="Arges">Arges</option>
-                              <option value="Bihor">Bihor</option>
+                              <option class="hidden" value="Bihor" disabled>Bihor</option>
                               <option value="Bistrita-Nasaud">Bistrita-Nasaud</option>
-                              <option value="Botosani">Botosani</option>
+                              <option class="hidden" value="Botosani" disabled>Botosani</option>
                               <option value="Brasov">Brasov</option>
                               <option value="Braila">Braila</option>
                               <option class="hidden" value="Bucuresti - Sector 1" disabled>Bucuresti - Sector 1</option>
@@ -196,8 +196,8 @@ $data = get_data();
                               <option value="Bucuresti - Sector 6">Bucuresti - Sector 6</option>
                               <option value="Buzau">Buzau</option>
                               <option value="Caras Severin">Caras Severin</option>
-                              <option value="Calarasi">Calarasi</option>
-                              <option value="Cluj">Cluj</option>
+                              <option class="hidden" value="Calarasi" disabled>Calarasi</option>
+                              <option class="hidden" value="Cluj" disabled>Cluj</option>
                               <option value="Constanta">Constanta</option>
                               <option value="Covasna">Covasna</option>
                               <option value="Dambovita">Dambovita</option>
