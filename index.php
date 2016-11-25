@@ -182,50 +182,50 @@ $data = get_data();
                               <option value="Diaspora">Diaspora</option>
                               <option value="Alba">Alba</option>
                               <option value="Arad">Arad</option>
-                              <option value="Arges">Arges</option>
+                              <option class="hidden" value="Arges" disabled>Arges</option>
                               <option class="hidden" value="Bihor" disabled>Bihor</option>
                               <option value="Bistrita-Nasaud">Bistrita-Nasaud</option>
                               <option class="hidden" value="Botosani" disabled>Botosani</option>
                               <option value="Brasov">Brasov</option>
-                              <option value="Braila">Braila</option>
+                              <option class="hidden" value="Braila" disabled>Braila</option>
                               <option class="hidden" value="Bucuresti - Sector 1" disabled>Bucuresti - Sector 1</option>
                               <option value="Bucuresti - Sector 2">Bucuresti - Sector 2</option>
                               <option value="Bucuresti - Sector 3">Bucuresti - Sector 3</option>
                               <option value="Bucuresti - Sector 4">Bucuresti - Sector 4</option>
                               <option value="Bucuresti - Sector 5">Bucuresti - Sector 5</option>
                               <option value="Bucuresti - Sector 6">Bucuresti - Sector 6</option>
-                              <option value="Buzau">Buzau</option>
+                              <option class="hidden" value="Buzau" disabled>Buzau</option>
                               <option value="Caras Severin">Caras Severin</option>
                               <option class="hidden" value="Calarasi" disabled>Calarasi</option>
                               <option class="hidden" value="Cluj" disabled>Cluj</option>
-                              <option value="Constanta">Constanta</option>
+                              <option class="hidden" value="Constanta" disabled>Constanta</option>
                               <option value="Covasna">Covasna</option>
-                              <option value="Dambovita">Dambovita</option>
+                              <option class="hidden" value="Dambovita" disabled>Dambovita</option>
                               <option value="Dolj">Dolj</option>
-                              <option value="Galati">Galati</option>
+                              <option class="hidden" value="Galati" disabled>Galati</option>
                               <option value="Giurgiu">Giurgiu</option>
-                              <option value="Gorj">Gorj</option>
+                              <option class="hidden" value="Gorj" disabled>Gorj</option>
                               <option value="Harghita">Harghita</option>
-                              <option value="Hunedoara">Hunedoara</option>
+                              <option class="hidden" value="Hunedoara" disabled>Hunedoara</option>
                               <option value="Ialomita">Ialomita</option>
-                              <option value="Iasi">Iasi</option>
+                              <option class="hidden" value="Iasi" disabled>Iasi</option>
                               <option value="Ilfov">Ilfov</option>
                               <option value="Maramures">Maramures</option>
                               <option value="Mehedinti">Mehedinti</option>
                               <option value="Mures">Mures</option>
-                              <option value="Neamt">Neamt</option>
-                              <option value="Olt">Olt</option>
+                              <option class="hidden" value="Neamt" disabled>Neamt</option>
+                              <option class="hidden" value="Olt" disabled>Olt</option>
                               <option value="Prahova">Prahova</option>
                               <option value="Satu Mare">Satu Mare</option>
                               <option value="Salaj">Salaj</option>
                               <option value="Sibiu">Sibiu</option>
                               <option value="Suceava">Suceava</option>
-                              <option value="Teleorman">Teleorman</option>
+                              <option class="hidden" value="Teleorman" disabled>Teleorman</option>
                               <option value="Timis">Timis</option>
-                              <option value="Tulcea">Tulcea</option>
+                              <option class="hidden" value="Tulcea" disabled>Tulcea</option>
                               <option value="Vaslui">Vaslui</option>
                               <option value="Valcea">Valcea</option>
-                              <option value="Vrancea">Vrancea</option>
+                              <option class="hidden" value="Vrancea" disabled>Vrancea</option>
                             </select>
                           </div>
                         </div>
