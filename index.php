@@ -183,7 +183,6 @@ $data = get_data();
                               <option value="Alba">Alba</option>
                               <option value="Arad">Arad</option>
                               <option value="Arges">Arges</option>
-                              <option value="Bacau">Bacau</option>
                               <option value="Bihor">Bihor</option>
                               <option value="Bistrita-Nasaud">Bistrita-Nasaud</option>
                               <option value="Botosani">Botosani</option>
