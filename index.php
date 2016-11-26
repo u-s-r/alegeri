@@ -180,13 +180,13 @@ $data = get_data();
                             <select class="form-control" id="regiune-reprezentant" name="regiune" required>
                               <option class="hidden" selected disabled>&mdash; Alege regiunea &mdash;</option>
                               <option value="Diaspora">Diaspora</option>
-                              <option value="Alba">Alba</option>
-                              <option value="Arad">Arad</option>
-                              <option class="hidden" value="Arges" disabled>Arges</option>
-                              <option class="hidden" value="Bihor" disabled>Bihor</option>
-                              <option value="Bistrita-Nasaud">Bistrita-Nasaud</option>
-                              <option class="hidden" value="Botosani" disabled>Botosani</option>
-                              <option value="Brasov">Brasov</option>
+                              <option class="hidden" value="Alba" disabled>Alba</option>
+                              <option class="hidden" value="Arad" disabled>Arad</option>
+                              <option class="hidden" class="hidden" value="Arges" disabled>Arges</option>
+                              <option class="hidden" class="hidden" value="Bihor" disabled>Bihor</option>
+                              <option class="hidden" value="Bistrita-Nasaud" disabled>Bistrita-Nasaud</option>
+                              <option class="hidden" class="hidden" value="Botosani" disabled>Botosani</option>
+                              <option class="hidden" value="Brasov" disabled>Brasov</option>
                               <option class="hidden" value="Braila" disabled>Braila</option>
                               <option class="hidden" value="Bucuresti - Sector 1" disabled>Bucuresti - Sector 1</option>
                               <option value="Bucuresti - Sector 2">Bucuresti - Sector 2</option>
@@ -195,36 +195,36 @@ $data = get_data();
                               <option value="Bucuresti - Sector 5">Bucuresti - Sector 5</option>
                               <option value="Bucuresti - Sector 6">Bucuresti - Sector 6</option>
                               <option class="hidden" value="Buzau" disabled>Buzau</option>
-                              <option value="Caras Severin">Caras Severin</option>
+                              <option class="hidden" value="Caras Severin" disabled>Caras Severin</option>
                               <option class="hidden" value="Calarasi" disabled>Calarasi</option>
                               <option class="hidden" value="Cluj" disabled>Cluj</option>
                               <option class="hidden" value="Constanta" disabled>Constanta</option>
-                              <option value="Covasna">Covasna</option>
+                              <option class="hidden" value="Covasna" disabled>Covasna</option>
                               <option class="hidden" value="Dambovita" disabled>Dambovita</option>
-                              <option value="Dolj">Dolj</option>
+                              <option class="hidden" value="Dolj" disabled>Dolj</option>
                               <option class="hidden" value="Galati" disabled>Galati</option>
-                              <option value="Giurgiu">Giurgiu</option>
+                              <option class="hidden" value="Giurgiu" disabled>Giurgiu</option>
                               <option class="hidden" value="Gorj" disabled>Gorj</option>
-                              <option value="Harghita">Harghita</option>
+                              <option class="hidden" value="Harghita" disabled>Harghita</option>
                               <option class="hidden" value="Hunedoara" disabled>Hunedoara</option>
-                              <option value="Ialomita">Ialomita</option>
+                              <option class="hidden" value="Ialomita" disabled>Ialomita</option>
                               <option class="hidden" value="Iasi" disabled>Iasi</option>
-                              <option value="Ilfov">Ilfov</option>
-                              <option value="Maramures">Maramures</option>
-                              <option value="Mehedinti">Mehedinti</option>
-                              <option value="Mures">Mures</option>
+                              <option class="hidden" value="Ilfov" disabled>Ilfov</option>
+                              <option class="hidden" value="Maramures" disabled>Maramures</option>
+                              <option class="hidden" value="Mehedinti" disabled>Mehedinti</option>
+                              <option class="hidden" value="Mures" disabled>Mures</option>
                               <option class="hidden" value="Neamt" disabled>Neamt</option>
                               <option class="hidden" value="Olt" disabled>Olt</option>
-                              <option value="Prahova">Prahova</option>
-                              <option value="Satu Mare">Satu Mare</option>
-                              <option value="Salaj">Salaj</option>
-                              <option value="Sibiu">Sibiu</option>
-                              <option value="Suceava">Suceava</option>
+                              <option class="hidden" value="Prahova" disabled>Prahova</option>
+                              <option class="hidden" value="Satu Mare" disabled>Satu Mare</option>
+                              <option class="hidden" value="Salaj" disabled>Salaj</option>
+                              <option class="hidden" value="Sibiu" disabled>Sibiu</option>
+                              <option class="hidden" value="Suceava" disabled>Suceava</option>
                               <option class="hidden" value="Teleorman" disabled>Teleorman</option>
-                              <option value="Timis">Timis</option>
+                              <option class="hidden" value="Timis" disabled>Timis</option>
                               <option class="hidden" value="Tulcea" disabled>Tulcea</option>
-                              <option value="Vaslui">Vaslui</option>
-                              <option value="Valcea">Valcea</option>
+                              <option class="hidden" value="Vaslui" disabled>Vaslui</option>
+                              <option class="hidden" value="Valcea" disabled>Valcea</option>
                               <option class="hidden" value="Vrancea" disabled>Vrancea</option>
                             </select>
                           </div>
