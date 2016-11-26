@@ -65,7 +65,7 @@ $data = get_data();
                 <p>Înscrie-te ca reprezentant sau delegat al Uniunii Salvați România în secțiile de votare! Dacă noi îi putem observa, ei nu ne mai pot frauda!</p>
                 <dl class="text-center">
                   <dt>Termene limită de înscriere:</dt>
-                  <dd>Reprezentant (doar Diaspora şi Bucureşti): <mark>26 noiembrie</mark></dd>
+                  <dd>Reprezentant (doar Diaspora): <mark>26 noiembrie</mark></dd>
                   <dd>Delegat: <mark>2 decembrie</mark></dd>
                 </dl>
               </div>
@@ -123,7 +123,7 @@ $data = get_data();
                         <li><strong>ziua alegerilor</strong> (11 decembrie 2016) de la ora 6:00 până la momentul întocmirii proceselor-verbale de constatare a rezultatelor votării și a dosarelor cu rezultatele votării din secția respectivă (aprox. ora 12 noaptea).</li>
                       </ul>
                       <p>Potrivit dispozițiilor <a href="http://legeaz.net/monitorul-oficial-691-2016/hg-637-2016-cheltuieli-pregatire-organizare-alegeri-senat-cdep-2016" target="_blank">H.G. nr. 637/2016</a>, va primi din partea statului o <strong>indemnizație de 65 de lei</strong> pentru fiecare zi de activitate, dar nu mai mult de 3 zile (prin zi de activitate se înțelege munca desfășurată pe parcursul unei zile calendaristice, indiferent de numărul de ore prestate, dar nu mai puțin de 6 ore pe zi). Reprezentantul din secția de votare din străinătate va primi în plus 150 de lei pentru fiecare zi de activitate, tot din partea statului.</p>
-                      <p><strong>Termen limită înscriere:</strong> <mark>26 noiembrie</mark> (doar Diaspora şi Bucureşti)</p>
+                      <p><strong>Termen limită înscriere:</strong> <mark>26 noiembrie</mark> (doar Diaspora)</p>
                       <div class="checkbox">
                         <label class="control-label">
                           <input type="checkbox" name="delegat" checked>
@@ -189,11 +189,11 @@ $data = get_data();
                               <option class="hidden" value="Brasov" disabled>Brasov</option>
                               <option class="hidden" value="Braila" disabled>Braila</option>
                               <option class="hidden" value="Bucuresti - Sector 1" disabled>Bucuresti - Sector 1</option>
-                              <option value="Bucuresti - Sector 2">Bucuresti - Sector 2</option>
-                              <option value="Bucuresti - Sector 3">Bucuresti - Sector 3</option>
-                              <option value="Bucuresti - Sector 4">Bucuresti - Sector 4</option>
-                              <option value="Bucuresti - Sector 5">Bucuresti - Sector 5</option>
-                              <option value="Bucuresti - Sector 6">Bucuresti - Sector 6</option>
+                              <option class="hidden" value="Bucuresti - Sector 2" disabled>Bucuresti - Sector 2</option>
+                              <option class="hidden" value="Bucuresti - Sector 3" disabled>Bucuresti - Sector 3</option>
+                              <option class="hidden" value="Bucuresti - Sector 4" disabled>Bucuresti - Sector 4</option>
+                              <option class="hidden" value="Bucuresti - Sector 5" disabled>Bucuresti - Sector 5</option>
+                              <option class="hidden" value="Bucuresti - Sector 6" disabled>Bucuresti - Sector 6</option>
                               <option class="hidden" value="Buzau" disabled>Buzau</option>
                               <option class="hidden" value="Caras Severin" disabled>Caras Severin</option>
                               <option class="hidden" value="Calarasi" disabled>Calarasi</option>
