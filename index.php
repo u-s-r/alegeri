@@ -182,10 +182,11 @@ $data = get_data();
                               <option value="Diaspora">Diaspora</option>
                               <option class="hidden" value="Alba" disabled>Alba</option>
                               <option class="hidden" value="Arad" disabled>Arad</option>
-                              <option class="hidden" class="hidden" value="Arges" disabled>Arges</option>
-                              <option class="hidden" class="hidden" value="Bihor" disabled>Bihor</option>
+                              <option class="hidden" value="Arges" disabled>Arges</option>
+                              <option class="hidden" value="Bacau" disabled>Bacau</option>
+                              <option class="hidden" value="Bihor" disabled>Bihor</option>
                               <option class="hidden" value="Bistrita-Nasaud" disabled>Bistrita-Nasaud</option>
-                              <option class="hidden" class="hidden" value="Botosani" disabled>Botosani</option>
+                              <option class="hidden" value="Botosani" disabled>Botosani</option>
                               <option class="hidden" value="Brasov" disabled>Brasov</option>
                               <option class="hidden" value="Braila" disabled>Braila</option>
                               <option class="hidden" value="Bucuresti - Sector 1" disabled>Bucuresti - Sector 1</option>
@@ -578,7 +579,7 @@ $data = get_data();
                               <option value="Botosani">Botosani</option>
                               <option value="Brasov">Brasov</option>
                               <option value="Braila">Braila</option>
-                              <option class="hidden" value="Bucuresti - Sector 1" disabled>Bucuresti - Sector 1</option>
+                              <option value="Bucuresti - Sector 1">Bucuresti - Sector 1</option>
                               <option value="Bucuresti - Sector 2">Bucuresti - Sector 2</option>
                               <option value="Bucuresti - Sector 3">Bucuresti - Sector 3</option>
                               <option value="Bucuresti - Sector 4">Bucuresti - Sector 4</option>
