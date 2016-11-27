@@ -110,11 +110,11 @@ $data = get_data();
                 <h3 class="media-heading">Înscrie-te ca reprezentant sau delegat</h3>
                 <p>Vreau să fiu:</p>
                 <ul class="nav nav-pills nav-justified" role="tablist">
-                  <li role="presentation" class="active"><a href="#reprezentant" aria-controls="reprezentant" role="tab" data-toggle="tab">Reprezentant</a></li>
-                  <li role="presentation"><a href="#delegat" aria-controls="delegat" role="tab" data-toggle="tab">Delegat</a></li>
+                  <li role="presentation" class="disabled"><a href="#">Reprezentant</a></li>
+                  <li role="presentation" class="active"><a href="#delegat" aria-controls="delegat" role="tab" data-toggle="tab">Delegat</a></li>
                 </ul>
                 <div class="tab-content">
-                  <div role="tabpanel" class="tab-pane fade in active" id="reprezentant">
+                  <div role="tabpanel" class="tab-pane fade" id="reprezentant">
                     <form class="form-reprezentant" method="post">
                       <input type="hidden" name="tip" value="reprezentant">
                       <p><strong>Reprezentantul</strong> are <em>obligația legală</em> de a participa la activitatea biroului electoral al secției de votare din care face parte (în conformitate cu dispozițiile art. 98 din <a href="http://legislatie.just.ro/Public/DetaliiDocument/170037" target="_blank">Legea nr. 208/2015</a>). Trebuie să fie prezent în secția de votare atât în:</p>
@@ -519,7 +519,7 @@ $data = get_data();
                       <span class="spinner" aria-hidden="true"></span>
                     </form>
                   </div>
-                  <div role="tabpanel" class="tab-pane fade" id="delegat">
+                  <div role="tabpanel" class="tab-pane fade in active" id="delegat">
                     <form class="form-delegat" method="post">
                       <input type="hidden" name="tip" value="delegat">
                       <p>În plus față de alegerile locale din acest an, <strong>delegatul</strong> poate asista la <em>toate</em> operațiunile electorale dintr-o secție de votare în ziua alegerilor (11 decembrie 2016), începând cu ora 6:00 și terminând cu momentul întocmirii proceselor-verbale de constatare a rezultatelor votării și a dosarelor cu rezultatele votării din secția respectivă (aprox. ora 12 noaptea).</p>

@@ -31,7 +31,7 @@ $prenume    = mb_convert_case($_POST['prenume'], MB_CASE_TITLE, 'UTF-8');
 $serie      = strtoupper($_POST['serie']);
 $observatii = trim($_POST['observatii']);
 
-if ('Reprezentant' === $tip && !isset($_POST['confirmare'])) {
+if ('Reprezentant' === $tip) {
   exit('false');
 }
 

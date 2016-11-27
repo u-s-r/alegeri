@@ -1,6 +1,10 @@
 (function ($) {
   'use strict';
 
+  $('[href="#"]').click(function (event) {
+    event.preventDefault();
+  });
+
   $('[data-trigger="scroll"]').click(function (event) {
     if (this.pathname !== window.location.pathname) {
       return;
