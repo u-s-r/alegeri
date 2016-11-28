@@ -110,8 +110,8 @@
     "@dropdown-link-color": "@gray-dark",
     "@dropdown-link-hover-color": "darken(@gray-dark, 5%)",
     "@dropdown-link-hover-bg": "#f5f5f5",
-    "@dropdown-link-active-color": "@component-active-color",
-    "@dropdown-link-active-bg": "@component-active-bg",
+    "@dropdown-link-active-color": "#555",
+    "@dropdown-link-active-bg": "#eee",
     "@dropdown-link-disabled-color": "@gray-light",
     "@dropdown-header-color": "@gray-light",
     "@dropdown-caret-color": "#000",
@@ -405,5 +405,5 @@
     "collapse.js",
     "transition.js"
   ],
-  "customizerUrl": "http://getbootstrap.com/customize/?id=c1994671443b16ed4260d0152d914b3e"
+  "customizerUrl": "http://getbootstrap.com/customize/?id=17d74be5c603efc30d735dc63b5baeb8"
 }

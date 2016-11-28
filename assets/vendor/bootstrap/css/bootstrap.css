@@ -5,8 +5,8 @@
  */
 
 /*!
- * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=c1994671443b16ed4260d0152d914b3e)
- * Config saved to config.json and https://gist.github.com/c1994671443b16ed4260d0152d914b3e
+ * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=17d74be5c603efc30d735dc63b5baeb8)
+ * Config saved to config.json and https://gist.github.com/17d74be5c603efc30d735dc63b5baeb8
  */
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
@@ -3272,10 +3272,10 @@ tbody.collapse.in {
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
 .dropdown-menu > .active > a:focus {
-  color: #ffffff;
+  color: #555555;
   text-decoration: none;
   outline: 0;
-  background-color: #00a1e4;
+  background-color: #eeeeee;
 }
 .dropdown-menu > .disabled > a,
 .dropdown-menu > .disabled > a:hover,
