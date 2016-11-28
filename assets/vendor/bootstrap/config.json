@@ -149,7 +149,7 @@
     "@navbar-default-color": "#777",
     "@navbar-default-bg": "#fff",
     "@navbar-default-border": "darken(@navbar-default-bg, 6.5%)",
-    "@navbar-default-link-color": "#0082ff",
+    "@navbar-default-link-color": "#00a1e4",
     "@navbar-default-link-hover-color": "#333",
     "@navbar-default-link-hover-bg": "transparent",
     "@navbar-default-link-active-color": "#555",
@@ -390,16 +390,20 @@
     "responsive-utilities.less",
     "glyphicons.less",
     "navs.less",
+    "navbar.less",
     "jumbotron.less",
     "alerts.less",
     "media.less",
     "panels.less",
     "responsive-embed.less",
-    "component-animations.less"
+    "component-animations.less",
+    "dropdowns.less"
   ],
   "js": [
+    "dropdown.js",
     "tab.js",
+    "collapse.js",
     "transition.js"
   ],
-  "customizerUrl": "http://getbootstrap.com/customize/?id=577809f78865224b4936007b94130dc8"
+  "customizerUrl": "http://getbootstrap.com/customize/?id=c1994671443b16ed4260d0152d914b3e"
 }
