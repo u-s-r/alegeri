@@ -153,6 +153,9 @@ mark {
   padding-bottom: 30px;
   padding-top: 30px;
 }
+.jumbotron h1 {
+  font-size: 24px;
+}
 .jumbotron p {
   font-weight: inherit;
 }
@@ -163,15 +166,16 @@ mark {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.jumbotron-primary h1 {
-  color: #fff;
-}
 .jumbotron-primary .label {
   color: #fff;
 }
 .panel {
   border: 0;
   box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+.panel-heading {
+  border-bottom: 0;
+  margin-bottom: -20px;
 }
 .panel-footer {
   border-top: 0;
@@ -552,6 +556,60 @@ mark {
 .jvectormap-tip ul {
   margin-bottom: 0;
 }
+.navbar {
+  border: 0;
+}
+.navbar-toggle {
+  margin-left: 15px;
+}
+.navbar-default .navbar-brand {
+  background-color: #00a1e4;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  background-color: #00a1e4;
+}
+.navbar-default .navbar-toggle {
+  background-color: #00a1e4;
+  border-color: #008fcb;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #007db1;
+  border-color: #00648b;
+}
+.navbar-brand {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.navbar-brand > img {
+  max-height: 60px;
+}
+.navbar-left {
+  margin-bottom: 0;
+}
+.navbar-right {
+  margin-top: 0;
+}
+.navbar-btn {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+@media (min-width: 768px) {
+  .navbar-right {
+    margin-right: 15px;
+  }
+}
+.dropdown-menu {
+  border: 0;
+  border-radius: 0;
+}
+.dropdown-menu > li > a {
+  padding: 10px 20px;
+}
 .jumbotron-primary {
   margin-bottom: 30px;
 }
@@ -562,7 +620,7 @@ mark {
 }
 @media (min-width: 1200px) {
   .jumbotron-primary .panel {
-    margin-top: 55px;
+    margin-top: 30px;
   }
 }
 @media (min-width: 992px) {
