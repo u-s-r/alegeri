@@ -58,13 +58,13 @@ $data = get_data();
               </ul>
             </li>
             <li><a href="https://usr.ro/candidati-alegerile-parlamentare-11-decembrie-2016/">Candidați</a></li>
-            <li class="dropdown">
+            <li class="dropdown active">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                 Înscrie-te
                 <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
-                <li><a href="https://usr.ro/alegeri/">Înscrie-te ca reprezentant</a></li>
+                <li class="active"><a href="https://usr.ro/alegeri/">Înscrie-te ca reprezentant</a></li>
                 <li><a href="https://usr.ro/inscrie-te-ca-voluntar/">Înscrie-te ca voluntar</a></li>
                 <li><a href="https://usr.ro/inscrie-te-ca-membru/">Înscrie-te ca membru</a></li>
               </ul>
