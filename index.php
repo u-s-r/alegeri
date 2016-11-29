@@ -185,7 +185,7 @@ $data = get_data();
                     </div>
                   </div>
                   <div class="form-group required">
-                    <label class="control-label" for="adresa-delegat">Domiciliul (întocmai ca în actul de identitate) / Adresa de reședință (din viza de flotant) în cazul în care doresc să fiu delegat în secția de votare la adresa de reședință:</label>
+                    <label class="control-label" for="adresa-delegat">Domiciliul (<em>întocmai ca în actul de identitate</em>) / Adresa de reședință (din viza de flotant) în cazul în care doresc să fiu delegat în secția de votare la adresa de reședință:</label>
                     <textarea class="form-control" id="adresa-delegat" name="adresa" rows="3" placeholder="Str. Carol Davila Nr. 91, Parter, Ap. 1, Sector 5, București" required></textarea>
                   </div>
                   <div class="row">
