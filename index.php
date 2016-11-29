@@ -101,9 +101,10 @@ $data = get_data();
               </div>
               <div class="panel-body">
                 <p>Înscrie-te ca delegat al Uniunii Salvați România în secțiile de votare! Dacă noi îi putem observa, ei nu ne mai pot frauda!</p>
-                <dl class="text-center">
-                  <dt>Termen limită de înscriere:<mark>2 decembrie</mark></dt>
-                </dl>
+                <div class="statistic statistic-primary">
+                  <div class="text value">2 decembrie</div>
+                  <div class="label">Termen limită de înscriere</div>
+                </div>
               </div>
               <div class="panel-footer">
                 <a class="btn btn-default" href="#inscriere" data-trigger="scroll" onclick="ga('send', 'event', 'pagina_alegeri', 'buton', 'scroll_formular')">
