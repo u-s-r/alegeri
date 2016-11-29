@@ -151,7 +151,7 @@ mark {
 }
 .jumbotron {
   padding-bottom: 30px;
-  padding-top: 30px;
+  padding-top: 110px;
 }
 .jumbotron h1 {
   font-size: 24px;
@@ -559,6 +559,11 @@ mark {
 .navbar {
   border: 0;
 }
+.navbar-static-top {
+  left: 0;
+  position: absolute;
+  right: 0;
+}
 .navbar-toggle {
   margin-left: 15px;
 }
@@ -582,6 +587,7 @@ mark {
   border-color: #00648b;
 }
 .navbar-brand {
+  margin-right: 15px;
   padding-bottom: 10px;
   padding-top: 10px;
 }
@@ -604,8 +610,9 @@ mark {
   }
 }
 .dropdown-menu {
-  border: 0;
   border-radius: 0;
+  border: 0;
+  top: 60px;
 }
 .dropdown-menu > li > a {
   padding: 10px 20px;

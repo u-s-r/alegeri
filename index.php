@@ -37,7 +37,7 @@ $data = get_data();
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="btn btn-default navbar-btn" href="https://usr.ro/doneaza/" target="_blank" onclick="ga('send', 'event', 'pagina_alegeri', 'buton', 'doneaza')">Donează</a>
+          <a class="btn btn-inverted navbar-btn" href="https://usr.ro/doneaza/" target="_blank" onclick="ga('send', 'event', 'pagina_alegeri', 'buton', 'doneaza')">Donează</a>
         </div>
         <div class="navbar-header">
           <a class="navbar-brand" href="#">
