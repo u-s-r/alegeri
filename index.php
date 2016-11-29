@@ -64,7 +64,7 @@ $data = get_data();
                 <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
-                <li class="active"><a href="https://usr.ro/alegeri/">Înscrie-te ca reprezentant</a></li>
+                <li class="active"><a href="https://usr.ro/alegeri/">Înscrie-te ca delegat</a></li>
                 <li><a href="https://usr.ro/inscrie-te-ca-voluntar/">Înscrie-te ca voluntar</a></li>
                 <li><a href="https://usr.ro/inscrie-te-ca-membru/">Înscrie-te ca membru</a></li>
               </ul>
@@ -100,17 +100,15 @@ $data = get_data();
                 <h1 class="panel-title">Asigură corectitudinea procesului electoral din ziua votului!</h1>
               </div>
               <div class="panel-body">
-                <p>Înscrie-te ca reprezentant sau delegat al Uniunii Salvați România în secțiile de votare! Dacă noi îi putem observa, ei nu ne mai pot frauda!</p>
+                <p>Înscrie-te ca delegat al Uniunii Salvați România în secțiile de votare! Dacă noi îi putem observa, ei nu ne mai pot frauda!</p>
                 <dl class="text-center">
-                  <dt>Termene limită de înscriere</dt>
-                  <dd>Pentru reprezentanți: <span class="text-muted">26 noiembrie</span></dd>
-                  <dd>Pentru delegați: <mark>2 decembrie</mark></dd>
+                  <dt>Termen limită de înscriere:<mark>2 decembrie</mark></dt>
                 </dl>
               </div>
               <div class="panel-footer">
                 <a class="btn btn-default" href="#inscriere" data-trigger="scroll" onclick="ga('send', 'event', 'pagina_alegeri', 'buton', 'scroll_formular')">
                   <span class="glyphicon glyphicon-menu-right"></span>
-                  Înscrie-te ca reprezentant/delegat
+                  Înscrie-te ca delegat
                 </a>
               </div>
             </div>
@@ -145,10 +143,9 @@ $data = get_data();
                 <img class="media-object" src="assets/app/img/icon-inscriere.png" alt="Înscrie-te ca reprezentant sau delegat">
               </div>
               <div class="media-body">
-                <h3 class="media-heading">Înscrie-te ca reprezentant sau delegat</h3>
-                <p>Vreau să fiu:</p>
+                <h3 class="media-heading">Înscrie-te ca delegat</h3>
                 <ul class="nav nav-pills nav-justified" role="tablist">
-                  <li role="presentation" class="disabled"><a href="#">Reprezentant</a></li>
+                  <li role="presentation" class="disabled"><a href="#">Reprezentant (înscrieri inchise)</a></li>
                   <li role="presentation" class="active"><a href="#delegat" aria-controls="delegat" role="tab" data-toggle="tab">Delegat</a></li>
                 </ul>
                 <div class="tab-content">
@@ -563,8 +560,8 @@ $data = get_data();
                       <p>În plus față de alegerile locale din acest an, <strong>delegatul</strong> poate asista la <em>toate</em> operațiunile electorale dintr-o secție de votare în ziua alegerilor (11 decembrie 2016), începând cu ora 6:00 și terminând cu momentul întocmirii proceselor-verbale de constatare a rezultatelor votării și a dosarelor cu rezultatele votării din secția respectivă (aprox. ora 12 noaptea).</p>
                       <p>Așadar, acesta poate asista inclusiv la operațiunea de numărare a voturilor din secția respectivă (operațiune care începe în ziua alegerilor la ora 21:00, după închiderea localului secției de votare).</p>
                       <p>Poate staționa în spațiul stabilit în sala de votare de către președintele biroului electoral al secției de votare și are dreptul de a sesiza în scris președintele biroului electoral în cazul constatării unor neregularități. Nu primește indemnizație din partea statului.</p>
-                      <p><strong>Termen limită înscriere:</strong> <mark>2 decembrie</mark></p>
-                      <p>Completează următoarele date întocmai ca în actul de identitate:</p>
+                      <p><strong>Termen limită înscriere:<font color="red"> 2 decembrie</font></strong></p>
+                      <p>Completează următoarele date <mark>întocmai ca în actul de identitate (și cu diacritice)</mark>:</p>
                       <div class="row">
                         <div class="col-sm-6">
                           <div class="form-group required">
@@ -598,13 +595,13 @@ $data = get_data();
                         </div>
                       </div>
                       <div class="form-group required">
-                        <label class="control-label" for="adresa-delegat">Domiciliul din actul de identate / Adresa de reședință (din viza de flotant) în cazul în care doresc să fiu delegat în secția de votare la adresa de reședință:</label>
+                        <label class="control-label" for="adresa-delegat">Domiciliul <mark>(întocmai ca în actul de identitate)</mark> / Adresa de reședință (din viza de flotant) în cazul în care doresc să fiu delegat în secția de votare la adresa de reședință:</label>
                         <textarea class="form-control" id="adresa-delegat" name="adresa" rows="3" placeholder="Str. Carol Davila Nr. 91, Parter, Ap. 1, Sector 5, București" required></textarea>
                       </div>
                       <div class="row">
                         <div class="col-sm-6">
                           <div class="form-group required">
-                            <label class="control-label" for="regiune-delegat">Județ:</label>
+                            <label class="control-label" for="regiune-delegat">Județ <mark>(întocmai ca în actul de identitate)</mark>:</label>
                             <select class="form-control" id="regiune-delegat" name="regiune" required>
                               <option class="hidden" selected disabled>&mdash; Alege regiunea &mdash;</option>
                               <option value="Diaspora">Diaspora</option>
@@ -660,7 +657,7 @@ $data = get_data();
                         </div>
                         <div class="col-sm-6">
                           <div class="form-group required">
-                            <label class="control-label" for="tara-delegat">Țara:</label>
+                            <label class="control-label" for="tara-delegat">Țara:</label><br><br>
                             <select class="form-control" id="tara-delegat" name="tara" required>
                               <option class="hidden" selected disabled>&mdash; Alege țara &mdash;</option>
                               <option value="Afghanistan">Afghanistan</option>
