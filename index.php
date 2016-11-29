@@ -28,55 +28,55 @@ $data = get_data();
     <![endif]-->
   </head>
   <body>
-    <nav class="navbar navbar-default navbar-static-top">
-      <div class="container">
-        <div class="pull-right">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Meniu navigare</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="btn btn-inverted navbar-btn" href="https://usr.ro/doneaza/" target="_blank" onclick="ga('send', 'event', 'pagina_alegeri', 'buton', 'doneaza')">Donează</a>
-        </div>
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">
-            <img class="media-object" src="assets/app/img/logo.png" alt="USR">
-          </a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-left">
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                Despre USR
-                <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu">
-                <li><a href="https://usr.ro/cine-suntem/">Cine suntem</a></li>
-                <li><a href="https://usr.ro/program/">Program</a></li>
-                <li><a href="https://usr.ro/faq/">Întrebări frecvente</a></li>
-              </ul>
-            </li>
-            <li><a href="https://usr.ro/candidati-alegerile-parlamentare-11-decembrie-2016/">Candidați</a></li>
-            <li class="dropdown active">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                Înscrie-te
-                <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu">
-                <li class="active"><a href="https://usr.ro/alegeri/">Înscrie-te ca delegat</a></li>
-                <li><a href="https://usr.ro/inscrie-te-ca-voluntar/">Înscrie-te ca voluntar</a></li>
-                <li><a href="https://usr.ro/inscrie-te-ca-membru/">Înscrie-te ca membru</a></li>
-              </ul>
-            </li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="https://usr.ro/contact/">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
     <div class="jumbotron jumbotron-primary">
+      <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+          <div class="pull-right">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Meniu navigare</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="btn btn-inverted navbar-btn" href="https://usr.ro/doneaza/" target="_blank" onclick="ga('send', 'event', 'pagina_alegeri', 'buton', 'doneaza')">Donează</a>
+          </div>
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+              <img class="media-object" src="assets/app/img/logo.png" alt="USR">
+            </a>
+          </div>
+          <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-left">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  Despre USR
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="https://usr.ro/cine-suntem/">Cine suntem</a></li>
+                  <li><a href="https://usr.ro/program/">Program</a></li>
+                  <li><a href="https://usr.ro/faq/">Întrebări frecvente</a></li>
+                </ul>
+              </li>
+              <li><a href="https://usr.ro/candidati-alegerile-parlamentare-11-decembrie-2016/">Candidați</a></li>
+              <li class="dropdown active">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  Înscrie-te
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="active"><a href="https://usr.ro/alegeri/">Înscrie-te ca delegat</a></li>
+                  <li><a href="https://usr.ro/inscrie-te-ca-voluntar/">Înscrie-te ca voluntar</a></li>
+                  <li><a href="https://usr.ro/inscrie-te-ca-membru/">Înscrie-te ca membru</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="https://usr.ro/contact/">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
       <div class="container">
         <div class="row">
           <div class="col-md-7">

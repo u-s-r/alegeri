@@ -1,11 +1,30 @@
 .navbar {
   border: 0;
+  margin-bottom: 30px;
 }
 
-.navbar-static-top {
-  left: 0;
-  position: absolute;
-  right: 0;
+.navbar-collapse {
+  border-top: 0;
+  box-shadow: none;
+}
+
+@media ( max-width: 768px ) {
+  .navbar-nav {
+    > li > a {
+      text-align: center;
+    }
+
+    .open .dropdown-menu {
+      > li > a {
+        padding-left: 15px;
+        text-align: center;
+      }
+    }
+
+    .caret {
+      margin-right: -1em;
+    }
+  }
 }
 
 .navbar-toggle {
@@ -92,7 +111,7 @@
 
   @media (min-width: 1200px) {
     .panel {
-      margin-top: 30px;
+      margin-top: 25px;
     }
   }
 }

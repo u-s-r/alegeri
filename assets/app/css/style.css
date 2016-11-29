@@ -151,7 +151,7 @@ mark {
 }
 .jumbotron {
   padding-bottom: 30px;
-  padding-top: 110px;
+  padding-top: 0;
 }
 .jumbotron h1 {
   font-size: 24px;
@@ -558,11 +558,23 @@ mark {
 }
 .navbar {
   border: 0;
+  margin-bottom: 30px;
 }
-.navbar-static-top {
-  left: 0;
-  position: absolute;
-  right: 0;
+.navbar-collapse {
+  border-top: 0;
+  box-shadow: none;
+}
+@media (max-width: 768px) {
+  .navbar-nav > li > a {
+    text-align: center;
+  }
+  .navbar-nav .open .dropdown-menu > li > a {
+    padding-left: 15px;
+    text-align: center;
+  }
+  .navbar-nav .caret {
+    margin-right: -1em;
+  }
 }
 .navbar-toggle {
   margin-left: 15px;
@@ -630,7 +642,7 @@ mark {
 }
 @media (min-width: 1200px) {
   .jumbotron-primary .panel {
-    margin-top: 30px;
+    margin-top: 25px;
   }
 }
 @media (min-width: 992px) {
