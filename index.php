@@ -41,7 +41,7 @@ $data = get_data();
             <a class="btn btn-inverted navbar-btn" href="https://usr.ro/doneaza/" target="_blank" onclick="ga('send', 'event', 'pagina_alegeri', 'buton', 'doneaza')">Donează</a>
           </div>
           <div class="navbar-header">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="https://usr.ro/">
               <img class="media-object" src="assets/app/img/logo.png" alt="USR">
             </a>
           </div>
