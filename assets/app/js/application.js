@@ -290,6 +290,23 @@ jQuery.fn.vectorMap('addMap', 'diaspora', {"width":89,"height":89,"paths":{"DIAS
     $('.alert').addClass('hidden');
   };
 
+  window.recaptchaInit = function () {
+    $('.g-recaptcha').each(function () {
+      var $this = $(this);
+      var id = grecaptcha.render(this, {
+        'sitekey': $this.data('sitekey')
+      });
+
+      $this.data('id', id);
+    });
+  };
+
+  var recaptchaValidate = function (element) {
+    var id = $(element).siblings('.g-recaptcha').data('id');
+
+    return '' === grecaptcha.getResponse(id);
+  };
+
   var onFormSubmit = function (form) {
     var $form = $(form);
     var $recaptcha = $form.find('.g-recaptcha');
@@ -362,9 +379,7 @@ jQuery.fn.vectorMap('addMap', 'diaspora', {"width":89,"height":89,"paths":{"DIAS
         required: true
       },
       recaptcha: {
-        required: function () {
-          return '' === grecaptcha.getResponse(0);
-        }
+        required: recaptchaValidate
       }
     },
     submitHandler: onFormSubmit
@@ -414,24 +429,11 @@ jQuery.fn.vectorMap('addMap', 'diaspora', {"width":89,"height":89,"paths":{"DIAS
         required: true
       },
       recaptcha: {
-        required: function () {
-          return '' === grecaptcha.getResponse(1);
-        }
+        required: recaptchaValidate
       }
     },
     submitHandler: onFormSubmit
   });
-
-  window.recaptchaInit = function () {
-    $('.g-recaptcha').each(function () {
-      var $this = $(this);
-      var id = grecaptcha.render(this, {
-        'sitekey': $this.data('sitekey')
-      });
-
-      $this.data('id', id);
-    });
-  };
 
   var validateRelationship = function (a, b) {
     $(a).change(function () {

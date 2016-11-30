@@ -145,7 +145,7 @@ $data = get_data();
               </div>
               <div class="media-body">
                 <h3 class="media-heading">Înscrie-te ca delegat</h3>
-                <form class="form-delegat" method="post">
+                <form class="form-delegat" action="inscriere.php" method="post">
                   <input type="hidden" name="tip" value="delegat">
                   <p>În plus față de alegerile locale din acest an, <strong>delegatul</strong> poate asista la <em>toate</em> operațiunile electorale dintr-o secție de votare în ziua alegerilor (11 decembrie 2016), începând cu ora 6:00 și terminând cu momentul întocmirii proceselor-verbale de constatare a rezultatelor votării și a dosarelor cu rezultatele votării din secția respectivă (aprox. ora 12 noaptea).</p>
                   <p>Așadar, acesta poate asista inclusiv la operațiunea de numărare a voturilor din secția respectivă (operațiune care începe în ziua alegerilor la ora 21:00, după închiderea localului secției de votare).</p>
