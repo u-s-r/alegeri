@@ -332,59 +332,6 @@ jQuery.fn.vectorMap('addMap', 'diaspora', {"width":89,"height":89,"paths":{"DIAS
     });
   };
 
-  $('.form-reprezentant').validate({
-    invalidHandler: onFormError,
-    rules: {
-      confirmare: {
-        required: true
-      },
-      nume: {
-        required: true
-      },
-      prenume: {
-        required: true
-      },
-      cnp: {
-        digits: true,
-        maxlength: 13,
-        minlength: 13,
-        required: true
-      },
-      serie: {
-        maxlength: 2,
-        minlength: 2,
-        required: true
-      },
-      numar: {
-        digits: true,
-        maxlength: 6,
-        minlength: 6,
-        required: true
-      },
-      adresa: {
-        required: true
-      },
-      regiune: {
-        required: true
-      },
-      tara: {
-        required: true
-      },
-      telefon: {
-        digits: true,
-        required: true
-      },
-      email: {
-        email: true,
-        required: true
-      },
-      recaptcha: {
-        required: recaptchaValidate
-      }
-    },
-    submitHandler: onFormSubmit
-  });
-
   $('.form-delegat').validate({
     invalidHandler: onFormError,
     rules: {
@@ -457,6 +404,5 @@ jQuery.fn.vectorMap('addMap', 'diaspora', {"width":89,"height":89,"paths":{"DIAS
     });
   };
 
-  validateRelationship('#regiune-reprezentant', '#tara-reprezentant');
   validateRelationship('#regiune-delegat', '#tara-delegat');
 })(jQuery);
