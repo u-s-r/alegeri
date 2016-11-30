@@ -531,6 +531,7 @@ $data = get_data();
                     <span class="glyphicon glyphicon-menu-right"></span>
                     Mă înscriu pentru alegeri corecte!
                   </button>
+                  <span class="spinner" aria-hidden="true"></span>
                 </form>
                 <div class="alert alert-success hidden" role="alert">
                   <strong>Felicitări!</strong>
