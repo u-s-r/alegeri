@@ -21,7 +21,7 @@ $data = get_data();
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/vendor/ion-rangeslider/css/ion.rangeSlider.css" rel="stylesheet">
     <link href="assets/vendor/jvectormap/jquery-jvectormap.css" rel="stylesheet">
-    <link href="assets/app/css/style.min.css" rel="stylesheet">
+    <link href="assets/app/css/style.min.css?v=1.0.0" rel="stylesheet">
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -640,7 +640,7 @@ $data = get_data();
     <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/vendor/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
     <script src="assets/vendor/jvectormap/jquery-jvectormap.min.js"></script>
-    <script src="assets/app/js/application.min.js"></script>
+    <script src="assets/app/js/application.min.js?v=1.0.0"></script>
     <script src="https://www.google.com/recaptcha/api.js?hl=ro&onload=recaptchaInit&render=explicit"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
