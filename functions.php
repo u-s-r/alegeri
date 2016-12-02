@@ -52,8 +52,16 @@ function get_data() {
   foreach ($alegeri->feed->entry as $entry) {
     $content = parse_entry_content($entry->content->{'$t'});
 
-    if (!isset($content['_chk2m'])) {
+    if (!isset($content['prescurtarejudet'])) {
       continue;
+    }
+
+    $keys = array('nrsectiidevotare', 'nrreprezentanti', 'nrdelegati');
+
+    foreach ($keys as $key) {
+      if (!isset($content[$key])) {
+        $content[$key] = 0;
+      }
     }
 
     $sectii          += $content['nrsectiidevotare'];
@@ -69,13 +77,13 @@ function get_data() {
       'delegati'      => $content['nrdelegati']
     );
 
-    if ('DIASPORA' === $content['_chk2m']) {
-      $data['diaspora']['alegeri'][$content['_chk2m']] = $alegeri;
+    if ('DIASPORA' === $content['prescurtarejudet']) {
+      $data['diaspora']['alegeri'][$content['prescurtarejudet']] = $alegeri;
 
       continue;
     }
 
-    $data['alegeri'][$content['_chk2m']] = $alegeri;
+    $data['alegeri'][$content['prescurtarejudet']] = $alegeri;
   }
 
   $data['sectii']          = $sectii;
