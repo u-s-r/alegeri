@@ -12,7 +12,7 @@ $data = get_data();
     <meta name="author" content="USR">
     <meta property="og:url" content="https://usr.ro/alegeri/">
     <meta property="og:title" content="Asigură corectitudinea procesului electoral din ziua votului!">
-    <meta property="og:description" content="Înscrie-te ca reprezentant sau delegat ca să asigurăm corectitudinea procesului electoral din ziua votului!">
+    <meta property="og:description" content="Înscrie-te ca delegat ca să asigurăm corectitudinea procesului electoral din ziua votului!">
     <meta property="og:image" content="https://usr.ro/alegeri/assets/app/img/alegeri.jpg">
     <link href="apple-touch-icon.png" rel="apple-touch-icon">
     <link href="favicon.ico" rel="icon">
@@ -141,7 +141,7 @@ $data = get_data();
           <ul class="media-list">
             <li class="media" id="inscriere">
               <div class="media-left">
-                <img class="media-object" src="assets/app/img/icon-inscriere.png" alt="Înscrie-te ca reprezentant sau delegat">
+                <img class="media-object" src="assets/app/img/icon-inscriere.png" alt="Înscrie-te ca delegat">
               </div>
               <div class="media-body">
                 <h3 class="media-heading">Înscrie-te ca delegat</h3>
@@ -509,7 +509,7 @@ $data = get_data();
                     <input type="tel" class="form-control" id="telefon-delegat" name="telefon" placeholder="0712345678" required>
                   </div>
                   <div class="form-group required">
-                    <label class="control-label" for="email-delegat">Email (pentru fiecare înscriere a unui reprezentant sau delegat introduceți <em>obligatoriu</em> o adresă de email unică pentru acea persoană):</label>
+                    <label class="control-label" for="email-delegat">Email (pentru fiecare înscriere a unui delegat introduceți <em>obligatoriu</em> o adresă de email unică pentru acea persoană):</label>
                     <input type="email" class="form-control" id="email-delegat" name="email" placeholder="andrei.popescu@usr.ro" required>
                   </div>
                   <div class="checkbox">
@@ -526,7 +526,7 @@ $data = get_data();
                     <div class="g-recaptcha" data-sitekey="6LcJvQsUAAAAANyRcfLvhPMuS6tp9Z2ngT8TLUlg"></div>
                     <input type="hidden" name="recaptcha">
                   </div>
-                  <small class="help-block">Prin completarea prezentului formular, persoana vizată își exprimă consimțământul pentru prelucrarea datelor sale cu caracter personal de către Uniunea Salvați România, în scopul desemnării de reprezentanți si delegați în secțiile de votare organizate pentru alegerile parlamentare din data de 11 decembrie 2016, și pentru comunicarea acestor date cu caracter personal către birourile și oficiile electorale competente, în conformitate cu dispozițiile art. 15 alin. (5), art. 17 alin. (5), art. 89 alin. (11) din <a href="http://legislatie.just.ro/Public/DetaliiDocument/170037" target="_blank">Legea nr. 208/2015</a> privind alegerea Senatului și a Camerei Deputaților, și art. 5 din <a href=" http://parlamentare2016.bec.ro/wp-content/uploads/2016/10/Decizia_73.pdf" target="_blank"> Decizia Biroului Electoral Central nr. 73D/21.10.2016 </a> privind unele măsuri pentru buna organizare și desfășurare a alegerilor pentru Senat și Camera Deputaților din data de 11 decembrie 2016. Nefurnizarea datelor cu caracter personal cerute prin prezentul formular atrage imposibilitatea desemnării persoanei vizate ca reprezentant sau delegat al Uniunii Salvați România în secțiile de votare organizate pentru alegerile parlamentare din data de 11 decembrie 2016. În conformitate cu dispozițiile <a href="http://legislatie.just.ro/Public/DetaliiDocument/32733" target="_blank">Legii nr. 677/2001</a> pentru protecția persoanelor cu privire la prelucrarea datelor cu caracter personal și libera circulație a acestor date, persoana vizată își poate exercita dreptul de acces la date, dreptul de intervenție asupra datelor sau dreptul de opoziție justificată, prin transmiterea unei cereri scrise, datate și semnate către Uniunea Salvați România, la adresa de email <a href="mailto:alegeri@usr.ro">alegeri@usr.ro</a>.</small>
+                  <small class="help-block">Prin completarea prezentului formular, persoana vizată își exprimă consimțământul pentru prelucrarea datelor sale cu caracter personal de către Uniunea Salvați România, în scopul desemnării de reprezentanți și delegați în secțiile de votare organizate pentru alegerile parlamentare din data de 11 decembrie 2016, și pentru comunicarea acestor date cu caracter personal către birourile și oficiile electorale competente, în conformitate cu dispozițiile art. 15 alin. (5), art. 17 alin. (5), art. 89 alin. (11) din <a href="http://legislatie.just.ro/Public/DetaliiDocument/170037" target="_blank">Legea nr. 208/2015</a> privind alegerea Senatului și a Camerei Deputaților, și art. 5 din <a href=" http://parlamentare2016.bec.ro/wp-content/uploads/2016/10/Decizia_73.pdf" target="_blank"> Decizia Biroului Electoral Central nr. 73D/21.10.2016 </a> privind unele măsuri pentru buna organizare și desfășurare a alegerilor pentru Senat și Camera Deputaților din data de 11 decembrie 2016. Nefurnizarea datelor cu caracter personal cerute prin prezentul formular atrage imposibilitatea desemnării persoanei vizate ca reprezentant sau delegat al Uniunii Salvați România în secțiile de votare organizate pentru alegerile parlamentare din data de 11 decembrie 2016. În conformitate cu dispozițiile <a href="http://legislatie.just.ro/Public/DetaliiDocument/32733" target="_blank">Legii nr. 677/2001</a> pentru protecția persoanelor cu privire la prelucrarea datelor cu caracter personal și libera circulație a acestor date, persoana vizată își poate exercita dreptul de acces la date, dreptul de intervenție asupra datelor sau dreptul de opoziție justificată, prin transmiterea unei cereri scrise, datate și semnate către Uniunea Salvați România, la adresa de email <a href="mailto:alegeri@usr.ro">alegeri@usr.ro</a>.</small>
                   <button class="btn btn-default" type="submit" onclick="ga('send', 'event', 'pagina_alegeri', 'buton', 'inscriere_delegat')">
                     <span class="glyphicon glyphicon-menu-right"></span>
                     Mă înscriu pentru alegeri corecte!
