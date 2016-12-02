@@ -13,7 +13,7 @@ $data = get_data();
     <meta property="og:url" content="https://usr.ro/alegeri/">
     <meta property="og:title" content="Asigură corectitudinea procesului electoral din ziua votului!">
     <meta property="og:description" content="Înscrie-te ca delegat ca să asigurăm corectitudinea procesului electoral din ziua votului!">
-    <meta property="og:image" content="https://usr.ro/alegeri/assets/app/img/alegeri.jpg">
+    <meta property="og:image" content="https://usr.ro/alegeri/assets/app/img/alegeri.jpg?v=1.0.0">
     <link href="apple-touch-icon.png" rel="apple-touch-icon">
     <link href="favicon.ico" rel="icon">
     <title>USR &middot; Asigură corectitudinea procesului electoral din ziua votului!</title>
