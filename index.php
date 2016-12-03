@@ -207,7 +207,7 @@ $data = get_data();
                           <option class="hidden" value="Bucuresti - Sector 1" disabled>Bucuresti - Sector 1</option>
                           <option class="hidden" value="Bucuresti - Sector 2" disabled>Bucuresti - Sector 2</option>
                           <option class="hidden" value="Bucuresti - Sector 3" disabled>Bucuresti - Sector 3</option>
-                          <option value="Bucuresti - Sector 4">Bucuresti - Sector 4</option>
+                          <option class="hidden" value="Bucuresti - Sector 4" disabled>Bucuresti - Sector 4</option>
                           <option value="Bucuresti - Sector 5">Bucuresti - Sector 5</option>
                           <option value="Bucuresti - Sector 6">Bucuresti - Sector 6</option>
                           <option value="Buzau">Buzau</option>
