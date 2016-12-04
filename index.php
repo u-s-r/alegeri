@@ -102,8 +102,8 @@ $data = get_data();
               <div class="panel-body">
                 <p>Înscrie-te ca delegat al Uniunii Salvați România în secțiile de votare! Dacă noi îi putem observa, ei nu ne mai pot frauda!</p>
                 <div class="statistic statistic-primary">
-                  <div class="text value">3 decembrie</div>
-                  <div class="label">Termen limită de înscriere</div>
+                  <div class="text value">6 decembrie</div>
+                  <div class="label">Termen limită de înscriere diaspora</div>
                 </div>
               </div>
               <div class="panel-footer">
@@ -150,7 +150,7 @@ $data = get_data();
                   <p>În plus față de alegerile locale din acest an, <strong>delegatul</strong> poate asista la <em>toate</em> operațiunile electorale dintr-o secție de votare în ziua alegerilor (11 decembrie 2016), începând cu ora 6:00 și terminând cu momentul întocmirii proceselor-verbale de constatare a rezultatelor votării și a dosarelor cu rezultatele votării din secția respectivă (aprox. ora 12 noaptea).</p>
                   <p>Așadar, acesta poate asista inclusiv la operațiunea de numărare a voturilor din secția respectivă (operațiune care începe în ziua alegerilor la ora 21:00, după închiderea localului secției de votare).</p>
                   <p>Poate staționa în spațiul stabilit în sala de votare de către președintele biroului electoral al secției de votare și are dreptul de a sesiza în scris președintele biroului electoral în cazul constatării unor neregularități. Nu primește indemnizație din partea statului.</p>
-                  <p><strong>Termen limită de înscriere: <span class="text-danger">3 decembrie</span></strong></p>
+                  <p><strong>Termen limită de înscriere (diaspora): <span class="text-danger">6 decembrie</span></strong></p>
                   <p>Completează următoarele date <mark>întocmai ca în actul de identitate și cu diacritice:</mark></p>
                   <div class="row">
                     <div class="col-sm-6">
@@ -195,53 +195,53 @@ $data = get_data();
                         <select class="form-control" id="regiune-delegat" name="regiune" required>
                           <option class="hidden" selected disabled>&mdash; Alege regiunea &mdash;</option>
                           <option value="Diaspora">Diaspora</option>
-                          <option value="Alba">Alba</option>
-                          <option value="Arad">Arad</option>
-                          <option value="Arges">Arges</option>
-                          <option value="Bacau">Bacau</option>
-                          <option value="Bihor">Bihor</option>
-                          <option value="Bistrita-Nasaud">Bistrita-Nasaud</option>
-                          <option value="Botosani">Botosani</option>
-                          <option value="Brasov">Brasov</option>
-                          <option value="Braila">Braila</option>
+                          <option class="hidden" value="Alba" disabled>Alba</option>
+                          <option class="hidden" value="Arad" disabled>Arad</option>
+                          <option class="hidden" value="Arges" disabled>Arges</option>
+                          <option class="hidden" value="Bacau" disabled>Bacau</option>
+                          <option class="hidden" value="Bihor" disabled>Bihor</option>
+                          <option class="hidden" value="Bistrita-Nasaud" disabled>Bistrita-Nasaud</option>
+                          <option class="hidden" value="Botosani" disabled>Botosani</option>
+                          <option class="hidden" value="Brasov" disabled>Brasov</option>
+                          <option class="hidden" value="Braila" disabled>Braila</option>
                           <option class="hidden" value="Bucuresti - Sector 1" disabled>Bucuresti - Sector 1</option>
                           <option class="hidden" value="Bucuresti - Sector 2" disabled>Bucuresti - Sector 2</option>
                           <option class="hidden" value="Bucuresti - Sector 3" disabled>Bucuresti - Sector 3</option>
                           <option class="hidden" value="Bucuresti - Sector 4" disabled>Bucuresti - Sector 4</option>
-                          <option value="Bucuresti - Sector 5">Bucuresti - Sector 5</option>
+                          <option class="hidden" value="Bucuresti - Sector 5" disabled>Bucuresti - Sector 5</option>
                           <option class="hidden" value="Bucuresti - Sector 6" disabled>Bucuresti - Sector 6</option>
-                          <option value="Buzau">Buzau</option>
-                          <option value="Caras Severin">Caras Severin</option>
-                          <option value="Calarasi">Calarasi</option>
-                          <option value="Cluj">Cluj</option>
-                          <option value="Constanta">Constanta</option>
-                          <option value="Covasna">Covasna</option>
-                          <option value="Dambovita">Dambovita</option>
-                          <option value="Dolj">Dolj</option>
-                          <option value="Galati">Galati</option>
-                          <option value="Giurgiu">Giurgiu</option>
-                          <option value="Gorj">Gorj</option>
-                          <option value="Harghita">Harghita</option>
-                          <option value="Hunedoara">Hunedoara</option>
-                          <option value="Ialomita">Ialomita</option>
-                          <option value="Iasi">Iasi</option>
-                          <option value="Ilfov">Ilfov</option>
-                          <option value="Maramures">Maramures</option>
-                          <option value="Mehedinti">Mehedinti</option>
-                          <option value="Mures">Mures</option>
-                          <option value="Neamt">Neamt</option>
-                          <option value="Olt">Olt</option>
-                          <option value="Prahova">Prahova</option>
-                          <option value="Satu Mare">Satu Mare</option>
-                          <option value="Salaj">Salaj</option>
-                          <option value="Sibiu">Sibiu</option>
-                          <option value="Suceava">Suceava</option>
-                          <option value="Teleorman">Teleorman</option>
-                          <option value="Timis">Timis</option>
-                          <option value="Tulcea">Tulcea</option>
-                          <option value="Vaslui">Vaslui</option>
-                          <option value="Valcea">Valcea</option>
-                          <option value="Vrancea">Vrancea</option>
+                          <option class="hidden" value="Buzau" disabled>Buzau</option>
+                          <option class="hidden" value="Caras Severin" disabled>Caras Severin</option>
+                          <option class="hidden" value="Calarasi" disabled>Calarasi</option>
+                          <option class="hidden" value="Cluj" disabled>Cluj</option>
+                          <option class="hidden" value="Constanta" disabled>Constanta</option>
+                          <option class="hidden" value="Covasna" disabled>Covasna</option>
+                          <option class="hidden" value="Dambovita" disabled>Dambovita</option>
+                          <option class="hidden" value="Dolj" disabled>Dolj</option>
+                          <option class="hidden" value="Galati" disabled>Galati</option>
+                          <option class="hidden" value="Giurgiu" disabled>Giurgiu</option>
+                          <option class="hidden" value="Gorj" disabled>Gorj</option>
+                          <option class="hidden" value="Harghita" disabled>Harghita</option>
+                          <option class="hidden" value="Hunedoara" disabled>Hunedoara</option>
+                          <option class="hidden" value="Ialomita" disabled>Ialomita</option>
+                          <option class="hidden" value="Iasi" disabled>Iasi</option>
+                          <option class="hidden" value="Ilfov" disabled>Ilfov</option>
+                          <option class="hidden" value="Maramures" disabled>Maramures</option>
+                          <option class="hidden" value="Mehedinti" disabled>Mehedinti</option>
+                          <option class="hidden" value="Mures" disabled>Mures</option>
+                          <option class="hidden" value="Neamt" disabled>Neamt</option>
+                          <option class="hidden" value="Olt" disabled>Olt</option>
+                          <option class="hidden" value="Prahova" disabled>Prahova</option>
+                          <option class="hidden" value="Satu Mare" disabled>Satu Mare</option>
+                          <option class="hidden" value="Salaj" disabled>Salaj</option>
+                          <option class="hidden" value="Sibiu" disabled>Sibiu</option>
+                          <option class="hidden" value="Suceava" disabled>Suceava</option>
+                          <option class="hidden" value="Teleorman" disabled>Teleorman</option>
+                          <option class="hidden" value="Timis" disabled>Timis</option>
+                          <option class="hidden" value="Tulcea" disabled>Tulcea</option>
+                          <option class="hidden" value="Vaslui" disabled>Vaslui</option>
+                          <option class="hidden" value="Valcea" disabled>Valcea</option>
+                          <option class="hidden" value="Vrancea" disabled>Vrancea</option>
                         </select>
                       </div>
                     </div>
