@@ -102,7 +102,7 @@ $data = get_data();
               <div class="panel-body">
                 <p>Înscrie-te ca delegat al Uniunii Salvați România în secțiile de votare! Dacă noi îi putem observa, ei nu ne mai pot frauda!</p>
                 <div class="statistic statistic-primary">
-                  <div class="text value">6 decembrie</div>
+                  <div class="text value">5 decembrie</div>
                   <div class="label">Termen limită de înscriere diaspora</div>
                 </div>
               </div>
@@ -150,7 +150,7 @@ $data = get_data();
                   <p>În plus față de alegerile locale din acest an, <strong>delegatul</strong> poate asista la <em>toate</em> operațiunile electorale dintr-o secție de votare în ziua alegerilor (11 decembrie 2016), începând cu ora 6:00 și terminând cu momentul întocmirii proceselor-verbale de constatare a rezultatelor votării și a dosarelor cu rezultatele votării din secția respectivă (aprox. ora 12 noaptea).</p>
                   <p>Așadar, acesta poate asista inclusiv la operațiunea de numărare a voturilor din secția respectivă (operațiune care începe în ziua alegerilor la ora 21:00, după închiderea localului secției de votare).</p>
                   <p>Poate staționa în spațiul stabilit în sala de votare de către președintele biroului electoral al secției de votare și are dreptul de a sesiza în scris președintele biroului electoral în cazul constatării unor neregularități. Nu primește indemnizație din partea statului.</p>
-                  <p><strong>Termen limită de înscriere (diaspora): <span class="text-danger">6 decembrie</span></strong></p>
+                  <p><strong>Termen limită de înscriere (diaspora): <span class="text-danger">5 decembrie</span></strong></p>
                   <p>Completează următoarele date <mark>întocmai ca în actul de identitate și cu diacritice:</mark></p>
                   <div class="row">
                     <div class="col-sm-6">
