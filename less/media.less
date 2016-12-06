@@ -67,9 +67,9 @@
 
 .media-list {
   margin-bottom: 60px;
-  text-align: center;
 
   .media-object {
+    display: inline-block;
     max-width: 90px;
   }
 
@@ -79,9 +79,10 @@
   }
 
   .media-left {
-    display: inline-block;
+    display: block;
     margin-bottom: 30px;
     padding-right: 0;
+    text-align: center;
   }
 
   .media-body {
@@ -103,6 +104,10 @@
 
     .media {
       display: table;
+    }
+
+    .media-left {
+      text-align: left;
     }
 
     .media-body {
