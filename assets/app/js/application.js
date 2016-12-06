@@ -388,7 +388,7 @@ jQuery.fn.vectorMap('addMap', 'diaspora', {"width":89,"height":89,"paths":{"DIAS
 
       if ('Diaspora' === $(this).val() && 'Romania' === $tara.val()) {
         $tara.find('option:first').prop('selected', true);
-      } else {
+      } else if ($tara.val()) {
         $tara.find('option[value="Romania"]').prop('selected', true);
       }
     });
@@ -398,7 +398,7 @@ jQuery.fn.vectorMap('addMap', 'diaspora', {"width":89,"height":89,"paths":{"DIAS
 
       if ('Romania' === $(this).val() && 'Diaspora' === $regiune.val()) {
         $regiune.find('option:first').prop('selected', true);
-      } else {
+      } else if ($regiune.val()) {
         $regiune.find('option[value="Diaspora"]').prop('selected', true);
       }
     });
