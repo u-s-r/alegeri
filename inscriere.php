@@ -4,6 +4,8 @@ require 'vendor/autoload.php';
 
 header('Content-Type: application/json');
 
+exit('false');
+
 $required_fields = array(
   'tip',
   'nume',
