@@ -8,7 +8,7 @@
   box-shadow: none;
 }
 
-@media ( max-width: 768px ) {
+@media ( max-width: 767px ) {
   .navbar-nav {
     > li > a {
       text-align: center;
@@ -27,8 +27,14 @@
   }
 }
 
+.container > .navbar-header {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .navbar-toggle {
   margin-left: 15px;
+  margin-right: 0;
 }
 
 .navbar-default {
@@ -61,6 +67,10 @@
   margin-right: 15px;
   padding-bottom: 10px;
   padding-top: 10px;
+}
+
+.navbar > .container .navbar-brand {
+  margin-left: 0;
 }
 
 .navbar-brand > img {
