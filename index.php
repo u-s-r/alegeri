@@ -146,7 +146,7 @@ $data = get_data();
               <div class="media-left">
                 <img class="media-object" src="assets/app/img/icon-intrebari.png" alt="Întrebări frecvente">
               </div>
-              <div class="media-body">
+              <div class="media-body text-left">
                 <h3 class="media-heading">Întrebări frecvente</h3>
                 <dl>
                   <dt>Trebuie să fiu membru al Uniunii Salvați România pentru a fi reprezentant sau delegat?</dt>

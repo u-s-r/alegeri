@@ -271,9 +271,9 @@ mark {
 }
 .media-list {
   margin-bottom: 60px;
+  text-align: center;
 }
 .media-list .media-object {
-  display: inline-block;
   max-width: 90px;
 }
 .media-list .media-heading {
@@ -281,10 +281,9 @@ mark {
   margin-bottom: 10px;
 }
 .media-list .media-left {
-  display: block;
+  display: inline-block;
   margin-bottom: 30px;
   padding-right: 0;
-  text-align: center;
 }
 .media-list .media-body {
   width: auto;
@@ -305,9 +304,6 @@ mark {
   }
   .media-list .media {
     display: table;
-  }
-  .media-list .media-left {
-    text-align: left;
   }
   .media-list .media-body {
     width: 10000px;
