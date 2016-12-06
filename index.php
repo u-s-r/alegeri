@@ -54,6 +54,7 @@ $data = get_data();
                 </a>
                 <ul class="dropdown-menu">
                   <li><a href="https://usr.ro/cine-suntem/">Cine suntem</a></li>
+                  <li><a href="https://usr.ro/proiecte-de-guvernare/">Proiecte de guvernare</a></li>
                   <li><a href="https://usr.ro/program/">Program</a></li>
                   <li><a href="https://usr.ro/faq/">Întrebări frecvente</a></li>
                 </ul>
@@ -61,13 +62,15 @@ $data = get_data();
               <li><a href="https://usr.ro/candidati-alegerile-parlamentare-11-decembrie-2016/">Candidați</a></li>
               <li class="dropdown active">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                  Înscrie-te
+                  Implică-te
                   <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
                   <li class="active"><a href="https://usr.ro/alegeri/">Înscrie-te ca delegat</a></li>
                   <li><a href="https://usr.ro/inscrie-te-ca-voluntar/">Înscrie-te ca voluntar</a></li>
                   <li><a href="https://usr.ro/inscrie-te-ca-membru/">Înscrie-te ca membru</a></li>
+                  <li><a href="https://usr.ro/sustine-online/">Susține online</a></li>
+                  <li><a href="https://usr.ro/doneaza/" target="_blank" onclick="ga('send', 'event', 'pagina_alegeri', 'buton', 'doneaza')">Donează</a></li>
                 </ul>
               </li>
             </ul>
