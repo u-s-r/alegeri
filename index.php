@@ -99,11 +99,11 @@ $data = get_data();
           <div class="col-md-5">
             <div class="panel panel-default">
               <div class="panel-heading">
-                <h1 class="panel-title">Îţi mulţumim că ne ajuţi pe 11 decembrie!</h1><br>
+                <h1 class="panel-title">Îţi mulţumim că ne ajuţi pe 11 decembrie!</h1>
               </div>
               <div class="panel-body">
-                <p>Chiar dacă România are o istorie lungă de fraudă electorală, împreună vom încerca să prevenim astfel de practici!<br><br>
-                  Află mai jos răspunsurile la întrebările cele mai frecvente despre reprezentanţii sau delegaţii USR în secţiile de votare sau cunoaşte-ne candidaţii!</p>
+                <p>Chiar dacă România are o istorie lungă de fraudă electorală, împreună vom încerca să prevenim astfel de practici!</p>
+                <p>Află mai jos răspunsurile la întrebările cele mai frecvente despre reprezentanţii sau delegaţii USR în secţiile de votare sau cunoaşte-ne candidaţii!</p>
               </div>
               <div class="panel-footer">
                 <a class="btn btn-default" href="https://usr.ro/" target="_blank" onclick="ga('send', 'event', 'pagina_alegeri', 'buton', 'continuam_usr')">
@@ -144,30 +144,33 @@ $data = get_data();
               </div>
               <div class="media-body text-left">
                 <h3 class="media-heading">Întrebări frecvente</h3>
-                <dl>
-                  <dt>Unde votez?</dt><br>
-                  <dd>Dacă în ziua votului ești în localitatea de domiciliu, votezi la secția de votare la care ești arondat (o găseşti pe <a href="https://registrulelectoral.ro" target="_blank">Registrul Electoral</a>). Dacă ești plecat din localitate, dar ești în același județ unde ai domiciliul, votezi pe liste suplimentare la orice secție de vot.<br><br>
-                      Dar dacă ești în alt județ decât acela în care este domiciliul tău? Îți trebuie viză de flotant (adresa de reşedinţă)! Cu aceasta vei putea vota şi în localitatea unde eşti flotant (la secția de votare la care ești arondat) sau în cadrul judeţului respectiv (pe liste suplimentare la orice secţie de vot)! </dd>
-                </dl>
-                <dl>
-                  <dt>Ce putere are un reprezentant în secția de vot? Dar un delegat?</dt><br>
-                  <dd>Principala diferență dintre reprezentant și delegat este aceea că reprezentantul participă la operațiunile biroului electoral al secției de votare (având calitatea de membru al biroului), în timp ce delegatul doar asistă la operațiunile biroului electoral al secției de votare.<br><br>
-                    Atât reprezentantul, cât și delegatul au dreptul de a sesiza (în scris) președintele biroului secției de votare cu privire la nereguli, iar președintele biroului secției de votare trebuie să soluționeze sesizarea. În plus față de delegați, legea conferă reprezentanților dreptul de a contesta identitatea persoanei care se prezintă la vot.</dd>
-                </dl>
-                <dl>
-                  <dt>Reprezentantul poate participa la operațiunile mai multor secții de votare? Delegatul poate asista la operațiunile mai multor secții de votare?</dt><br>
-                  <dd>Nu. Reprezentantul poate participa doar la operațiunile din secția de votare în care a fost desemnat, iar delegatul poate asista doar la operațiunile din secția de votare pentru care a fost acreditat de către biroul electoral de circumscripție.
+                <dl class="dl-relaxed">
+                  <dt>Unde votez?</dt>
+                  <dd>
+                    <p>Dacă în ziua votului ești în localitatea de domiciliu, votezi la secția de votare la care ești arondat (o găseşti pe <a href="https://registrulelectoral.ro" target="_blank">Registrul Electoral</a>). Dacă ești plecat din localitate, dar ești în același județ unde ai domiciliul, votezi pe liste suplimentare la orice secție de vot.</p>
+                    <p>Dar dacă ești în alt județ decât acela în care este domiciliul tău? Îți trebuie viză de flotant (adresa de reşedinţă)! Cu aceasta vei putea vota şi în localitatea unde eşti flotant (la secția de votare la care ești arondat) sau în cadrul judeţului respectiv (pe liste suplimentare la orice secţie de vot)!</p>
                   </dd>
                 </dl>
-                <dl>
-                  <dt>Sunt reprezentant. Dacă nu mai reușesc să ajung în biroul secției de vot pe 11 decembrie?</dt><br>
+                <dl class="dl-relaxed">
+                  <dt>Ce putere are un reprezentant în secția de vot? Dar un delegat?</dt>
+                  <dd>
+                    <p>Principala diferență dintre reprezentant și delegat este aceea că reprezentantul participă la operațiunile biroului electoral al secției de votare (având calitatea de membru al biroului), în timp ce delegatul doar asistă la operațiunile biroului electoral al secției de votare.</p>
+                    <p>Atât reprezentantul, cât și delegatul au dreptul de a sesiza (în scris) președintele biroului secției de votare cu privire la nereguli, iar președintele biroului secției de votare trebuie să soluționeze sesizarea. În plus față de delegați, legea conferă reprezentanților dreptul de a contesta identitatea persoanei care se prezintă la vot.</p>
+                  </dd>
+                </dl>
+                <dl class="dl-relaxed">
+                  <dt>Reprezentantul poate participa la operațiunile mai multor secții de votare? Delegatul poate asista la operațiunile mai multor secții de votare?</dt>
+                  <dd>Nu. Reprezentantul poate participa doar la operațiunile din secția de votare în care a fost desemnat, iar delegatul poate asista doar la operațiunile din secția de votare pentru care a fost acreditat de către biroul electoral de circumscripție.</dd>
+                </dl>
+                <dl class="dl-relaxed">
+                  <dt>Sunt reprezentant. Dacă nu mai reușesc să ajung în biroul secției de vot pe 11 decembrie?</dt>
                   <dd>Reprezentantul are <em>obligația legală</em> de a participa la activitatea biroului electoral al secției de votare din care face parte (în conformitate cu dispozițiile art. 98 din <a href="http://legislatie.just.ro/Public/DetaliiDocument/170037" target="_blank">Legea nr. 208/2015</a>). Neparticiparea poate sa atragă o sancțiune conform art. 99 (alin. 1), între 1.500-4.500 lei.</dd>
                 </dl>
-                <dl>
-                  <dt>De unde și când îmi iau indemnizația după ziua votului?</dt><br>
+                <dl class="dl-relaxed">
+                  <dt>De unde și când îmi iau indemnizația după ziua votului?</dt>
                   <dd>
                     <p>Reprezentantul va afla, de la președintele biroului electoral al secției de votare, detalii privind locul și data la care își va primi indemnizația. <a href="http://legeaz.net/monitorul-oficial-691-2016/hg-637-2016-cheltuieli-pregatire-organizare-alegeri-senat-cdep-2016" target="_blank">H.G. nr. 637/2016</a> prevede că plata indemnizațiilor și drepturilor cuvenite membrilor birourilor electorale ale secțiilor de votare se face de către instituțiile prefectului sau Ministerul Afacerilor Externe, după caz.</p>
-                    <p> Membrii birourilor electorale ale secțiilor de votare primesc din partea statului câte o indemnizație de 65 de lei pentru fiecare zi de activitate, dar nu mai mult de 3 zile (prin zi de activitate se înțelege munca desfășurată pe parcursul unei zile calendaristice, indiferent de numărul de ore prestate, dar nu mai puțin de 6 ore pe zi). Membrii birourilor electorale ale secțiilor de votare din străinătate primesc în plus 150 de lei pentru fiecare zi de activitate, tot din partea statului. </p>
+                    <p>Membrii birourilor electorale ale secțiilor de votare primesc din partea statului câte o indemnizație de 65 de lei pentru fiecare zi de activitate, dar nu mai mult de 3 zile (prin zi de activitate se înțelege munca desfășurată pe parcursul unei zile calendaristice, indiferent de numărul de ore prestate, dar nu mai puțin de 6 ore pe zi). Membrii birourilor electorale ale secțiilor de votare din străinătate primesc în plus 150 de lei pentru fiecare zi de activitate, tot din partea statului.</p>
                   </dd>
                 </dl>
               </div>

@@ -18,6 +18,9 @@
   color: #eb0000;
   content: "\25cf";
 }
+.dl-relaxed dt {
+  margin-bottom: 10px;
+}
 /* Labels */
 .label {
   color: #00a1e4;
@@ -131,7 +134,6 @@ mark {
 }
 .panel-heading {
   border-bottom: 0;
-  margin-bottom: -20px;
 }
 .panel-footer {
   border-top: 0;
@@ -605,12 +607,12 @@ mark {
     margin-top: 45px;
   }
   .jumbotron-primary .panel {
-    margin-top: 20px;
+    margin-top: 10px;
   }
 }
 @media (min-width: 1200px) {
   .jumbotron-primary .panel {
-    margin-top: 35px;
+    margin-top: 20px;
   }
 }
 @media (min-width: 992px) {
