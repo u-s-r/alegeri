@@ -60,7 +60,7 @@ $data = get_data();
                 </ul>
               </li>
               <li><a href="https://usr.ro/candidati-alegerile-parlamentare-11-decembrie-2016/">Candidați</a></li>
-              <li class="dropdown active">
+              <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                   Implică-te
                   <span class="caret"></span>
@@ -164,7 +164,7 @@ $data = get_data();
                   <dd>Reprezentantul are <em>obligația legală</em> de a participa la activitatea biroului electoral al secției de votare din care face parte (în conformitate cu dispozițiile art. 98 din <a href="http://legislatie.just.ro/Public/DetaliiDocument/170037" target="_blank">Legea nr. 208/2015</a>). Neparticiparea poate sa atragă o sancțiune conform art. 99 (alin. 1), între 1.500-4.500 lei.</dd>
                 </dl>
                 <dl>
-                  <dt>De unde și când îmi iau indemnizația după ziua votului?</dt><br>  
+                  <dt>De unde și când îmi iau indemnizația după ziua votului?</dt><br>
                   <dd>
                     <p>Reprezentantul va afla, de la președintele biroului electoral al secției de votare, detalii privind locul și data la care își va primi indemnizația. <a href="http://legeaz.net/monitorul-oficial-691-2016/hg-637-2016-cheltuieli-pregatire-organizare-alegeri-senat-cdep-2016" target="_blank">H.G. nr. 637/2016</a> prevede că plata indemnizațiilor și drepturilor cuvenite membrilor birourilor electorale ale secțiilor de votare se face de către instituțiile prefectului sau Ministerul Afacerilor Externe, după caz.</p>
                     <p> Membrii birourilor electorale ale secțiilor de votare primesc din partea statului câte o indemnizație de 65 de lei pentru fiecare zi de activitate, dar nu mai mult de 3 zile (prin zi de activitate se înțelege munca desfășurată pe parcursul unei zile calendaristice, indiferent de numărul de ore prestate, dar nu mai puțin de 6 ore pe zi). Membrii birourilor electorale ale secțiilor de votare din străinătate primesc în plus 150 de lei pentru fiecare zi de activitate, tot din partea statului. </p>
